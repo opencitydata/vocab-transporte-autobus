@@ -1060,28 +1060,6 @@
     
 
 
-    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/Observation -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/Sensor -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
-    
 
 
     <!-- 
