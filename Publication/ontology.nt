@@ -1,0 +1,1083 @@
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/transporte/autobus/1.0.0> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/abstract> "El vocabulario de Autobús trabaja con el estándar europeo TransModel (EN 12896 realizado por el CEN, Comité Europeo de Normalización) que ha sido adoptado por el reglamento europeo 2017/1926 y que sigue la directiva europea sobre servicios inteligentes de transporte (Directiva 2010/40/UE sobre ITS,Intelligent Transport System).\nDesde diciembre de 2019 este reglamento ha entrado en vigor y dictamina que cualquier operador o autoridad de transporte europea debe ofrecer sus datos en formatos compatibles con Transmodel.\nEsta ontología se basa en el trabajo previo realizado durante el proyecto SNAP (snap-project.eu) donde se realizó una primera versión de la ontología transmodel.\nEn general se han reusado los siguientes conceptos de Transmodel: Operador, Autoridad, Línea, Ruta, Puntos en una Ruta, Patrón de Viaje, Puntos en un Patrón de Viaje, Parada, Viaje asociado a un Patrón de Viaje, Horarios y Frecuencias de un Viaje y Calendario de Servicio.\nEste vocabulario realiza otras relaciones: con el concepto de Incidencia que se ha desarrollado en el vocabulario de Tráfico del mismo proyecto de Ciudades Abiertas; con el vocabularios de Dirección Postal; con geosparql para la representación geográfica.\nEl vocabulario se ha dividido en tres grandes partes:\n- Organizaciones (autoridad y operador) y sus líneas\n- Rutas y puntos de las mismas, incluidas las paradas.\n- Viajes y patrones de viaje\n"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/abstract> "The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been adopted by the European regulation 2017/1926 and follows the European directive on intelligent transport services (Directive 2010/40/EU on ITS,Intelligent Transport System).\nSince December 2019 this regulation has come into force and dictates that any European operator or transport authority must offer its data in formats compatible with Transmodel.\nThis ontology is based on the previous work carried out during the SNAP project (snap-project.eu) where a first version of the Transmodel ontology was developed.\nIn general, the following Transmodel concepts have been reused: Operator, Authority, Line, Route, Points on a Route, Trip Pattern, Points on a Trip Pattern, Stop, Trip associated to a Trip Pattern, Timetables and Frequencies of a Trip and Service Calendar.\nThis vocabulary makes other relations: with the concept of Incidence that has been developed in the Traffic vocabulary of the same Open Cities project; with the Postal Address vocabulary; with geosparql for the geographical representation.\nThe vocabulary has been divided into three main parts:\n- Organizations (authority and operator) and their lines\n- Routes and points thereof, including stops.\n- Journeys and travel patterns\n\t"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "Red.es"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> "Víctor Morlán Pío - Ayuntamiento de Zaragoza"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/creator> "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/creator> "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/creator> "Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/description> "Este vocabulario está siendo desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/description> "This vocabulary is being developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/transporte/autobus"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre el transporte público urbano de autobuses."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/title> "Vocabulary for the representation of data on public transport by bus."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/created> "2020-05-05"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/hasVersion> "1.0.0" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/issued> "2020-05-07"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/vocab/vann/preferredNamespacePrefix> "esautob" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\tpropuestos en las reuniones del grupo."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://www.w3.org/2000/01/rdf-schema#comment> "This version has been generated within the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts proposed at the group's meetings."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://www.w3.org/2002/07/owl#versionInfo> "This is the initial version of the Traffic ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://www.w3.org/2002/07/owl#versionInfo> "Versión 1.0 de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/contactPoint
+<http://schema.org/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica cuál es la parada de cabecera de la línea."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://www.w3.org/2000/01/rdf-schema#comment> "Points out which stop point is the heading of the line."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/autobus> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://www.w3.org/2000/01/rdf-schema#label> "Cabecera de Línea"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://www.w3.org/2000/01/rdf-schema#label> "Line Head Stop Point"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica cuál es la parada de final de la línea."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea> <http://www.w3.org/2000/01/rdf-schema#comment> "Points out which stop point is the end of the line."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/autobus> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea> <http://www.w3.org/2000/01/rdf-schema#label> "Final de Línea"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea> <http://www.w3.org/2000/01/rdf-schema#label> "Line End Stop Point"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/spec/geosparql/1.0#Point> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Stop Point Location according to WGS84"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Ubicación de la Parada según coordenadas WGS84"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Point Location"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> <http://www.w3.org/2000/01/rdf-schema#label> "Ubicación Parada"@es .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "is in scheme"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+# 
+# http://www.w3.org/2006/vcard/ns#hasAddress
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3id.org/transmodel/journeys#aGenericDescriptionOf
+<http://www.w3id.org/transmodel/journeys#aGenericDescriptionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/transmodel/journeys#aGenericDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#Place> .
+<http://www.w3id.org/transmodel/journeys#aGenericDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#ScheduledStopPoint> .
+<http://www.w3id.org/transmodel/journeys#aGenericDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad señala que un Lugar, que es la superclase de esautob:parada, es una descripción genérica de tanto una Parada Planificada como un Punto de Ruta."@es .
+<http://www.w3id.org/transmodel/journeys#aGenericDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points out a Place, which is a super class of esautob:Parada, is a genericDescription of both a ScheduledStopPoint and of RoutePoint"@en .
+<http://www.w3id.org/transmodel/journeys#aGenericDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "A Generic Description"@en .
+<http://www.w3id.org/transmodel/journeys#aGenericDescriptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "Descripción Genérica"@es .
+# 
+# http://www.w3id.org/transmodel/journeys#directionType
+<http://www.w3id.org/transmodel/journeys#directionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3id.org/transmodel/journeys#orientedBy
+<http://www.w3id.org/transmodel/journeys#orientedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3id.org/transmodel/journeys#prescribing
+<http://www.w3id.org/transmodel/journeys#prescribing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/transmodel/journeys#prescribing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#JourneyPattern> .
+<http://www.w3id.org/transmodel/journeys#prescribing> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#DestinationDisplay> .
+<http://www.w3id.org/transmodel/journeys#prescribing> <http://www.w3.org/2000/01/rdf-schema#comment> "A Journey Pattern is prescribing a Destination Display"@en .
+<http://www.w3id.org/transmodel/journeys#prescribing> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Patrón de Viaje que anuncia su destino de alguna forma"@en .
+<http://www.w3id.org/transmodel/journeys#prescribing> <http://www.w3.org/2000/01/rdf-schema#label> "Prescribe"@es .
+<http://www.w3id.org/transmodel/journeys#prescribing> <http://www.w3.org/2000/01/rdf-schema#label> "Prescribing"@en .
+# 
+# http://www.w3id.org/transmodel/journeys#within
+<http://www.w3id.org/transmodel/journeys#within> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/transmodel/journeys#within> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#ServiceCalendar> .
+<http://www.w3id.org/transmodel/journeys#within> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#OperatingPeriod> .
+<http://www.w3id.org/transmodel/journeys#within> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad establece la relación entre un Calendario de Servicio y un Periodo Operativo."@es .
+<http://www.w3id.org/transmodel/journeys#within> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship between Vehicle Journey and Day Type."@en .
+<http://www.w3id.org/transmodel/journeys#within> <http://www.w3.org/2000/01/rdf-schema#label> "dentro de"@es .
+<http://www.w3id.org/transmodel/journeys#within> <http://www.w3.org/2000/01/rdf-schema#label> "within"@en .
+# 
+# http://www.w3id.org/transmodel/organisations#managing
+<http://www.w3id.org/transmodel/organisations#managing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/transmodel/organisations#managing> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la autoridad de transporte y los patrones de viaje."@es .
+<http://www.w3id.org/transmodel/organisations#managing> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between Transport Authority and Journey Patterns"@en .
+<http://www.w3id.org/transmodel/organisations#managing> <http://www.w3.org/2000/01/rdf-schema#label> "Gestionando"@es .
+<http://www.w3id.org/transmodel/organisations#managing> <http://www.w3.org/2000/01/rdf-schema#label> "Managing"@en .
+# 
+# http://www.w3id.org/transmodel/organisations#operating
+<http://www.w3id.org/transmodel/organisations#operating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/transmodel/organisations#operating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/organisations#Operator> .
+<http://www.w3id.org/transmodel/organisations#operating> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#Line> .
+<http://www.w3id.org/transmodel/organisations#operating> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad señala qué Líneas están operadas por qué Operador."@es .
+<http://www.w3id.org/transmodel/organisations#operating> <http://www.w3.org/2000/01/rdf-schema#comment> "This property points out what Lines are operated by what Operator"@en .
+<http://www.w3id.org/transmodel/organisations#operating> <http://www.w3.org/2000/01/rdf-schema#label> "operando"@es .
+<http://www.w3id.org/transmodel/organisations#operating> <http://www.w3.org/2000/01/rdf-schema#label> "operating"@en .
+# 
+# http://www.w3id.org/transmodel/organisations#servingPTFrom
+<http://www.w3id.org/transmodel/organisations#servingPTFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://schema.org/contactPoint
+<https://schema.org/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/organisations#Organisation> .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/ContactPoint> .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A contact point for a person or organization."@en .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Punto de Información de Contacto para una persona u organización."@es .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Point"@en .
+<https://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Punto de Información"@es .
+# 
+# https://w3id.org/transmodel/commons#at
+<https://w3id.org/transmodel/commons#at> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/commons#at> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/transmodel/commons#at> <http://www.w3.org/2000/01/rdf-schema#comment> "la relación entre una frecuencia de paso y el punto de control."@es .
+<https://w3id.org/transmodel/commons#at> <http://www.w3.org/2000/01/rdf-schema#comment> "the relationship between a timetabled passing time and a timing point."@en .
+<https://w3id.org/transmodel/commons#at> <http://www.w3.org/2000/01/rdf-schema#label> "at"@en .
+<https://w3id.org/transmodel/commons#at> <http://www.w3.org/2000/01/rdf-schema#label> "en"@es .
+# 
+# https://w3id.org/transmodel/journeys#at
+<https://w3id.org/transmodel/journeys#at> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/transmodel/journeys#composedOf
+<https://w3id.org/transmodel/journeys#composedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#composedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#VehicleJourney> .
+<https://w3id.org/transmodel/journeys#composedOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#HeadwayJourneyGroup> .
+<https://w3id.org/transmodel/journeys#composedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a Vehicle Journey with the Headway Journey Group which sets the first and last departure time."@en .
+<https://w3id.org/transmodel/journeys#composedOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Viaje de Vehículo compuesto de indicaciones de viaje en cabecera de línea donde se indican las salidas del primero y último viaje."@es .
+<https://w3id.org/transmodel/journeys#composedOf> <http://www.w3.org/2000/01/rdf-schema#label> "Se compone de"@es .
+<https://w3id.org/transmodel/journeys#composedOf> <http://www.w3.org/2000/01/rdf-schema#label> "composed of"@en .
+# 
+# https://w3id.org/transmodel/journeys#definedAs
+<https://w3id.org/transmodel/journeys#definedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/transmodel/journeys#definedBy
+<https://w3id.org/transmodel/journeys#definedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#definedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#ServiceCalendar> .
+<https://w3id.org/transmodel/journeys#definedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#DayTypeAssignment> .
+<https://w3id.org/transmodel/journeys#definedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Establece la relación entre un Calendario de Servicio y la Asignación de Día Tipo."@es .
+<https://w3id.org/transmodel/journeys#definedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship between Service Calendar and Day Type Assignment"@en .
+<https://w3id.org/transmodel/journeys#definedBy> <http://www.w3.org/2000/01/rdf-schema#label> "defined By"@en .
+<https://w3id.org/transmodel/journeys#definedBy> <http://www.w3.org/2000/01/rdf-schema#label> "definición por"@es .
+# 
+# https://w3id.org/transmodel/journeys#describedBy
+<https://w3id.org/transmodel/journeys#describedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#describedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/transmodel/journeys#describedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#DayType> .
+<https://w3id.org/transmodel/journeys#describedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#PropertyOfDay> .
+<https://w3id.org/transmodel/journeys#describedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un día tipo descrito por sus propiedades en Property of Day."@es .
+<https://w3id.org/transmodel/journeys#describedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property asign a DayType to the specific Property of Day"@en .
+<https://w3id.org/transmodel/journeys#describedBy> <http://www.w3.org/2000/01/rdf-schema#label> "described By"@en .
+<https://w3id.org/transmodel/journeys#describedBy> <http://www.w3.org/2000/01/rdf-schema#label> "descripción por"@es .
+# 
+# https://w3id.org/transmodel/journeys#determinedBy
+<https://w3id.org/transmodel/journeys#determinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#determinedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#HeadwayJourneyGroup> .
+<https://w3id.org/transmodel/journeys#determinedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#HeadwayInterval> .
+<https://w3id.org/transmodel/journeys#determinedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A Headway Journey Group determined by a Headway Interval"@en .
+<https://w3id.org/transmodel/journeys#determinedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Un grupo de viajes de cabecera de línea con un intervalo desde cabecera de línea"@es .
+<https://w3id.org/transmodel/journeys#determinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "determinado por"@es .
+<https://w3id.org/transmodel/journeys#determinedBy> <http://www.w3.org/2000/01/rdf-schema#label> "determined By"@en .
+# 
+# https://w3id.org/transmodel/journeys#directionType
+<https://w3id.org/transmodel/journeys#directionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#directionType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/transmodel/journeys#directionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#ServiceJourney> .
+<https://w3id.org/transmodel/journeys#ServiceJourney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#directionType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/transmodel/kos/journeys/direction-type> .
+<https://w3id.org/transmodel/kos/journeys/direction-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#directionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite describir el tipo de dirección para un Viaje."@es .
+<https://w3id.org/transmodel/journeys#directionType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows describing the type of direction for a service journey"@en .
+<https://w3id.org/transmodel/journeys#directionType> <http://www.w3.org/2000/01/rdf-schema#label> "direction Type"@en .
+<https://w3id.org/transmodel/journeys#directionType> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de dirección"@es .
+# 
+# https://w3id.org/transmodel/journeys#endingAt
+<https://w3id.org/transmodel/journeys#endingAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#endingAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#OperatingPeriod> .
+<https://w3id.org/transmodel/journeys#endingAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#OperatingDay> .
+<https://w3id.org/transmodel/journeys#endingAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to connect an Operating Period to the related Operating Days, indicating when it ends"@en .
+<https://w3id.org/transmodel/journeys#endingAt> <http://www.w3.org/2000/01/rdf-schema#comment> "endingAt conecta un Periodo Operativo a días operativos indicando cuándo termina."@es .
+<https://w3id.org/transmodel/journeys#endingAt> <http://www.w3.org/2000/01/rdf-schema#label> "ending at"@en .
+<https://w3id.org/transmodel/journeys#endingAt> <http://www.w3.org/2000/01/rdf-schema#label> "termina en"@es .
+# 
+# https://w3id.org/transmodel/journeys#for
+<https://w3id.org/transmodel/journeys#for> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#for> <http://www.w3.org/2000/01/rdf-schema#comment> "A general property that allows associating anything similar to Point to sort of journeys."@en .
+<https://w3id.org/transmodel/journeys#for> <http://www.w3.org/2000/01/rdf-schema#comment> "Una propiedad general que conecta Puntos con Viajes."@es .
+<https://w3id.org/transmodel/journeys#for> <http://www.w3.org/2000/01/rdf-schema#label> "for"@en .
+<https://w3id.org/transmodel/journeys#for> <http://www.w3.org/2000/01/rdf-schema#label> "para"@es .
+# 
+# https://w3id.org/transmodel/journeys#madeUpOf
+<https://w3id.org/transmodel/journeys#madeUpOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#madeUpOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/transmodel/journeys#madeUpOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre cualquier cosa considerada una secuencia de enlaces con cada uno de los puntos de la secuencia."@es .
+<https://w3id.org/transmodel/journeys#madeUpOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between anything considered a link sequence with each point of the link sequence that makes it up"@en .
+<https://w3id.org/transmodel/journeys#madeUpOf> <http://www.w3.org/2000/01/rdf-schema#label> "made Up Of"@en .
+<https://w3id.org/transmodel/journeys#madeUpOf> <http://www.w3.org/2000/01/rdf-schema#label> "se compone de"@es .
+# 
+# https://w3id.org/transmodel/journeys#madeUsing
+<https://w3id.org/transmodel/journeys#madeUsing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#madeUsing> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/transmodel/journeys#madeUsing> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad conecta algunas clases con otras que hacen posible su funcionamiento."@es .
+<https://w3id.org/transmodel/journeys#madeUsing> <http://www.w3.org/2000/01/rdf-schema#comment> "This property connects some classes to other classes that makes its behaviour possible"@en .
+<https://w3id.org/transmodel/journeys#madeUsing> <http://www.w3.org/2000/01/rdf-schema#label> "made Using"@en .
+<https://w3id.org/transmodel/journeys#madeUsing> <http://www.w3.org/2000/01/rdf-schema#label> "se hace con"@es .
+# 
+# https://w3id.org/transmodel/journeys#operatingPeriod
+<https://w3id.org/transmodel/journeys#operatingPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#operatingPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#OperatingPeriod> .
+<https://w3id.org/transmodel/journeys#operatingPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Periodo operativo asignado a un día tipo operativo"@es .
+<https://w3id.org/transmodel/journeys#operatingPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "operating period assigned to a Day Type Assignment"@en .
+<https://w3id.org/transmodel/journeys#operatingPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "operating period"@en .
+<https://w3id.org/transmodel/journeys#operatingPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "periodo operativo"@es .
+# 
+# https://w3id.org/transmodel/journeys#prescribing
+<https://w3id.org/transmodel/journeys#prescribing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/transmodel/journeys#presentedBy
+<https://w3id.org/transmodel/journeys#presentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/transmodel/journeys#specifying
+<https://w3id.org/transmodel/journeys#specifying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#specifying> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/transmodel/journeys#specifying> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#DayTypeAssignment> .
+<https://w3id.org/transmodel/journeys#specifying> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#DayType> .
+<https://w3id.org/transmodel/journeys#specifying> <http://www.w3.org/2000/01/rdf-schema#comment> "La asignación de características operativas expresadas en Día Tipo a un Día Operativo particular dentro de un Calendario de Servicio."@en .
+<https://w3id.org/transmodel/journeys#specifying> <http://www.w3.org/2000/01/rdf-schema#comment> "The assignment of operational characteristics, expressed by DayType, to a particular OperatingDay within a ServiceCalendar"@en .
+<https://w3id.org/transmodel/journeys#specifying> <http://www.w3.org/2000/01/rdf-schema#label> "especifica"@es .
+<https://w3id.org/transmodel/journeys#specifying> <http://www.w3.org/2000/01/rdf-schema#label> "specifying"@en .
+# 
+# https://w3id.org/transmodel/journeys#startingAt
+<https://w3id.org/transmodel/journeys#startingAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#startingAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#OperatingPeriod> .
+<https://w3id.org/transmodel/journeys#startingAt> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#OperatingDay> .
+<https://w3id.org/transmodel/journeys#startingAt> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to connect an Operating Period to the related Operating Days, indicating when it starts"@en .
+<https://w3id.org/transmodel/journeys#startingAt> <http://www.w3.org/2000/01/rdf-schema#comment> "startingAt conecta un Periodo Operativo con un Día Operativo indicando cuándo comienza."@es .
+<https://w3id.org/transmodel/journeys#startingAt> <http://www.w3.org/2000/01/rdf-schema#label> "empieza en"@es .
+<https://w3id.org/transmodel/journeys#startingAt> <http://www.w3.org/2000/01/rdf-schema#label> "starting At"@en .
+# 
+# https://w3id.org/transmodel/journeys#stopUse
+<https://w3id.org/transmodel/journeys#stopUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#stopUse> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/transmodel/journeys#stopUse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> .
+<https://w3id.org/transmodel/journeys#stopUse> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/transmodel/kos/journeys/stop-use-type> .
+<https://w3id.org/transmodel/kos/journeys/stop-use-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#stopUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Permite la descripción del tipo de uso de una parada: acceso, intercambio, de paso, etc."@es .
+<https://w3id.org/transmodel/journeys#stopUse> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows describing the type of use of a stop (e.g., access, interchange only, pass through)"@en .
+<https://w3id.org/transmodel/journeys#stopUse> <http://www.w3.org/2000/01/rdf-schema#label> "función de la parada"@es .
+<https://w3id.org/transmodel/journeys#stopUse> <http://www.w3.org/2000/01/rdf-schema#label> "stop Use"@en .
+# 
+# https://w3id.org/transmodel/journeys#timedFrom
+<https://w3id.org/transmodel/journeys#timedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#timedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el punto del Viaje del Vehículo donde se toman los tiempos."@es .
+<https://w3id.org/transmodel/journeys#timedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a sort of Journey and a sort of Timing Point"@en .
+<https://w3id.org/transmodel/journeys#timedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "ToDo: Valorar si se trata de una medición SOSA para próxima versión"@es .
+<https://w3id.org/transmodel/journeys#timedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "timedFrom"@en .
+<https://w3id.org/transmodel/journeys#timedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "toma de tiempo"@es .
+# 
+# https://w3id.org/transmodel/journeys#viewedAs
+<https://w3id.org/transmodel/journeys#viewedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#viewedAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/transmodel/journeys#viewedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#PointInLinkSequence> .
+<https://w3id.org/transmodel/journeys#viewedAs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#Point> .
+<https://w3id.org/transmodel/journeys#viewedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad relaciona un Punto en una secuencia con un Punto ya que es una forma de verlo."@es .
+<https://w3id.org/transmodel/journeys#viewedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows connecting a Point in Link Sequence with the corresponding Point"@en .
+<https://w3id.org/transmodel/journeys#viewedAs> <http://www.w3.org/2000/01/rdf-schema#label> "Se ve como"@es .
+<https://w3id.org/transmodel/journeys#viewedAs> <http://www.w3.org/2000/01/rdf-schema#label> "viewed As"@en .
+# 
+# https://w3id.org/transmodel/journeys#workedOn
+<https://w3id.org/transmodel/journeys#workedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/journeys#workedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/journeys#VehicleJourney> .
+<https://w3id.org/transmodel/journeys#workedOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/journeys#DayType> .
+<https://w3id.org/transmodel/journeys#workedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Viaje de un Vehículo y el Día Tipo."@es .
+<https://w3id.org/transmodel/journeys#workedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the relationship between Vehicle Journey and Day Type."@en .
+<https://w3id.org/transmodel/journeys#workedOn> <http://www.w3.org/2000/01/rdf-schema#label> "Opera en"@es .
+<https://w3id.org/transmodel/journeys#workedOn> <http://www.w3.org/2000/01/rdf-schema#label> "worked On"@en .
+# 
+# https://w3id.org/transmodel/organisations#characterisedBy
+<https://w3id.org/transmodel/organisations#characterisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/transmodel/organisations#characterisedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/contactPoint> .
+<https://w3id.org/transmodel/organisations#characterisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/organisations#Organisation> .
+<https://w3id.org/transmodel/organisations#characterisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/transmodel/organisations#ContactDetails> .
+<https://w3id.org/transmodel/organisations#characterisedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an Organisation with its corresponding Contact Details. It is a subproperty of schema:contactPoint, which relates anything to a ContactPoint"@en .
+<https://w3id.org/transmodel/organisations#characterisedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Una organización tiene información de contacto. Es una subpropiedad de schema:contacPoint que aporta información de contacto para una persona u organización a través de la clase schema:ContactPoint."@es .
+<https://w3id.org/transmodel/organisations#characterisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "caracterizada por"@es .
+<https://w3id.org/transmodel/organisations#characterisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "characterised by"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#DayType> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#DayTypeAssignment> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#PropertyOfDay> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#ServiceCalendar> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the resource within a given context."@en .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "Una descripción del recurso dentro de un contexto dado."@es .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Descripción"@es .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#DayType> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#DayTypeAssignment> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#HeadwayInterval> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#LinkSequence> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#OperatingDay> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#OperatingPeriod> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#PointInLinkSequence> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#StopArea> .
+<https://w3id.org/transmodel/journeys#StopArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#TimetabledPassingTime> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/transmodel/journeys#VehicleJourney> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Referencia inequívoca al recurso dentro de un contexto dado."@es .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identificador"@es .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
+# 
+# http://schema.org/datePosted
+<http://schema.org/datePosted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/datePosted> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/datePosted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/datePosted> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)"@es .
+<http://schema.org/datePosted> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date and time of the incidence (in ISO 8601 date format)."@en .
+<http://schema.org/datePosted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
+<http://schema.org/datePosted> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de publicación de incidencia"@es .
+<http://schema.org/datePosted> <http://www.w3.org/2000/01/rdf-schema#label> "posted incidence date"@en .
+# 
+# http://schema.org/endDate
+<http://schema.org/endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha y hora de finalización de\n\t    una incidencia (en formato fecha ISO 8601)"@es .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date and time of an incidence (in ISO 8601 date format)."@en .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date"@en .
+<http://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de fin"@es .
+# 
+# http://schema.org/startDate
+<http://schema.org/startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "(expected) start date"@en .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "La fecha y hora de inicio de una incidencia (en formato fecha ISO 8601)."@es .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "The start date and time of an incidence (in ISO 8601 date format)."@en .
+<http://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de inicio (prevista)"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#color
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#color> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#color> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#color> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#color> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#color> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite describir el color de la línea."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#color> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows describing the color of the line."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#color> <http://www.w3.org/2000/01/rdf-schema#label> "Color"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#color> <http://www.w3.org/2000/01/rdf-schema#label> "Color "@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite describir si la incidencia es recurrente o no."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows describing whether there is a recurrence in the\n\t    incidence or not"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> <http://www.w3.org/2000/01/rdf-schema#label> "Incidencia recurrente"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrent incidence"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha y hora prevista de\n\t    finalización de una incidencia planificada (en formato fecha ISO 8601)"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date and time of a planned\n\t    incidence (in ISO 8601 date format)."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista> <http://www.w3.org/2000/01/rdf-schema#label> "(expected) end date"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de fin (prevista)"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of lanes of traffic"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de carriles de circulación"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#label> "Carriles de circulación"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#label> "Traffic lanes"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of directions of traffic"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de sentidos de circulación"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/2000/01/rdf-schema#label> "Sentidos de circulación"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/2000/01/rdf-schema#label> "Street directions"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite describir la recurrencia."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows describing the recurrence"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrence"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrencia"@es .
+# 
+# https://w3id.org/transmodel/commons#colour
+<https://w3id.org/transmodel/commons#colour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/transmodel/commons#colour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/commons#Presentation> .
+<https://w3id.org/transmodel/commons#colour> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/transmodel/commons#colour> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite describir el color de la línea."@es .
+<https://w3id.org/transmodel/commons#colour> <http://www.w3.org/2000/01/rdf-schema#comment> "The colour used to represent something with a Presentation (e.g., a Line)"@en .
+<https://w3id.org/transmodel/commons#colour> <http://www.w3.org/2000/01/rdf-schema#label> "color"@es .
+<https://w3id.org/transmodel/commons#colour> <http://www.w3.org/2000/01/rdf-schema#label> "colour"@en .
+# 
+# https://w3id.org/transmodel/commons#textColour
+<https://w3id.org/transmodel/commons#textColour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/transmodel/commons#textColour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/transmodel/commons#Presentation> .
+<https://w3id.org/transmodel/commons#textColour> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/transmodel/commons#textColour> <http://www.w3.org/2000/01/rdf-schema#comment> "El color que se usa para representar el texto asociado con una Presentación, por ejemplo de una línea."@es .
+<https://w3id.org/transmodel/commons#textColour> <http://www.w3.org/2000/01/rdf-schema#comment> "The colour used to represent the text associated to something with a Presentation (e.g., a Line)"@en .
+<https://w3id.org/transmodel/commons#textColour> <http://www.w3.org/2000/01/rdf-schema#label> "color de texto"@es .
+<https://w3id.org/transmodel/commons#textColour> <http://www.w3.org/2000/01/rdf-schema#label> "text colour"@en .
+# 
+# https://w3id.org/transmodel/journeys#distanceFromStart
+<https://w3id.org/transmodel/journeys#distanceFromStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/transmodel/journeys#distanceFromStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/transmodel/journeys#distanceFromStart> <http://www.w3.org/2000/01/rdf-schema#comment> "For a Point in a Link Sequence (or alike), this property represents the distance from the start of the corresponding Journey Pattern or alike."@en .
+<https://w3id.org/transmodel/journeys#distanceFromStart> <http://www.w3.org/2000/01/rdf-schema#comment> "Para un Punto en una Secuencia de enlaces (o similares), esta propiedad representa la distancia desde el comienzo del correspondiente Patrón de Viaje o similares."@es .
+<https://w3id.org/transmodel/journeys#distanceFromStart> <http://www.w3.org/2000/01/rdf-schema#label> "distance from start"@en .
+<https://w3id.org/transmodel/journeys#distanceFromStart> <http://www.w3.org/2000/01/rdf-schema#label> "distancia desde el inicio"@es .
+# 
+# https://w3id.org/transmodel/journeys#order
+<https://w3id.org/transmodel/journeys#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/transmodel/journeys#order> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/transmodel/journeys#order> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/transmodel/journeys#order> <http://www.w3.org/2000/01/rdf-schema#comment> "Order of a Point in Link Sequence, or in a Point on Route within sequence, or in any other type of situation where the order or points are relevant"@en .
+<https://w3id.org/transmodel/journeys#order> <http://www.w3.org/2000/01/rdf-schema#label> "order"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/transmodel/journeys#Line> .
+<http://www.w3id.org/transmodel/journeys#Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> <http://www.w3.org/2000/01/rdf-schema#comment> "Line of the public transport service of urban buses"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> <http://www.w3.org/2000/01/rdf-schema#comment> "Línea del servicio público de transporte de autobuses urbanos"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/autobus> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> <http://www.w3.org/2000/01/rdf-schema#label> "Line"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> <http://www.w3.org/2000/01/rdf-schema#label> "Línea"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/transmodel/journeys#Place> .
+<http://www.w3id.org/transmodel/journeys#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> <http://www.w3.org/2000/01/rdf-schema#comment> "A Stop of the public transport service of urban buses"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> <http://www.w3.org/2000/01/rdf-schema#comment> "Una parada del servicio público de transporte de autobuses urbanos."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> <http://www.w3.org/2000/01/rdf-schema#label> "Parada"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Place"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/transmodel/journeys#TimetabledPassingTime> .
+<http://www.w3id.org/transmodel/journeys#TimetabledPassingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiempo de espera actualizado"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal> <http://www.w3.org/2000/01/rdf-schema#comment> "Waiting time up to date"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal> <http://www.w3.org/2000/01/rdf-schema#label> "Tiempo de Espera"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal> <http://www.w3.org/2000/01/rdf-schema#label> "Waiting Time"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> <http://www.w3.org/2000/01/rdf-schema#comment> "Part of street network"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> <http://www.w3.org/2000/01/rdf-schema#comment> "Parte del callejero"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> <http://www.w3.org/2000/01/rdf-schema#label> "Street"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> <http://www.w3.org/2000/01/rdf-schema#label> "Vía"@es .
+# 
+# http://www.opengis.net/spec/geosparql/1.0#Feature
+<http://www.opengis.net/spec/geosparql/1.0#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/spec/geosparql/1.0#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/spec/geosparql/1.0#SpatialObject> .
+<http://www.opengis.net/spec/geosparql/1.0#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156, and it is superclass of all feature types."@en .
+<http://www.opengis.net/spec/geosparql/1.0#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<http://www.opengis.net/spec/geosparql/1.0#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@en .
+# 
+# http://www.opengis.net/spec/geosparql/1.0#Geometry
+<http://www.opengis.net/spec/geosparql/1.0#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/spec/geosparql/1.0#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/spec/geosparql/1.0#SpatialObject> .
+<http://www.opengis.net/spec/geosparql/1.0#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta clase representa el tipo de geometría de alto nivel. Es equivalente a\n\t    GFI_Geometry definida en ISO 19156 y es superclase de todos los tipos geométricos."@es .
+<http://www.opengis.net/spec/geosparql/1.0#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level geometry type. This class is equivalent to GFI_Geometry defined in ISO 19156, and it is superclass of all geometry types."@en .
+<http://www.opengis.net/spec/geosparql/1.0#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<http://www.opengis.net/spec/geosparql/1.0#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@en .
+<http://www.opengis.net/spec/geosparql/1.0#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometría"@es .
+# 
+# http://www.opengis.net/spec/geosparql/1.0#Point
+<http://www.opengis.net/spec/geosparql/1.0#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/spec/geosparql/1.0#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/spec/geosparql/1.0#Geometry> .
+<http://www.opengis.net/spec/geosparql/1.0#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level point type. This class is equivalent to GFI_Point defined in ISO 19156, and it is superclass of all point types."@en .
+<http://www.opengis.net/spec/geosparql/1.0#Point> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<http://www.opengis.net/spec/geosparql/1.0#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point"@en .
+# 
+# http://www.opengis.net/spec/geosparql/1.0#SpatialObject
+<http://www.opengis.net/spec/geosparql/1.0#SpatialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/spec/geosparql/1.0#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level spatial object type. This class is\n\t    equivalent to GFI_SpatialObject defined in ISO 19156, and it is superclass of all spatial object types."@en .
+<http://www.opengis.net/spec/geosparql/1.0#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0> .
+<http://www.opengis.net/spec/geosparql/1.0#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialObject"@en .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://purl.org/dc/terms/issued> "2004-02-xx" .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought." .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://purl.org/dc/terms/issued> "2004-02-xx" .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept scheme may be defined to include concepts from different sources."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Scheme"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2004/02/skos/core#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+# 
+# http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o política. Dicho grupo tiene un objetivo o motivo común para su existencia que va más allá del conjunto de personas que lo forman y que puede actuar como “agente”. A menudo las organizaciones se pueden agrupar en estructuras jerárquicas. Se recomienda el uso de etiquetas de SKOS para denominar a cada “organización”. En concreto, `skos:prefLabel` para la denominación principal o recomendada (aquella reconocida legalmente, siempre que sea posible), `skos:altLabel` para denominaciones alternativas (nombre comercial, sigla, denominación por la que se conoce a la organización coloquialmente) y `skos:notation` para referirse al código que identifique a la organización en una lista de códigos. Denominaciones alternativas: _colectivo_ _corporación_ _grupo_."@es .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_"@en .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organización"@es .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# http://www.w3id.org/transmodel/journeys#Line
+# 
+# http://www.w3id.org/transmodel/journeys#Place
+# 
+# http://www.w3id.org/transmodel/journeys#TimetabledPassingTime
+# 
+# https://schema.org/ContactPoint
+<https://schema.org/ContactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A contact point—for example, Contact section in a website of a Public Transport Organisation Network."@en .
+<https://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Punto de Información, por ejemplo, la sección de Contacto en la web de la entidad que participa de alguna manera en el Transporte Público de Autobuses."@es .
+<https://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Point"@en .
+<https://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Punto de Información de Contacto"@es .
+# 
+# https://w3id.org/transmodel/commons#Presentation
+<https://w3id.org/transmodel/commons#Presentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/commons#Presentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/commons#colour> .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/transmodel/commons#Presentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/commons#textColour> .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/transmodel/commons#Presentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Se utiliza para representar una Línea o cualquier otro objeto en un mapa."@es .
+<https://w3id.org/transmodel/commons#Presentation> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to represent a Line, or any other object, in a map"@en .
+<https://w3id.org/transmodel/commons#Presentation> <http://www.w3.org/2000/01/rdf-schema#label> "Presentación"@es .
+<https://w3id.org/transmodel/commons#Presentation> <http://www.w3.org/2000/01/rdf-schema#label> "Presentation"@en .
+# 
+# https://w3id.org/transmodel/journeys#DayType
+<https://w3id.org/transmodel/journeys#DayType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#DayType> <http://www.w3.org/2000/01/rdf-schema#comment> "A DayType is a type of day characterised by one or more properties which affect public transport operation"@en .
+<https://w3id.org/transmodel/journeys#DayType> <http://www.w3.org/2000/01/rdf-schema#comment> "Un día tipo es un tipo de día caracterizado por una o más propiedades que afectan al transporte público"@es .
+<https://w3id.org/transmodel/journeys#DayType> <http://www.w3.org/2000/01/rdf-schema#label> "DayType"@en .
+<https://w3id.org/transmodel/journeys#DayType> <http://www.w3.org/2000/01/rdf-schema#label> "Día Tipo"@es .
+# 
+# https://w3id.org/transmodel/journeys#DayTypeAssignment
+<https://w3id.org/transmodel/journeys#DayTypeAssignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#DayTypeAssignment> <http://www.w3.org/2000/01/rdf-schema#comment> "La asignación de características operativas, expresadas por Día Tipo, a un Día Operativo de un Calendario de Servicio."@es .
+<https://w3id.org/transmodel/journeys#DayTypeAssignment> <http://www.w3.org/2000/01/rdf-schema#comment> "The assignment of operational characteristics, expressed by DAY TYPEs, to particular OPERATING DAYs within a SERVICE CALENDAR."@en .
+<https://w3id.org/transmodel/journeys#DayTypeAssignment> <http://www.w3.org/2000/01/rdf-schema#label> "Asignación de Día Tipo"@es .
+<https://w3id.org/transmodel/journeys#DayTypeAssignment> <http://www.w3.org/2000/01/rdf-schema#label> "DayTypeAssignment"@en .
+# 
+# https://w3id.org/transmodel/journeys#DestinationDisplay
+<https://w3id.org/transmodel/journeys#DestinationDisplay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#DestinationDisplay> <http://www.w3.org/2000/01/rdf-schema#comment> "An advertised destination of a specific Journey Pattern usually displayed on a headsign or other on-board locations"@en .
+<https://w3id.org/transmodel/journeys#DestinationDisplay> <http://www.w3.org/2000/01/rdf-schema#comment> "Un destino anunciado como un Patrón de Viaje específico normalmente mostrado en el frente del vehículo o en otros emplazamientos."@es .
+<https://w3id.org/transmodel/journeys#DestinationDisplay> <http://www.w3.org/2000/01/rdf-schema#label> "Anuncio del Destino"@es .
+<https://w3id.org/transmodel/journeys#DestinationDisplay> <http://www.w3.org/2000/01/rdf-schema#label> "Destination Display"@en .
+# 
+# https://w3id.org/transmodel/journeys#HeadwayInterval
+<https://w3id.org/transmodel/journeys#HeadwayInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#HeadwayInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "A time interval or a duration defining a headway period and characterizing HeadwayJourneyGroup"@en .
+<https://w3id.org/transmodel/journeys#HeadwayInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "Un intervalo o duración determinada para una cabecera de línea que caracteriza el grupo de viajes desde cabecera de línea"@es .
+<https://w3id.org/transmodel/journeys#HeadwayInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Headway Interval"@en .
+<https://w3id.org/transmodel/journeys#HeadwayInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalo o frecuencia"@es .
+# 
+# https://w3id.org/transmodel/journeys#HeadwayJourneyGroup
+<https://w3id.org/transmodel/journeys#HeadwayJourneyGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#HeadwayJourneyGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of VEHICLE JOURNEYs following the same JOURNEY PATTERN having the same HEADWAY INTERVAL between a specified start and end time (for example, every 10 min). This is especially useful for passenger information."@en .
+<https://w3id.org/transmodel/journeys#HeadwayJourneyGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Un grupo de viajes de vehículos que siguen el mismo intervalo fijado en cabecera entre el principio y el final (por ejemplo, cada 10 minutos). Esto es muy útil para los pasajeros."@es .
+<https://w3id.org/transmodel/journeys#HeadwayJourneyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo de viajes con un horario"@es .
+<https://w3id.org/transmodel/journeys#HeadwayJourneyGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Headway Journey Group"@en .
+# 
+# https://w3id.org/transmodel/journeys#JourneyPattern
+<https://w3id.org/transmodel/journeys#JourneyPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#JourneyPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#LinkSequence> .
+<https://w3id.org/transmodel/journeys#JourneyPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "An ordered list of Scheduled Stop Points and Timing Point on a single Route, describing the pattern of working for public transport vehicles. A Journey Pattern may pass through the same Point more than once. The first point of a JourneyPattern is the origin. The last point is the destination."@en .
+<https://w3id.org/transmodel/journeys#JourneyPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Una lista ordenada de paradas planificadas y puntos de control en una ruta que describe el patrón de funcionamiento de los vehículos de transporte públicos. Un patrón de viaje puede pasar por el mismo punto más de una vez. El primer punto del patrón es el origen y el último punto el destino."@en .
+<https://w3id.org/transmodel/journeys#JourneyPattern> <http://www.w3.org/2000/01/rdf-schema#label> "JourneyPattern"@en .
+<https://w3id.org/transmodel/journeys#JourneyPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Patrón de viaje"@es .
+# 
+# https://w3id.org/transmodel/journeys#Line
+<https://w3id.org/transmodel/journeys#Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#Line> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#presentedBy> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/transmodel/commons#Presentation> .
+<https://w3id.org/transmodel/journeys#Line> <http://www.w3.org/2000/01/rdf-schema#comment> "A Line is a group of Routes which is generally known to the public by a similar name or number."@en .
+<https://w3id.org/transmodel/journeys#Line> <http://www.w3.org/2000/01/rdf-schema#label> "Line"@en .
+# 
+# https://w3id.org/transmodel/journeys#LinkSequence
+<https://w3id.org/transmodel/journeys#LinkSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#LinkSequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#madeUpOf> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/transmodel/journeys#PointInLinkSequence> .
+<https://w3id.org/transmodel/journeys#LinkSequence> <http://www.w3.org/2000/01/rdf-schema#comment> "An ordered sequence either of POINTs or of LINKs, defining a path through the network"@en .
+<https://w3id.org/transmodel/journeys#LinkSequence> <http://www.w3.org/2000/01/rdf-schema#comment> "Una secuencia ordenada de puntos o enlaces que definen una ruta a través de la red."@es .
+<https://w3id.org/transmodel/journeys#LinkSequence> <http://www.w3.org/2000/01/rdf-schema#label> "Link Sequence"@en .
+<https://w3id.org/transmodel/journeys#LinkSequence> <http://www.w3.org/2000/01/rdf-schema#label> "Secuencia de enlaces"@es .
+# 
+# https://w3id.org/transmodel/journeys#OperatingDay
+<https://w3id.org/transmodel/journeys#OperatingDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#comment> "A day of public transport operation of which the characteristics are defined within in a specific ServiceCalendar. An OperatingDay may last more than 24 hours."@en .
+<https://w3id.org/transmodel/journeys#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Un día operativo del transporte públicos con las características que se definen en el Calendario de Servicio. Un día operativo puede durar más de 24 horas."@es .
+<https://w3id.org/transmodel/journeys#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#label> "Día operativo"@es .
+<https://w3id.org/transmodel/journeys#OperatingDay> <http://www.w3.org/2000/01/rdf-schema#label> "Operating Day"@en .
+# 
+# https://w3id.org/transmodel/journeys#OperatingPeriod
+<https://w3id.org/transmodel/journeys#OperatingPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#OperatingPeriod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#endingAt> .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/transmodel/journeys#OperatingDay> .
+<https://w3id.org/transmodel/journeys#OperatingPeriod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#startingAt> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/transmodel/journeys#OperatingDay> .
+<https://w3id.org/transmodel/journeys#OperatingPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "A continuous interval of time between two Operating Day which will be used to define validities"@en .
+<https://w3id.org/transmodel/journeys#OperatingPeriod> <http://www.w3.org/2000/01/rdf-schema#comment> "Un periodo de tiempo entre dos días operativos que servirán para definir validaciones del servicio."@es .
+<https://w3id.org/transmodel/journeys#OperatingPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "Operating Period"@en .
+<https://w3id.org/transmodel/journeys#OperatingPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "Periodo operativo"@es .
+# 
+# https://w3id.org/transmodel/journeys#Place
+<https://w3id.org/transmodel/journeys#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographic Place of any type which may be specified as the origin or destination of a Trip. A Place may be represented as a Point (dimension 0), a Road section (dimension 1) or a Zone (dimension 2)"@en .
+<https://w3id.org/transmodel/journeys#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Un lugar geográfico de cualquier tipo que puede usarse como el origen o el destino de un Viaje. Debe representarse por un Punto (dimensión 0 en topología), una ruta (una dimensión en topología) o una zona (dos dimensiones en topología)."@es .
+<https://w3id.org/transmodel/journeys#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Lugar"@es .
+<https://w3id.org/transmodel/journeys#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# https://w3id.org/transmodel/journeys#Point
+<https://w3id.org/transmodel/journeys#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "A Point is a 0-dimensional Node of the Network used for the spatial description of the network. Point may be located by a Location"@en .
+<https://w3id.org/transmodel/journeys#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "Un punto topológico tiene dimensión 0, es un nodo de la red de transporte usado para la descripción espacial de la red. Puede ser localizado por una Ubicación."@es .
+<https://w3id.org/transmodel/journeys#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point"@en .
+<https://w3id.org/transmodel/journeys#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Punto"@es .
+# 
+# https://w3id.org/transmodel/journeys#PointInJourneyPattern
+<https://w3id.org/transmodel/journeys#PointInJourneyPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#PointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#PointInLinkSequence> .
+<https://w3id.org/transmodel/journeys#PointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#at> .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/transmodel/journeys#TimetabledPassingTime> .
+<https://w3id.org/transmodel/journeys#PointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#prescribing> .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/transmodel/journeys#DestinationDisplay> .
+<https://w3id.org/transmodel/journeys#PointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "A Scheduled Stop Point OR Timing Point in a Journey Pattern with its order in that Journey Pattern"@en .
+<https://w3id.org/transmodel/journeys#PointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Una Parada Programada o un Punto de Control en un patrón de viaje con su orden en ese patrón."@es .
+<https://w3id.org/transmodel/journeys#PointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Point In Journey Pattern"@en .
+<https://w3id.org/transmodel/journeys#PointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Punto en un Patrón de Viaje"@es .
+# 
+# https://w3id.org/transmodel/journeys#PointInLinkSequence
+<https://w3id.org/transmodel/journeys#PointInLinkSequence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#PointInLinkSequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#viewedAs> .
+_:genid35 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/transmodel/journeys#Point> .
+<https://w3id.org/transmodel/journeys#PointInLinkSequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#distanceFromStart> .
+_:genid36 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/transmodel/journeys#PointInLinkSequence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#order> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/transmodel/journeys#PointInLinkSequence> <http://www.w3.org/2000/01/rdf-schema#comment> "A POINT in a LINK SEQUENCE indicating its order in that particular LINK SEQUENCE."@en .
+<https://w3id.org/transmodel/journeys#PointInLinkSequence> <http://www.w3.org/2000/01/rdf-schema#comment> "Un punto en una secuencia indica su orden en esa secuencia de enlaces"@es .
+<https://w3id.org/transmodel/journeys#PointInLinkSequence> <http://www.w3.org/2000/01/rdf-schema#label> "Point in Link Sequence"@en .
+<https://w3id.org/transmodel/journeys#PointInLinkSequence> <http://www.w3.org/2000/01/rdf-schema#label> "Punto en secuencia de enlaces"@es .
+# 
+# https://w3id.org/transmodel/journeys#PointOnRoute
+<https://w3id.org/transmodel/journeys#PointOnRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#PointOnRoute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#PointInLinkSequence> .
+<https://w3id.org/transmodel/journeys#PointOnRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "A Route Point used to define a Route with its order on that Route."@en .
+<https://w3id.org/transmodel/journeys#PointOnRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Punto de Ruta se usa para definir una Ruta con su orden en esa Ruta."@es .
+<https://w3id.org/transmodel/journeys#PointOnRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Point on Route"@en .
+<https://w3id.org/transmodel/journeys#PointOnRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Punto de Ruta"@es .
+# 
+# https://w3id.org/transmodel/journeys#PropertyOfDay
+<https://w3id.org/transmodel/journeys#PropertyOfDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#PropertyOfDay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/transmodel/journeys#definedAs> .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid41 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/transmodel/kos/journeys/day-type> .
+<https://w3id.org/transmodel/kos/journeys/day-type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#PropertyOfDay> <http://www.w3.org/2000/01/rdf-schema#comment> "A property which a day may possess, such as school holiday, weekday, summer, winter, etc."@en .
+<https://w3id.org/transmodel/journeys#PropertyOfDay> <http://www.w3.org/2000/01/rdf-schema#comment> "Una propiedad que puede tener un día para identificarlo: vacaciones de verano, día de la semana, día de verano, etc."@es .
+<https://w3id.org/transmodel/journeys#PropertyOfDay> <http://www.w3.org/2000/01/rdf-schema#label> "Property Of Day"@en .
+<https://w3id.org/transmodel/journeys#PropertyOfDay> <http://www.w3.org/2000/01/rdf-schema#label> "Propiedad de Día"@es .
+# 
+# https://w3id.org/transmodel/journeys#Route
+<https://w3id.org/transmodel/journeys#Route> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#Route> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#LinkSequence> .
+<https://w3id.org/transmodel/journeys#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "A Route is and ordered list of located Points defining one single path through the road (or rail) network."@en .
+<https://w3id.org/transmodel/journeys#Route> <http://www.w3.org/2000/01/rdf-schema#comment> "Una ruta es una lista ordenada de Puntos que definen una sola ruta a través de una red de calles"@es .
+<https://w3id.org/transmodel/journeys#Route> <http://www.w3.org/2000/01/rdf-schema#label> "Route"@en .
+<https://w3id.org/transmodel/journeys#Route> <http://www.w3.org/2000/01/rdf-schema#label> "Ruta"@es .
+# 
+# https://w3id.org/transmodel/journeys#RoutePoint
+<https://w3id.org/transmodel/journeys#RoutePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#RoutePoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#Point> .
+<https://w3id.org/transmodel/journeys#RoutePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A Point used to define the shape of a Route through the network."@en .
+<https://w3id.org/transmodel/journeys#RoutePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Un punto que se usa para definir la forma de una ruta por la red de transporte."@es .
+<https://w3id.org/transmodel/journeys#RoutePoint> <http://www.w3.org/2000/01/rdf-schema#label> "Punto de Ruta"@es .
+<https://w3id.org/transmodel/journeys#RoutePoint> <http://www.w3.org/2000/01/rdf-schema#label> "Route Point"@en .
+# 
+# https://w3id.org/transmodel/journeys#ScheduledStopPoint
+<https://w3id.org/transmodel/journeys#ScheduledStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#ScheduledStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#Point> .
+<https://w3id.org/transmodel/journeys#ScheduledStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A Scheduled Stop Point is a Point where a Passenger can board or alight from a Vehicle."@en .
+<https://w3id.org/transmodel/journeys#ScheduledStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Una Parada Planificada es un Punto donde se puede tomar o dejar un vehículo."@es .
+<https://w3id.org/transmodel/journeys#ScheduledStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Parada Planificada"@es .
+<https://w3id.org/transmodel/journeys#ScheduledStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Scheduled Stop Point"@en .
+# 
+# https://w3id.org/transmodel/journeys#ServiceCalendar
+<https://w3id.org/transmodel/journeys#ServiceCalendar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#ServiceCalendar> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of DAY TYPE ASSIGNMENTs."@en .
+<https://w3id.org/transmodel/journeys#ServiceCalendar> <http://www.w3.org/2000/01/rdf-schema#comment> "Un conjunto de tareas de un día tipo."@es .
+<https://w3id.org/transmodel/journeys#ServiceCalendar> <http://www.w3.org/2000/01/rdf-schema#label> "Calendario de servicio"@es .
+<https://w3id.org/transmodel/journeys#ServiceCalendar> <http://www.w3.org/2000/01/rdf-schema#label> "ServiceCalendar"@en .
+# 
+# https://w3id.org/transmodel/journeys#ServiceJourney
+# 
+# https://w3id.org/transmodel/journeys#StopArea
+# 
+# https://w3id.org/transmodel/journeys#StopPointInJourneyPattern
+<https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#PointInJourneyPattern> .
+<https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "A Point in Journey Pattern that is a Scheduled Stop Point"@en .
+<https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Punto en el Patrón de Viaje que se ve como una Parada Planificada"@es .
+<https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Parada en Patrón de Viaje"@es .
+<https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Point In Journey Pattern"@en .
+# 
+# https://w3id.org/transmodel/journeys#TimetabledPassingTime
+<https://w3id.org/transmodel/journeys#TimetabledPassingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#TimetabledPassingTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Long-term planned time data concerning public transport vehicles passing a particular POINT IN JOURNEY PATTERN on a specified VEHICLE JOURNEY for a certain DAY TYPE"@en .
+<https://w3id.org/transmodel/journeys#TimetabledPassingTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiempo de paso de los vehículos de transporte público en un punto del patrón de viaje para un viaje ve un vehículo concreto en un cierto día tipo"@es .
+<https://w3id.org/transmodel/journeys#TimetabledPassingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Tiempo de paso estipulado"@es .
+<https://w3id.org/transmodel/journeys#TimetabledPassingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Timetabled Passing Time"@en .
+# 
+# https://w3id.org/transmodel/journeys#TimingPointInJourneyPattern
+<https://w3id.org/transmodel/journeys#TimingPointInJourneyPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#TimingPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#Point> .
+<https://w3id.org/transmodel/journeys#TimingPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/journeys#PointInLinkSequence> .
+<https://w3id.org/transmodel/journeys#TimingPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "A Point in a JourneyPattern which is a TimingPoint"@en .
+<https://w3id.org/transmodel/journeys#TimingPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Un punto en un patrón de viaje que es un punto de control"@es .
+<https://w3id.org/transmodel/journeys#TimingPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Punto de control en el patrón de viaje"@es .
+<https://w3id.org/transmodel/journeys#TimingPointInJourneyPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Timing Point In Journey Pattern"@en .
+# 
+# https://w3id.org/transmodel/journeys#VehicleJourney
+<https://w3id.org/transmodel/journeys#VehicleJourney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/journeys#VehicleJourney> <http://www.w3.org/2000/01/rdf-schema#label> "El movimiento planificado de un vehículo de transporte público en un día tipo DayType desde un punto inicial al punto final de un patrón de viaje JourneyPattern en una ruta especificada."@es .
+<https://w3id.org/transmodel/journeys#VehicleJourney> <http://www.w3.org/2000/01/rdf-schema#label> "The planned movement of a Public Transport Vehicle on a DayType from the start point to the end point of a JourneyPattern on a specified Route."@en .
+<https://w3id.org/transmodel/journeys#VehicleJourney> <http://www.w3.org/2000/01/rdf-schema#label> "VehicleJourney"@en .
+<https://w3id.org/transmodel/journeys#VehicleJourney> <http://www.w3.org/2000/01/rdf-schema#label> "Viaje de un vehículo"@es .
+# 
+# https://w3id.org/transmodel/organisations#Authority
+<https://w3id.org/transmodel/organisations#Authority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/organisations#Authority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/organisations#Organisation> .
+<https://w3id.org/transmodel/organisations#Authority> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/transmodel/organisations#Operator> .
+<https://w3id.org/transmodel/organisations#Authority> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/transmodel/organisations#Organisation> .
+<https://w3id.org/transmodel/organisations#Authority> <http://www.w3.org/2000/01/rdf-schema#comment> "Autoridad del Transporte Público, organización bajo la cual está la responsabilidad de organizar el servicio de transporte de una cierta área (por ejemplo, zona administrativa)."@es .
+<https://w3id.org/transmodel/organisations#Authority> <http://www.w3.org/2000/01/rdf-schema#comment> "Public Transport Authority, the organization under which the responsability of organising the TransportService in a certain area (AdministrativeZone) is placed"@en .
+<https://w3id.org/transmodel/organisations#Authority> <http://www.w3.org/2000/01/rdf-schema#label> "Authority"@en .
+<https://w3id.org/transmodel/organisations#Authority> <http://www.w3.org/2000/01/rdf-schema#label> "Autoridad"@es .
+# 
+# https://w3id.org/transmodel/organisations#ContactDetails
+<https://w3id.org/transmodel/organisations#ContactDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/organisations#ContactDetails> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/ContactPoint> .
+<https://w3id.org/transmodel/organisations#ContactDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact Details for an Organisation. A subclass of schema:ContactPoint. As such, it can be the domain of properties like schema:url, schema:telephone, schema:email, etc."@en .
+<https://w3id.org/transmodel/organisations#ContactDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Información de contacto de una organización. Una subclase de schema:ContactPoint. Como tal, puede ser el dominio de propiedades como schema:url, schema:telephone, schema:email, etc."@es .
+<https://w3id.org/transmodel/organisations#ContactDetails> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Details"@en .
+<https://w3id.org/transmodel/organisations#ContactDetails> <http://www.w3.org/2000/01/rdf-schema#label> "Información de Contacto"@en .
+# 
+# https://w3id.org/transmodel/organisations#Operator
+<https://w3id.org/transmodel/organisations#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/organisations#Operator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/transmodel/organisations#Organisation> .
+<https://w3id.org/transmodel/organisations#Operator> <http://www.w3.org/2000/01/rdf-schema#comment> "A company providing Public Transport Services. In GTFS, this is represented as a TransitAgency"@en .
+<https://w3id.org/transmodel/organisations#Operator> <http://www.w3.org/2000/01/rdf-schema#comment> "Una empresa que ofrece servicio de transporte público. En GTFS se representa como una TransitAgency."@es .
+<https://w3id.org/transmodel/organisations#Operator> <http://www.w3.org/2000/01/rdf-schema#label> "Operador"@es .
+<https://w3id.org/transmodel/organisations#Operator> <http://www.w3.org/2000/01/rdf-schema#label> "Operator"@en .
+# 
+# https://w3id.org/transmodel/organisations#Organisation
+<https://w3id.org/transmodel/organisations#Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/transmodel/organisations#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<https://w3id.org/transmodel/organisations#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "A legally incorporated body associated with any aspect of the transport system"@en .
+<https://w3id.org/transmodel/organisations#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "Una figura legal asociada con cualquier aspecto del sistema de transporte."@es .
+<https://w3id.org/transmodel/organisations#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@en .
+<https://w3id.org/transmodel/organisations#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organización"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia
+<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de incidencia"@es .
+<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> <http://www.w3.org/2000/01/rdf-schema#label> "type of incidence"@en .
+# 
+# https://w3id.org/transmodel/kos/journeys/day-type
+# 
+# https://w3id.org/transmodel/kos/journeys/direction-type
+# 
+# https://w3id.org/transmodel/kos/journeys/stop-use-type
+# 
+# https://w3id.org/transmodel/kos/journeys/direction-type/
+<https://w3id.org/transmodel/kos/journeys/direction-type/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/transmodel/kos/journeys/direction-type/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/transmodel/kos/journeys/direction-type/> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de dirección que toma un Viaje de un Vehículo."@es .
+<https://w3id.org/transmodel/kos/journeys/direction-type/> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of direction of a Vehicle Journey."@en .
+<https://w3id.org/transmodel/kos/journeys/direction-type/> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de dirección"@es .
+<https://w3id.org/transmodel/kos/journeys/direction-type/> <http://www.w3.org/2000/01/rdf-schema#label> "type of direction"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#issued-003> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance (e.g., publication) of the resource."@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/"@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Date Issued"@en .
+# 
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación de una línea que está afectada por una incidencia."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship of a line affected by an incidence."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/autobus> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/2000/01/rdf-schema#label> "line affected by an incidence"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia> <http://www.w3.org/2000/01/rdf-schema#label> "línea afectada por incidencia"@es .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
