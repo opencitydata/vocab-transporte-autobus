@@ -9,7 +9,7 @@
     },
     "iri" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus",
     "version" : "This is the initial version of the Traffic ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate.",
-    "author" : [ "Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)", "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)", "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)", "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ],
+    "author" : [ "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)", "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)", "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)", "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ],
     "description" : {
       "en" : "This vocabulary is being developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry.",
       "es" : "Este vocabulario está siendo desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio."
@@ -28,7 +28,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)",
+        "value" : "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)",
         "type" : "label"
       }, {
         "identifier" : "creator",

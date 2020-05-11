@@ -44,7 +44,7 @@ The vocabulary has been divided into three main parts:
         <dc:creator>Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator>Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dc:creator>
-        <dc:creator>Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
+        <dc:creator>Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:description xml:lang="es">Este vocabulario está siendo desarrollado en el contexto de la actuación sobre datos abiertos del proyecto &quot;Plataforma de Gobierno Abierto, Colaborativa e Interoperable&quot; de la &quot;II Convocatoria de Ciudades Inteligentes&quot; del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</dc:description>
         <dc:description xml:lang="en">This vocabulary is being developed in the context of the action on open data of the project &quot;Platform of Open, Collaborative and Interoperable Government&quot; of the &quot;II Call for Intelligent Cities&quot; of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry.</dc:description>
         <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/transporte/autobus</dc:identifier>
