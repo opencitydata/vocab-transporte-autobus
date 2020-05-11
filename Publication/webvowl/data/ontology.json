@@ -66,7 +66,7 @@
       }, {
         "identifier" : "versionInfo",
         "language" : "es",
-        "value" : "Versión 1.0 de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.",
+        "value" : "Versión 1.0 de la ontología de Autobús que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.",
         "type" : "label"
       } ],
       "abstract" : [ {
