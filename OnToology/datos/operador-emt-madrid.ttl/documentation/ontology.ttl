@@ -1,0 +1,224 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://schema.orgalternateName
+<http://schema.orgalternateName> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.orgemail
+<http://schema.orgemail> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.orglegalName
+<http://schema.orglegalName> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.orgpostmail
+<http://schema.orgpostmail> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.orgtelephone
+<http://schema.orgtelephone> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.orgurl
+<http://schema.orgurl> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#madeUpOf
+<https://w3id.org/transmodel/journeys#madeUpOf> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#name
+<https://w3id.org/transmodel/journeys#name> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#operating
+<https://w3id.org/transmodel/journeys#operating> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#presentedBy
+<https://w3id.org/transmodel/journeys#presentedBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#runBy
+<https://w3id.org/transmodel/journeys#runBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#shortName
+<https://w3id.org/transmodel/journeys#shortName> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/organisations#characterisedBy
+<https://w3id.org/transmodel/organisations#characterisedBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/organisations#servingPTServiceFrom
+<https://w3id.org/transmodel/organisations#servingPTServiceFrom> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/organisations#ContactDetails
+<https://w3id.org/transmodel/organisations#ContactDetails> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/organisations#Operator
+<https://w3id.org/transmodel/organisations#Operator> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/contactdetails/emt
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/contactdetails/emt> rdf:type owl:NamedIndividual ,
+                                                                                          <https://w3id.org/transmodel/organisations#ContactDetails> ;
+                                                                                 <http://schema.orgalternateName> "EMT" ;
+                                                                                 <http://schema.orgemail> "https://www.emtmadrid.es/AtencionAlCliente/Agradecimientos" ;
+                                                                                 <http://schema.orglegalName> "Empresa Municipal de Transportes" ;
+                                                                                 <http://schema.orgpostmail> "Empresa Municipal de Transportes, Calle Cerro de la Plata, 4. 28007 Madrid" ;
+                                                                                 <http://schema.orgtelephone> "+34 91 406 88 10" ;
+                                                                                 <http://schema.orgurl> "https://www.emtmadrid.es/Servicios/Contactar"^^xsd:anyURI .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/n19
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/n19> rdf:type owl:NamedIndividual ,
+                                                                                 <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> ;
+                                                                        <http://schema.orgurl> "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=139&lang=es-ES"^^xsd:anyURI ;
+                                                                        <http://purl.org/dc/terms/description> "Línea N19, comienzo en Plaza Cibeles y final en Oliva de Plasencia" ;
+                                                                        <http://purl.org/dc/terms/identifier> "N19" ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/parada/375> ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/parada/376> ;
+                                                                        <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/n19a> ,
+                                                                                                                        <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/n19b> ;
+                                                                        <https://w3id.org/transmodel/journeys#name> "Línea N19" ;
+                                                                        <https://w3id.org/transmodel/journeys#presentedBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+                                                                        <https://w3id.org/transmodel/journeys#runBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+                                                                        <https://w3id.org/transmodel/journeys#shortName> "N19" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138> rdf:type owl:NamedIndividual ,
+                                                                                 <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> ;
+                                                                        <http://schema.orgurl> "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=138&lang=es-ES"^^xsd:anyURI ;
+                                                                        <http://purl.org/dc/terms/description> "Línea 138, comienzo en Hospital Clínico y final en Avda. Aviación" ;
+                                                                        <http://purl.org/dc/terms/identifier> "138" ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/375> ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/376> ;
+                                                                        <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a> ,
+                                                                                                                        <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b> ;
+                                                                        <https://w3id.org/transmodel/journeys#name> "Línea 138" ;
+                                                                        <https://w3id.org/transmodel/journeys#presentedBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+                                                                        <https://w3id.org/transmodel/journeys#runBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+                                                                        <https://w3id.org/transmodel/journeys#shortName> "138" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/139
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/139> rdf:type owl:NamedIndividual ,
+                                                                                 <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> ;
+                                                                        <http://schema.orgurl> "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=139&lang=es-ES"^^xsd:anyURI ;
+                                                                        <http://purl.org/dc/terms/description> "Línea 139, comienzo en Plaza Aluche y final en Dehesa de Carabanchel" ;
+                                                                        <http://purl.org/dc/terms/identifier> "139" ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/375> ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/376> ;
+                                                                        <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/139a> ,
+                                                                                                                        <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/139b> ;
+                                                                        <https://w3id.org/transmodel/journeys#name> "Línea 139" ;
+                                                                        <https://w3id.org/transmodel/journeys#presentedBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+                                                                        <https://w3id.org/transmodel/journeys#runBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+                                                                        <https://w3id.org/transmodel/journeys#shortName> "139" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/17
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/17> rdf:type owl:NamedIndividual ,
+                                                                                <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> ;
+                                                                       <http://schema.orgurl> "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=17&lang=es-ES"^^xsd:anyURI ;
+                                                                       <http://purl.org/dc/terms/description> "Línea 17, comienzo en Plaza Mayor y final en Parque Europa" ;
+                                                                       <http://purl.org/dc/terms/identifier> "17" ;
+                                                                       <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/17a> ,
+                                                                                                                       <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/17b> ;
+                                                                       <https://w3id.org/transmodel/journeys#name> "Línea 17" ;
+                                                                       <https://w3id.org/transmodel/journeys#presentedBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+                                                                       <https://w3id.org/transmodel/journeys#runBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+                                                                       <https://w3id.org/transmodel/journeys#shortName> "17" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/34
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/34> rdf:type owl:NamedIndividual ,
+                                                                                <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> ;
+                                                                       <http://schema.orgurl> "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=34&lang=es-ES"^^xsd:anyURI ;
+                                                                       <http://purl.org/dc/terms/description> "Línea 34, comienzo en Cibeles y final en Avda. de las Águilas" ;
+                                                                       <http://purl.org/dc/terms/identifier> "34" ;
+                                                                       <http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/375> ;
+                                                                       <http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/376> ;
+                                                                       <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/34a> ,
+                                                                                                                       <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/34b> ;
+                                                                       <https://w3id.org/transmodel/journeys#name> "Línea 34" ;
+                                                                       <https://w3id.org/transmodel/journeys#presentedBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+                                                                       <https://w3id.org/transmodel/journeys#runBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+                                                                       <https://w3id.org/transmodel/journeys#shortName> "34" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/39
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/39> rdf:type owl:NamedIndividual ,
+                                                                                <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> ;
+                                                                       <http://schema.orgurl> "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=39&lang=es-ES"^^xsd:anyURI ;
+                                                                       <http://purl.org/dc/terms/description> "Línea 39, comienzo en Plaza España y final en Oliva de Plasencia" ;
+                                                                       <http://purl.org/dc/terms/identifier> "39" ;
+                                                                       <http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/375> ;
+                                                                       <http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/376> ;
+                                                                       <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/39a> ,
+                                                                                                                       <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/39b> ;
+                                                                       <https://w3id.org/transmodel/journeys#name> "Línea 39" ;
+                                                                       <https://w3id.org/transmodel/journeys#presentedBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+                                                                       <https://w3id.org/transmodel/journeys#runBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+                                                                       <https://w3id.org/transmodel/journeys#shortName> "39" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/operador/emt
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/operador/emt> rdf:type owl:NamedIndividual ,
+                                                                                           <https://w3id.org/transmodel/organisations#Operator> ;
+                                                                                  <https://w3id.org/transmodel/journeys#operating> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/139> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/17> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/34> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/39> ;
+                                                                                  <https://w3id.org/transmodel/organisations#characterisedBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/contactdetails/emt> ;
+                                                                                  <https://w3id.org/transmodel/organisations#servingPTServiceFrom> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/autoridad/crtm> .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
