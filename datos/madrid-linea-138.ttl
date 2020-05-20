@@ -1,0 +1,272 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix esautob: <http://vocab.ciudadesabiertas.es/def/transporte/autobus#> .
+@prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#> .
+@prefix estraf: <http://vocab.ciudadesabiertas.es/def/transporte/trafico#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/doc/IS/geosparql/1.0#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org> .
+@prefix tmkoscommons: <http://vocab.linkeddata.es/datosabiertos/kos/transporte/autobus/commons/> .
+@prefix tmkosjourney: <http://vocab.linkeddata.es/datosabiertos/kos/transporte/autobus/journey/> .
+@prefix tmjourney: <https://w3id.org/transmodel/journeys#> .
+@prefix tmorg: <https://w3id.org/transmodel/organisations#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Línea 138
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138> a esautob:Linea ;
+    tmjourney:runBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+    dcterms:identifier "138"^^xsd:string ;
+    dcterms:description "Línea 138, comienzo en Cristo Rey y final en San Ignacio de Loyola"^^xsd:string ;
+    schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=138&lang=es-ES"^^xsd:anyURI ; 
+    tmjourney:name "Línea 138"^^xsd:string ;
+    tmjourney:shortName "138"^^xsd:string ;
+    tmjourney:presentedBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+    esautob:afectadoPorIncidencia <http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/incidencia/123456> ;
+    esautob:cabeceraLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608> ;
+    esautob:finLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/5481> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b> .
+
+# Routes de línea 138
+
+## Route de ida, de cabecera de línea a final de línea
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a> a tmjourney:Route ;
+    dcterms:identifier "138a"^^xsd:string ;
+    dcterms:description "Línea 138 con inicio en Cristo Rey y destino en San Ignacio de Loyola"^^xsd:string ;
+    tmjourney:orientedBy "true"^^xsd:boolean ; #check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4608> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4022> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-3687> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-737> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-735> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-193> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-173> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-854> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-599> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-601> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-603> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4070> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1452> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1453> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1454> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1457> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4633> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1459> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1461> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1463> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1465> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1467> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1469> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1471> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1472> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1474> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1476> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1478> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1484> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-575> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4505> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-578> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-580> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-582> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-3149> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-653> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-651> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-5481> .
+
+## Route de vuelta de la línea 138, del final de línea a cabecera de línea
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b> a tmjourney:Route ;
+    dcterms:identifier "138b"^^xsd:string ;
+    dcterms:description "Línea 138 con inicio en San Ignacio de Loyola y destino en Cristo Rey"^^xsd:string ;
+    tmjourney:orientedBy "true"^^xsd:boolean ; #check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-5481> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-651> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-653> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-3149> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-582> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-580> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-578> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4505> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-575> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1484> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1478> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1476> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1474> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1472> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1471> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1469> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1467> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1465> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1463> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1461> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1459> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4633> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1457> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1454> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1453> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1452> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4070> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-603> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-601> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-599> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-854> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-173> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-193> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-735> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-737> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-3687> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4022> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608> .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608> a tmjourney:PointOnRoute ;
+    dcterms:identifier "138b-4608"^^xsd:string ;
+    tmjourney:order "1"^^xsd:integer ;
+    tmjourney:viewedAs <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608> .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608> a tmjourney:RoutePoint ;
+    tmjourney:functionalCentroidFor <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608> .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608> a tmjourney:Zone ;
+    dcterms:identifier "4608"^^xsd:string ;
+    dcterms:description "Zona que rodea la parada 4608"^^xsd:string ;
+    schema:name "4608"^^xsd:string .
+
+# Journey Patterns
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1> a tmjourney:JourneyPattern ;
+    dcterms:identifier "138a1"^^xsd:string ;
+    schema:name "138a1"^^xsd:string ;
+    tmjourney:distance "11.194"^^xsd:double ; 
+    tmjourney:on <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a> ;
+    tmjourney:journeyPatternAdvertisedFor <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1> ; #check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4022> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-3687> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-737> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-735> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-193> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-173> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-854> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-599> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-601> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-603> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4070> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1452> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1453> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1454> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1457> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4633> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1459> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1461> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1463> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1465> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1467> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1469> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1471> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1472> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1474> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1476> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1478> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1484> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-575> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4505> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-578> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-580> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-582> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-3149> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-653> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-651> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-5481> .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1> a tmjourney:JourneyPattern ;
+    dcterms:identifier "138b1"^^xsd:string ;
+    schema:name "138b1"^^xsd:string ;
+    tmjourney:distance "11.194"^^xsd:double ; 
+    tmjourney:on <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b> ;
+    tmjourney:journeyPatternAdvertisedFor <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138b1> ; #check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4608> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4022> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-3687> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-737> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-735> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-193> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-173> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-854> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-599> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-601> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-603> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4070> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1452> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1453> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1454> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1457> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4633> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1459> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1461> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1463> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1465> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1467> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1469> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1471> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1472> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1474> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1476> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1478> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1484> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-575> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4505> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-578> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-580> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-582> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-3149> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-653> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-651> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-5481> .
+
+# Destino visible de cada route:
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1> a tmjourney:DestinationDisplay ;
+    dcterms:identifier "138a1" ;
+    tmjourney:frontText "Avda. de Aviación"^^xsd:string .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138b1> a tmjourney:DestinationDisplay ;
+    dcterms:identifier "138b1" ;
+    tmjourney:frontText "Cristo Rey"^^xsd:string .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608> a tmjourney:StopPointInJourneyPattern ;
+    dcterms:identifier "138a1-4608"^^xsd:string ;
+    tmjourney:order "1"^^xsd:integer ;
+    tmjourney:stopUse <http://w3id.org/transmodel/kos/journeys/stop-use-type/pass-through> ;
+    tmjourney:viewedAs <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/scheduledstoppoint/138a1-4608> .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/schedulestoppoint/138a1-4608> a tmjourney:ScheduledStopPoint ;
+    tmjourney:includedIn <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey> ; #check, inventado
+    tmjourney:forAlighting "false"^^xsd:boolean ;
+    tmjourney:forBoarding "true"^^xsd:boolean .
+    
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey> a tmjourney:StopArea ;
+    dcterms:identifier "cristorey"^^xsd:string ;
+    dcterms:name "Cristo Rey"^^xsd:string .
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608> a esautob:Parada ;
+    dcterms:identifier "4608"^^xsd:string ;
+    dcterms:description "Cristo Rey"^^xsd:string ;
+    schema:name "Cristo Rey"^^xsd:string ;
+    schema:url "https://emtmadrid.es/paradas/#"^^xsd:anyURI ;
+    esautob:wifi "false"^^xsd:boolean ;
+    esautob:panelElectronico "true"^^xsd:boolean ;
+    esautob:zona "A"^^xsd:string ;
+    esautob:ubicacion <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608> ;
+    schema:hasAddress <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/cristorey> . # check
+    
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608> a geosparql:Point ;
+    geosparql:lat "40.43846"^^xsd:double ;
+    geosparql:long "-3.7179"^^xsd:double .
+
+

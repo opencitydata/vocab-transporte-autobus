@@ -1,0 +1,124 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix esautob: <http://vocab.ciudadesabiertas.es/def/transporte/autobus#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org> .
+@prefix tmkoscommons: <http://vocab.linkeddata.es/datosabiertos/kos/transporte/autobus/commons/> .
+@prefix tmkosjourney: <http://vocab.linkeddata.es/datosabiertos/kos/transporte/autobus/journey/> .
+@prefix tmjourney: <https://w3id.org/transmodel/journeys#> .
+@prefix tmorg: <https://w3id.org/transmodel/organisations#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# EMT Madrid
+
+# 5 líneas
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/operador/emt> a tmorg:Operator ;
+    tmorg:characterisedBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/contactdetails/emt> ;
+    tmorg:servingPTServiceFrom <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/autoridad/crtm> ;
+    tmjourney:operating <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/34> ;
+    tmjourney:operating <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/39> ;
+    tmjourney:operating <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/17> ;
+    tmjourney:operating <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138> ;
+    tmjourney:operating <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/139> .
+
+# Detalles de contacto
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/contactdetails/emt> a tmorg:ContactDetails ;
+    schema:telephone "+34 91 406 88 10"^^xsd:string ;
+    schema:email "https://www.emtmadrid.es/AtencionAlCliente/Agradecimientos"^^xsd:string ;
+    schema:url "https://www.emtmadrid.es/Servicios/Contactar"^^xsd:anyURI ;
+    schema:postmail "Empresa Municipal de Transportes, Calle Cerro de la Plata, 4. 28007 Madrid"^^xsd:string ;
+    schema:legalName "Empresa Municipal de Transportes"^^xsd:string ;
+    schema:alternateName "EMT"^^xsd:string .
+
+# Línea 34
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/34> a esautob:Linea ;
+    tmjourney:runBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+    dcterms:identifier "34"^^xsd:string ;
+    dcterms:description "Línea 34, comienzo en Cibeles y final en Avda. de las Águilas"^^xsd:string ;
+    schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=34&lang=es-ES"^^xsd:anyURI ; 
+    tmjourney:name "Línea 34"^^xsd:string ;
+    tmjourney:shortName "34"^^xsd:string ;
+    tmjourney:presentedBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+    esautob:cabeceraLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/375> ; # check
+    esautob:finLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/376> ; # check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/34a> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/34b> .
+
+# Línea 39
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/39> a esautob:Linea ;
+tmjourney:runBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+    dcterms:identifier "39"^^xsd:string ;
+    dcterms:description "Línea 39, comienzo en Plaza España y final en Oliva de Plasencia"^^xsd:string ;
+    schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=39&lang=es-ES"^^xsd:anyURI ; 
+    tmjourney:name "Línea 39"^^xsd:string ;
+    tmjourney:shortName "39"^^xsd:string ;
+    tmjourney:presentedBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+    esautob:cabeceraLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/375> ; # check
+    esautob:finLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/376> ; # check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/39a> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/39b> .
+
+# Línea 17
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/17> a esautob:Linea ;
+tmjourney:runBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+    dcterms:identifier "17"^^xsd:string ;
+    dcterms:description "Línea 17, comienzo en Plaza Mayor y final en Parque Europa"^^xsd:string ;
+    schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=17&lang=es-ES"^^xsd:anyURI ; 
+    tmjourney:name "Línea 17"^^xsd:string ;
+    tmjourney:shortName "17"^^xsd:string ;
+    tmjourney:presentedBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/17a> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/17b> .
+
+# Línea 138
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138> a esautob:Linea ;
+tmjourney:runBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+    dcterms:identifier "138"^^xsd:string ;
+    dcterms:description "Línea 138, comienzo en Hospital Clínico y final en Avda. Aviación"^^xsd:string ;
+    schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=138&lang=es-ES"^^xsd:anyURI ; 
+    tmjourney:name "Línea 138"^^xsd:string ;
+    tmjourney:shortName "138"^^xsd:string ;
+    tmjourney:presentedBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+    esautob:cabeceraLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/375> ; # check
+    esautob:finLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/376> ; # check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b> .
+
+# Línea 139
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/139> a esautob:Linea ;
+tmjourney:runBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+    dcterms:identifier "139"^^xsd:string ;
+    dcterms:description "Línea 139, comienzo en Plaza Aluche y final en Dehesa de Carabanchel"^^xsd:string ;
+    schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=139&lang=es-ES"^^xsd:anyURI ; 
+    tmjourney:name "Línea 139"^^xsd:string ;
+    tmjourney:shortName "139"^^xsd:string ;
+    tmjourney:presentedBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+    esautob:cabeceraLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/375> ; # check
+    esautob:finLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/376> ; # check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/139a> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/139b> .
+
+# Línea N19
+
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/n19> a esautob:Linea ;
+tmjourney:runBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+    dcterms:identifier "N19"^^xsd:string ;
+    dcterms:description "Línea N19, comienzo en Plaza Cibeles y final en Oliva de Plasencia"^^xsd:string ;
+    schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=139&lang=es-ES"^^xsd:anyURI ; 
+    tmjourney:name "Línea N19"^^xsd:string ;
+    tmjourney:shortName "N19"^^xsd:string ;
+    tmjourney:presentedBy <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+    esautob:cabeceraLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/parada/375> ; # check
+    esautob:finLinea <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/parada/376> ; # check
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/n19a> ;
+    tmjourney:madeUpOf <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/n19b> .
