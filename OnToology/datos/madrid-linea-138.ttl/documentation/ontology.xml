@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:http="http://"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:autobus="http://vocab.ciudadesabiertas.es/def/transporte/autobus#"
+     xmlns:journeys="https://w3id.org/transmodel/journeys#"
+     xmlns:geosparql="http://www.opengis.net/doc/IS/geosparql/1.0#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.orghasAddress -->
+
+
+    <AnnotationProperty rdf:about="http://schema.orghasAddress"/>
+    
+
+
+    <!-- http://schema.orgname -->
+
+
+    <AnnotationProperty rdf:about="http://schema.orgname"/>
+    
+
+
+    <!-- http://schema.orgurl -->
+
+
+    <AnnotationProperty rdf:about="http://schema.orgurl"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/name -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/name"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadoPorIncidencia -->
+
+
+    <AnnotationProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadoPorIncidencia"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea -->
+
+
+    <AnnotationProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea -->
+
+
+    <AnnotationProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#panelElectronico -->
+
+
+    <AnnotationProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#panelElectronico"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion -->
+
+
+    <AnnotationProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#wifi -->
+
+
+    <AnnotationProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#wifi"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#zona -->
+
+
+    <AnnotationProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#zona"/>
+    
+
+
+    <!-- http://www.opengis.net/doc/IS/geosparql/1.0#lat -->
+
+
+    <AnnotationProperty rdf:about="http://www.opengis.net/doc/IS/geosparql/1.0#lat"/>
+    
+
+
+    <!-- http://www.opengis.net/doc/IS/geosparql/1.0#long -->
+
+
+    <AnnotationProperty rdf:about="http://www.opengis.net/doc/IS/geosparql/1.0#long"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#distance -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#distance"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#forAlighting -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#forAlighting"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#forBoarding -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#forBoarding"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#frontText -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#frontText"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#functionalCentroidFor -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#functionalCentroidFor"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#includedIn -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#includedIn"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#madeUpOf -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#madeUpOf"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#name -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#name"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#on -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#on"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#order -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#order"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#orientedBy -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#orientedBy"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#presentedBy -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#presentedBy"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#runBy -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#runBy"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#shortName -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#shortName"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#stopUse -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#stopUse"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#viewedAs -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#viewedAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea -->
+
+
+    <Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada -->
+
+
+    <Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
+    
+
+
+    <!-- http://www.opengis.net/doc/IS/geosparql/1.0#Point -->
+
+
+    <Class rdf:about="http://www.opengis.net/doc/IS/geosparql/1.0#Point"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#DestinationDisplay -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#DestinationDisplay"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#JourneyPattern -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#JourneyPattern"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#PointOnRoute -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#PointOnRoute"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#Route -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#Route"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#RoutePoint -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#RoutePoint"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#ScheduledStopPoint -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#ScheduledStopPoint"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#StopArea -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#StopArea"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#StopPointInJourneyPattern -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#StopPointInJourneyPattern"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#Zone -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#Zone"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#DestinationDisplay"/>
+        <terms:identifier>138a1</terms:identifier>
+        <journeys:frontText>Avda. de Aviación</journeys:frontText>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138b1 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138b1">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#DestinationDisplay"/>
+        <terms:identifier>138b1</terms:identifier>
+        <journeys:frontText>Cristo Rey</journeys:frontText>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#JourneyPattern"/>
+        <http:schema.orgname>138a1</http:schema.orgname>
+        <terms:identifier>138a1</terms:identifier>
+        <journeys:distance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.194</journeys:distance>
+        <journeys:journeyPatternAdvertisedFor rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1452"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1453"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1454"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1457"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1459"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1461"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1463"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1465"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1467"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1469"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1471"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1472"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1474"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1476"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1478"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1484"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-173"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-193"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-3149"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-3687"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4022"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4070"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4505"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4633"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-5481"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-575"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-578"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-580"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-582"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-599"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-601"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-603"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-651"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-653"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-735"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-737"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-854"/>
+        <journeys:on rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#JourneyPattern"/>
+        <http:schema.orgname>138b1</http:schema.orgname>
+        <terms:identifier>138b1</terms:identifier>
+        <journeys:distance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.194</journeys:distance>
+        <journeys:journeyPatternAdvertisedFor rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138b1"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1452"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1453"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1454"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1457"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1459"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1461"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1463"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1465"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1467"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1469"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1471"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1472"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1474"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1476"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1478"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1484"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-173"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-193"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-3149"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-3687"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4022"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4070"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4505"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4608"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4633"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-5481"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-575"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-578"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-580"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-582"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-599"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-601"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-603"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-651"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-653"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-735"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-737"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-854"/>
+        <journeys:on rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138">
+        <rdf:type rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea"/>
+        <http:schema.orgurl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=138&amp;lang=es-ES</http:schema.orgurl>
+        <terms:description>Línea 138, comienzo en Cristo Rey y final en San Ignacio de Loyola</terms:description>
+        <terms:identifier>138</terms:identifier>
+        <autobus:afectadoPorIncidencia rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/incidencia/123456"/>
+        <autobus:cabeceraLinea rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608"/>
+        <autobus:finLinea rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/5481"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b"/>
+        <journeys:name>Línea 138</journeys:name>
+        <journeys:presentedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101"/>
+        <journeys:runBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt"/>
+        <journeys:shortName>138</journeys:shortName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608">
+        <rdf:type rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
+        <http:schema.orghasAddress rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/cristorey"/>
+        <http:schema.orgname>Cristo Rey</http:schema.orgname>
+        <http:schema.orgurl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://emtmadrid.es/paradas/#</http:schema.orgurl>
+        <terms:description>Cristo Rey</terms:description>
+        <terms:identifier>4608</terms:identifier>
+        <autobus:panelElectronico rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autobus:panelElectronico>
+        <autobus:ubicacion rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608"/>
+        <autobus:wifi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</autobus:wifi>
+        <autobus:zona>A</autobus:zona>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608">
+        <rdf:type rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#Point"/>
+        <geosparql:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.43846</geosparql:lat>
+        <geosparql:long rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-3.7179</geosparql:long>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#PointOnRoute"/>
+        <terms:identifier>138b-4608</terms:identifier>
+        <journeys:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</journeys:order>
+        <journeys:viewedAs rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#Route"/>
+        <terms:description>Línea 138 con inicio en Cristo Rey y destino en San Ignacio de Loyola</terms:description>
+        <terms:identifier>138a</terms:identifier>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1452"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1453"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1454"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1457"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1459"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1461"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1463"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1465"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1467"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1469"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1471"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1472"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1474"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1476"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1478"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1484"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-173"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-193"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-3149"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-3687"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4022"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4070"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4505"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4608"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4633"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-5481"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-575"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-578"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-580"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-582"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-599"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-601"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-603"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-651"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-653"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-735"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-737"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-854"/>
+        <journeys:orientedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</journeys:orientedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#Route"/>
+        <terms:description>Línea 138 con inicio en San Ignacio de Loyola y destino en Cristo Rey</terms:description>
+        <terms:identifier>138b</terms:identifier>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1452"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1453"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1454"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1457"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1459"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1461"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1463"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1465"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1467"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1469"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1471"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1472"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1474"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1476"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1478"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1484"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-173"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-193"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-3149"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-3687"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4022"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4070"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4505"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4633"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-5481"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-575"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-578"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-580"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-582"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-599"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-601"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-603"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-651"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-653"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-735"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-737"/>
+        <journeys:madeUpOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-854"/>
+        <journeys:orientedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</journeys:orientedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#RoutePoint"/>
+        <journeys:functionalCentroidFor rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/schedulestoppoint/138a1-4608 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/schedulestoppoint/138a1-4608">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#ScheduledStopPoint"/>
+        <journeys:forAlighting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</journeys:forAlighting>
+        <journeys:forBoarding rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</journeys:forBoarding>
+        <journeys:includedIn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#StopArea"/>
+        <terms:identifier>cristorey</terms:identifier>
+        <terms:name>Cristo Rey</terms:name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#StopPointInJourneyPattern"/>
+        <terms:identifier>138a1-4608</terms:identifier>
+        <journeys:order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</journeys:order>
+        <journeys:stopUse rdf:resource="http://w3id.org/transmodel/kos/journeys/stop-use-type/pass-through"/>
+        <journeys:viewedAs rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/scheduledstoppoint/138a1-4608"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#Zone"/>
+        <http:schema.orgname>4608</http:schema.orgname>
+        <terms:description>Zona que rodea la parada 4608</terms:description>
+        <terms:identifier>4608</terms:identifier>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

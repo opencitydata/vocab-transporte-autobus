@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:http="http://"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:commons="https://w3id.org/transmodel/commons#"
+     xmlns:journeys="https://w3id.org/transmodel/journeys#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.orgname -->
+
+
+    <AnnotationProperty rdf:about="http://schema.orgname"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/commons#shortName -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/commons#shortName"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#composedOf -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#composedOf"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#date -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#date"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#definedBy -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#definedBy"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#departureTime -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#departureTime"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#determinedBy -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#determinedBy"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#directionType -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#directionType"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#earliesTime -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#earliesTime"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#earliestTime -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#earliestTime"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#firstDepartureTime -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#firstDepartureTime"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#from -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#from"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#identifier -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#identifier"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#journeyDuration -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#journeyDuration"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#lastDepartureTime -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#lastDepartureTime"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#madeUsing -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#madeUsing"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#maximumHeadwayInterval -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#maximumHeadwayInterval"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#minimumHeadwayInterval -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#minimumHeadwayInterval"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#scheduledHeadwayInterval -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#scheduledHeadwayInterval"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#specifying -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#specifying"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#to -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#to"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#workedOn -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/transmodel/journeys#workedOn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#DayType -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#DayType"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#DayTypeAssignment -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#DayTypeAssignment"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#HeadwayInterval -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#HeadwayJourneyGroup -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#OperatingDay -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#OperatingDay"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#ServiceCalendar -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#ServiceCalendar"/>
+    
+
+
+    <!-- https://w3id.org/transmodel/journeys#VehicleJourney -->
+
+
+    <Class rdf:about="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#OperatingDay"/>
+        <http:schema.orgname>Festivo</http:schema.orgname>
+        <terms:identifier>Domingos y festivos</terms:identifier>
+        <terms:identifier>festivo</terms:identifier>
+        <commons:shortName>Festivo</commons:shortName>
+        <journeys:earliesTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:00:00</journeys:earliesTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#DayType"/>
+        <http:schema.orgname>Día laborable</http:schema.orgname>
+        <terms:description>Normalmente de lunes a viernes, salvo que sea fiesta; el sábado es laborable pero tiene día especial</terms:description>
+        <terms:identifier>laborable</terms:identifier>
+        <commons:shortName>Día laborable</commons:shortName>
+        <journeys:earliestTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00</journeys:earliestTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/sabado -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/sabado">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#OperatingDay"/>
+        <http:schema.orgname>Sábados laborables</http:schema.orgname>
+        <terms:identifier>Sábados laborables; los sábados festivos son festivos</terms:identifier>
+        <terms:identifier>sabado</terms:identifier>
+        <commons:shortName>Sábado laborable</commons:shortName>
+        <journeys:earliesTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00</journeys:earliesTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200514 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200514">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#DayTypeAssignment"/>
+        <journeys:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-14</journeys:date>
+        <journeys:specifying rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200515 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200515">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#DayTypeAssignment"/>
+        <journeys:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-15</journeys:date>
+        <journeys:specifying rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200523 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200523">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#DayTypeAssignment"/>
+        <journeys:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-23</journeys:date>
+        <journeys:specifying rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/sabado"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-festivo-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-festivo-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P24M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P18M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>18-24 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-festivo-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-festivo-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P30M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P16M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>16-30 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-laborable-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-laborable-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P15M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P7M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>7-15 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-laborable-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-laborable-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P15M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P7M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>7-15 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P16M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P12M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>12-16 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P22M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P14M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>14-22 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P27M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P14M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>14-27 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P19M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P16M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>16-19 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P24M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P18M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>18-24 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P30M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P16M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>16-30 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-laborable-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-laborable-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P15M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P7M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>7-15 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-laborable-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-laborable-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P15M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P7M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>7-15 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P16M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P12M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>12-16 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P22M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P14M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>14-22 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P27M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P14M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>14-27 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138-laborable-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138-laborable-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayInterval"/>
+        <journeys:maximumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P9M</journeys:maximumHeadwayInterval>
+        <journeys:minimumHeadwayInterval rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P7M</journeys:minimumHeadwayInterval>
+        <journeys:scheduledHeadwayInterval>7-9 min</journeys:scheduledHeadwayInterval>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-festivo-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-festivo-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-festivo-valle-fin"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">21:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138a1-festivo-valle-fin</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:30:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-festivo-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-festivo-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-festivo-valle-inicio"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:30:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138a1-festivo-valle-inicio</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:46:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-laborable-valle-fin"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">20:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138a1-laborable-valle-fin</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:30:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-laborable-valle-inicio"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">06:15:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138a1-laborable-valle-inicio</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:53:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-sabado-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-sabado-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-llano"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138a1-sabado-llano</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">20:48:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-sabado-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-sabado-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-valle-fin"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">21:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138a1-sabado-valle-fin</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:30:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-sabado-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-sabado-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-sabado-valle-inicio"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">06:15:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138a1-sabado-valle-inicio</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">08:46:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-festivo-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-festivo-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-valle-fin"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">21:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138b1-festivo-valle-fin</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:15:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-festivo-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-festivo-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-valle-inicio"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138b1-laborable-valle-inicio</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:46:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-laborable-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-laborable-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-laborable-valle-fin"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">20:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138b1-laborable-valle-fin</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:15:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-laborable-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-laborable-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-laborable-valle-inicio"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138b1-laborable-valle-inicio</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:53:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-sabado-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-sabado-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-llano"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138b1-sabado-llano</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">20:48:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-sabado-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-sabado-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-valle-fin"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">21:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138b1-sabado-valle-fin</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:15:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-sabado-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-sabado-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-sabado-valle-inicio"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138b1-sabado-valle-inicio</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">08:46:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138-festivo-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138-festivo-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138b1-festivo-llano"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">10:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138-festivo-llano</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">20:44:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138-laborable-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138-laborable-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
+        <journeys:determinedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138-laborable-llano"/>
+        <journeys:firstDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">08:00:00+02:00</journeys:firstDepartureTime>
+        <journeys:identifier>138-laborable-llano</journeys:identifier>
+        <journeys:lastDepartureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">19:53:00+02:00</journeys:lastDepartureTime>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/horario-verano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/horario-verano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#ServiceCalendar"/>
+        <http:schema.orgname>Horario de temporada baja de julio 2020</http:schema.orgname>
+        <terms:description>Temporada baja, segunda quincena de julio</terms:description>
+        <terms:identifier>Temporada baja julio</terms:identifier>
+        <commons:shortName>Horario temporada baja julio 2020</commons:shortName>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200801"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008011"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008012"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008013"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008014"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008015"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008016"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008017"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008018"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008019"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200802"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008020"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008021"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008022"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008023"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008024"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008025"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008026"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008027"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008028"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008029"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200803"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008030"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/202008031"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200804"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200805"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200806"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200807"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200808"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200809"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200810"/>
+        <journeys:from rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-01:00:00:01+02:00</journeys:from>
+        <journeys:to rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-31:23:59:59+02:00</journeys:to>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/horarioinvierno -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/horarioinvierno">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#ServiceCalendar"/>
+        <http:schema.orgname>Horario de invierno de 2020</http:schema.orgname>
+        <terms:description>Horario general para todo el año, salvo verano, Semana Santa y otras fechas excepcionales</terms:description>
+        <terms:identifier>Horario de invierno</terms:identifier>
+        <commons:shortName>Horario invierno 2020</commons:shortName>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200501"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200502"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200503"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200504"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200505"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200506"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200507"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200508"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200509"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200510"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200511"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200512"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200513"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200514"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200515"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200516"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200517"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200518"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200519"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200520"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200521"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200522"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200523"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200524"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200525"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200526"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200527"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200528"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200529"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200530"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200531"/>
+        <journeys:from rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-01:00:00:01+02:00</journeys:from>
+        <journeys:to rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-31:23:59:59+02:00</journeys:to>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/semanasanta -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/semanasanta">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#ServiceCalendar"/>
+        <http:schema.orgname>Horario de Semana Santa, un 12% menos</http:schema.orgname>
+        <terms:description>Semana Santa 2020</terms:description>
+        <terms:identifier>Semana santa</terms:identifier>
+        <commons:shortName>Horario de Semana Santa 2020</commons:shortName>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200406"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200407"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200408"/>
+        <journeys:from rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-06:00:00:01+02:00</journeys:from>
+        <journeys:to rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-08:23:59:59+02:00</journeys:to>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/temporada-baja-julio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/temporada-baja-julio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#ServiceCalendar"/>
+        <http:schema.orgname>Horario de temporada baja</http:schema.orgname>
+        <terms:description>Temporada baja, segunda quincena de julio</terms:description>
+        <terms:identifier>Temporada baja julio</terms:identifier>
+        <commons:shortName>Temporada baja julio</commons:shortName>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200715"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200716"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200717"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200718"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200719"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200720"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200721"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200722"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200723"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200724"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200725"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200726"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200727"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200728"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200729"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200730"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200731"/>
+        <journeys:from rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-15:00:00:01+02:00</journeys:from>
+        <journeys:to rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-07-31:23:59:59+02:00</journeys:to>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/temporada-baja-septiembre -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/temporada-baja-septiembre">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#ServiceCalendar"/>
+        <http:schema.orgname>Horario de temporada baja</http:schema.orgname>
+        <terms:description>Temporada baja, primera quincena de septiembre</terms:description>
+        <terms:identifier>Temporada baja septiembre</terms:identifier>
+        <commons:shortName>Horario temporada baja septiembre 2020</commons:shortName>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200901"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200902"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200903"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200904"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200905"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200906"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200907"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200908"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200909"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200910"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200911"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200912"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200913"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200914"/>
+        <journeys:definedBy rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200915"/>
+        <journeys:from rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-01:00:00:01+02:00</journeys:from>
+        <journeys:to rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-15:23:59:59+02:00</journeys:to>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-festivo-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-festivo-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138a1-festivo-llano</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-festivo-llano"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:30:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-festivo-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-festivo-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138a1-festivo-valle-fin</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-festivo-valle-fin"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:30:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-festivo-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-festivo-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138a1-festivo-valle-inicio</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-festivo-valle-inicio"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:30:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-laborable-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-laborable-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138a1-laborable-llano</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-llano"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">06:15:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-laborable-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-laborable-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138a1-laborable-valle-fin</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-valle-fin"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">06:15:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-laborable-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-laborable-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138a1-laborable-valle-inicio</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-valle-inicio-1"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">06:15:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-sabado-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-sabado-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138a1-sabado-llano</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-sabado-llano"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">06:15:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/sabado"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-sabado-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-sabado-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138a1-sabado-valle-inicio</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-sabado-valle-inicio"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">06:15:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/sabado"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-festivo-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-festivo-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138b1-festivo-llano</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-festivo-llano"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:00:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-festivo-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-festivo-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138b1-festivo-valle-fin</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-festivo-valle-fin"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:00:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-festivo-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-festivo-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138b1-festivo-valle-inicio</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-festivo-valle-inicio"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:00:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/festivo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-laborable-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-laborable-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138b1-laborable-llano</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-laborable-llano"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/anticlockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-laborable-valle-fin -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-laborable-valle-fin">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138b1-laborable-valle-fin</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-laborable-valle-fin"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/anticlockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-laborable-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-laborable-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138b1-laborable-valle-inicio</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-laborable-valle-inicio"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/anticlockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-sabado-llano -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-sabado-llano">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138b1-sabado-llano</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-sabado-llano"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/sabado"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-sabado-valle-inicio -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138b1-sabado-valle-inicio">
+        <rdf:type rdf:resource="https://w3id.org/transmodel/journeys#VehicleJourney"/>
+        <terms:identifier>138b1-sabado-valle-inicio</terms:identifier>
+        <journeys:composedOf rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138b1-sabado-valle-inicio"/>
+        <journeys:departureTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">05:30:00+02:00</journeys:departureTime>
+        <journeys:directionType rdf:resource="http://w3id.org/transmodel/kos/journeys/direction-type/clockwise"/>
+        <journeys:journeyDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</journeys:journeyDuration>
+        <journeys:madeUsing rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1"/>
+        <journeys:workedOn rdf:resource="http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/sabado"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

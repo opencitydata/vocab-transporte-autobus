@@ -1,0 +1,485 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://schema.orghasAddress
+<http://schema.orghasAddress> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.orgname
+<http://schema.orgname> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.orgurl
+<http://schema.orgurl> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/name
+<http://purl.org/dc/terms/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadoPorIncidencia
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadoPorIncidencia> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#panelElectronico
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#panelElectronico> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#wifi
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#wifi> rdf:type owl:AnnotationProperty .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#zona
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#zona> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.opengis.net/doc/IS/geosparql/1.0#lat
+<http://www.opengis.net/doc/IS/geosparql/1.0#lat> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.opengis.net/doc/IS/geosparql/1.0#long
+<http://www.opengis.net/doc/IS/geosparql/1.0#long> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#distance
+<https://w3id.org/transmodel/journeys#distance> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#forAlighting
+<https://w3id.org/transmodel/journeys#forAlighting> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#forBoarding
+<https://w3id.org/transmodel/journeys#forBoarding> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#frontText
+<https://w3id.org/transmodel/journeys#frontText> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#functionalCentroidFor
+<https://w3id.org/transmodel/journeys#functionalCentroidFor> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#includedIn
+<https://w3id.org/transmodel/journeys#includedIn> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor
+<https://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#madeUpOf
+<https://w3id.org/transmodel/journeys#madeUpOf> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#name
+<https://w3id.org/transmodel/journeys#name> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#on
+<https://w3id.org/transmodel/journeys#on> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#order
+<https://w3id.org/transmodel/journeys#order> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#orientedBy
+<https://w3id.org/transmodel/journeys#orientedBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#presentedBy
+<https://w3id.org/transmodel/journeys#presentedBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#runBy
+<https://w3id.org/transmodel/journeys#runBy> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#shortName
+<https://w3id.org/transmodel/journeys#shortName> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#stopUse
+<https://w3id.org/transmodel/journeys#stopUse> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/transmodel/journeys#viewedAs
+<https://w3id.org/transmodel/journeys#viewedAs> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> rdf:type owl:Class .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> rdf:type owl:Class .
+
+
+###  http://www.opengis.net/doc/IS/geosparql/1.0#Point
+<http://www.opengis.net/doc/IS/geosparql/1.0#Point> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#DestinationDisplay
+<https://w3id.org/transmodel/journeys#DestinationDisplay> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#JourneyPattern
+<https://w3id.org/transmodel/journeys#JourneyPattern> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#PointOnRoute
+<https://w3id.org/transmodel/journeys#PointOnRoute> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#Route
+<https://w3id.org/transmodel/journeys#Route> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#RoutePoint
+<https://w3id.org/transmodel/journeys#RoutePoint> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#ScheduledStopPoint
+<https://w3id.org/transmodel/journeys#ScheduledStopPoint> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#StopArea
+<https://w3id.org/transmodel/journeys#StopArea> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#StopPointInJourneyPattern
+<https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> rdf:type owl:Class .
+
+
+###  https://w3id.org/transmodel/journeys#Zone
+<https://w3id.org/transmodel/journeys#Zone> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1> rdf:type owl:NamedIndividual ,
+                                                                                                <https://w3id.org/transmodel/journeys#DestinationDisplay> ;
+                                                                                       <http://purl.org/dc/terms/identifier> "138a1" ;
+                                                                                       <https://w3id.org/transmodel/journeys#frontText> "Avda. de Aviación" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138b1
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138b1> rdf:type owl:NamedIndividual ,
+                                                                                                <https://w3id.org/transmodel/journeys#DestinationDisplay> ;
+                                                                                       <http://purl.org/dc/terms/identifier> "138b1" ;
+                                                                                       <https://w3id.org/transmodel/journeys#frontText> "Cristo Rey" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1> rdf:type owl:NamedIndividual ,
+                                                                                            <https://w3id.org/transmodel/journeys#JourneyPattern> ;
+                                                                                   <http://schema.orgname> "138a1" ;
+                                                                                   <http://purl.org/dc/terms/identifier> "138a1" ;
+                                                                                   <https://w3id.org/transmodel/journeys#distance> "11.194"^^xsd:double ;
+                                                                                   <https://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1> ;
+                                                                                   <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1452> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1453> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1454> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1457> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1459> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1461> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1463> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1465> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1467> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1469> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1471> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1472> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1474> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1476> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1478> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1484> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-173> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-193> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-3149> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-3687> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4022> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4070> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4505> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4633> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-5481> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-575> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-578> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-580> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-582> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-599> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-601> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-603> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-651> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-653> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-735> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-737> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-854> ;
+                                                                                   <https://w3id.org/transmodel/journeys#on> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a> .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138b1> rdf:type owl:NamedIndividual ,
+                                                                                            <https://w3id.org/transmodel/journeys#JourneyPattern> ;
+                                                                                   <http://schema.orgname> "138b1" ;
+                                                                                   <http://purl.org/dc/terms/identifier> "138b1" ;
+                                                                                   <https://w3id.org/transmodel/journeys#distance> "11.194"^^xsd:double ;
+                                                                                   <https://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138b1> ;
+                                                                                   <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1452> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1453> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1454> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1457> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1459> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1461> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1463> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1465> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1467> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1469> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1471> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1472> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1474> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1476> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1478> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-1484> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-173> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-193> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-3149> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-3687> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4022> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4070> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4505> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4608> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-4633> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-5481> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-575> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-578> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-580> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-582> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-599> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-601> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-603> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-651> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-653> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-735> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-737> ,
+                                                                                                                                   <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138b1-854> ;
+                                                                                   <https://w3id.org/transmodel/journeys#on> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b> .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138> rdf:type owl:NamedIndividual ,
+                                                                                 <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea> ;
+                                                                        <http://schema.orgurl> "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=138&lang=es-ES"^^xsd:anyURI ;
+                                                                        <http://purl.org/dc/terms/description> "Línea 138, comienzo en Cristo Rey y final en San Ignacio de Loyola" ;
+                                                                        <http://purl.org/dc/terms/identifier> "138" ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadoPorIncidencia> <http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/incidencia/123456> ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608> ;
+                                                                        <http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/5481> ;
+                                                                        <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a> ,
+                                                                                                                        <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b> ;
+                                                                        <https://w3id.org/transmodel/journeys#name> "Línea 138" ;
+                                                                        <https://w3id.org/transmodel/journeys#presentedBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101> ;
+                                                                        <https://w3id.org/transmodel/journeys#runBy> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt> ;
+                                                                        <https://w3id.org/transmodel/journeys#shortName> "138" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608> rdf:type owl:NamedIndividual ,
+                                                                                   <http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada> ;
+                                                                          <http://schema.orghasAddress> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/cristorey> ;
+                                                                          <http://schema.orgname> "Cristo Rey" ;
+                                                                          <http://schema.orgurl> "https://emtmadrid.es/paradas/#"^^xsd:anyURI ;
+                                                                          <http://purl.org/dc/terms/description> "Cristo Rey" ;
+                                                                          <http://purl.org/dc/terms/identifier> "4608" ;
+                                                                          <http://vocab.ciudadesabiertas.es/def/transporte/autobus#panelElectronico> "true"^^xsd:boolean ;
+                                                                          <http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608> ;
+                                                                          <http://vocab.ciudadesabiertas.es/def/transporte/autobus#wifi> "false"^^xsd:boolean ;
+                                                                          <http://vocab.ciudadesabiertas.es/def/transporte/autobus#zona> "A" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.opengis.net/doc/IS/geosparql/1.0#Point> ;
+                                                                         <http://www.opengis.net/doc/IS/geosparql/1.0#lat> "40.43846"^^xsd:double ;
+                                                                         <http://www.opengis.net/doc/IS/geosparql/1.0#long> "-3.7179"^^xsd:double .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608> rdf:type owl:NamedIndividual ,
+                                                                                              <https://w3id.org/transmodel/journeys#PointOnRoute> ;
+                                                                                     <http://purl.org/dc/terms/identifier> "138b-4608" ;
+                                                                                     <https://w3id.org/transmodel/journeys#order> 1 ;
+                                                                                     <https://w3id.org/transmodel/journeys#viewedAs> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608> .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a> rdf:type owl:NamedIndividual ,
+                                                                                  <https://w3id.org/transmodel/journeys#Route> ;
+                                                                         <http://purl.org/dc/terms/description> "Línea 138 con inicio en Cristo Rey y destino en San Ignacio de Loyola" ;
+                                                                         <http://purl.org/dc/terms/identifier> "138a" ;
+                                                                         <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1452> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1453> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1454> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1457> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1459> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1461> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1463> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1465> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1467> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1469> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1471> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1472> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1474> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1476> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1478> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1484> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-173> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-193> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-3149> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-3687> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4022> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4070> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4505> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4608> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4633> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-5481> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-575> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-578> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-580> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-582> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-599> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-601> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-603> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-651> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-653> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-735> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-737> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-854> ;
+                                                                         <https://w3id.org/transmodel/journeys#orientedBy> "true"^^xsd:boolean .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b> rdf:type owl:NamedIndividual ,
+                                                                                  <https://w3id.org/transmodel/journeys#Route> ;
+                                                                         <http://purl.org/dc/terms/description> "Línea 138 con inicio en San Ignacio de Loyola y destino en Cristo Rey" ;
+                                                                         <http://purl.org/dc/terms/identifier> "138b" ;
+                                                                         <https://w3id.org/transmodel/journeys#madeUpOf> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1452> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1453> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1454> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1457> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1459> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1461> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1463> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1465> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1467> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1469> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1471> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1472> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1474> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1476> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1478> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-1484> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-173> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-193> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-3149> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-3687> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4022> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4070> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4505> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4633> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-5481> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-575> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-578> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-580> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-582> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-599> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-601> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-603> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-651> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-653> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-735> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-737> ,
+                                                                                                                         <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-854> ;
+                                                                         <https://w3id.org/transmodel/journeys#orientedBy> "true"^^xsd:boolean .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608> rdf:type owl:NamedIndividual ,
+                                                                                            <https://w3id.org/transmodel/journeys#RoutePoint> ;
+                                                                                   <https://w3id.org/transmodel/journeys#functionalCentroidFor> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608> .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/schedulestoppoint/138a1-4608
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/schedulestoppoint/138a1-4608> rdf:type owl:NamedIndividual ,
+                                                                                                    <https://w3id.org/transmodel/journeys#ScheduledStopPoint> ;
+                                                                                           <https://w3id.org/transmodel/journeys#forAlighting> "false"^^xsd:boolean ;
+                                                                                           <https://w3id.org/transmodel/journeys#forBoarding> "true"^^xsd:boolean ;
+                                                                                           <https://w3id.org/transmodel/journeys#includedIn> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey> .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey> rdf:type owl:NamedIndividual ,
+                                                                                          <https://w3id.org/transmodel/journeys#StopArea> ;
+                                                                                 <http://purl.org/dc/terms/identifier> "cristorey" ;
+                                                                                 <http://purl.org/dc/terms/name> "Cristo Rey" .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608> rdf:type owl:NamedIndividual ,
+                                                                                                            <https://w3id.org/transmodel/journeys#StopPointInJourneyPattern> ;
+                                                                                                   <http://purl.org/dc/terms/identifier> "138a1-4608" ;
+                                                                                                   <https://w3id.org/transmodel/journeys#order> 1 ;
+                                                                                                   <https://w3id.org/transmodel/journeys#stopUse> <http://w3id.org/transmodel/kos/journeys/stop-use-type/pass-through> ;
+                                                                                                   <https://w3id.org/transmodel/journeys#viewedAs> <http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/scheduledstoppoint/138a1-4608> .
+
+
+###  http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608
+<http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608> rdf:type owl:NamedIndividual ,
+                                                                                 <https://w3id.org/transmodel/journeys#Zone> ;
+                                                                        <http://schema.orgname> "4608" ;
+                                                                        <http://purl.org/dc/terms/description> "Zona que rodea la parada 4608" ;
+                                                                        <http://purl.org/dc/terms/identifier> "4608" .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
