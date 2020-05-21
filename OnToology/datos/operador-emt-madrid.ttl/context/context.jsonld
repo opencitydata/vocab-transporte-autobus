@@ -1,0 +1,67 @@
+{
+  "@context" : {
+    "Linea" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea"
+    },
+    "cabeceraLinea" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea"
+    },
+    "schema.orgemail" : {
+      "@id" : "http://schema.orgemail"
+    },
+    "schema.orgtelephone" : {
+      "@id" : "http://schema.orgtelephone"
+    },
+    "servingPTServiceFrom" : {
+      "@id" : "https://w3id.org/transmodel/organisations#servingPTServiceFrom"
+    },
+    "presentedBy" : {
+      "@id" : "https://w3id.org/transmodel/journeys#presentedBy"
+    },
+    "schema.orglegalName" : {
+      "@id" : "http://schema.orglegalName"
+    },
+    "schema.orgurl" : {
+      "@id" : "http://schema.orgurl"
+    },
+    "ContactDetails" : {
+      "@id" : "https://w3id.org/transmodel/organisations#ContactDetails"
+    },
+    "name" : {
+      "@id" : "https://w3id.org/transmodel/journeys#name"
+    },
+    "schema.orgpostmail" : {
+      "@id" : "http://schema.orgpostmail"
+    },
+    "operating" : {
+      "@id" : "https://w3id.org/transmodel/journeys#operating"
+    },
+    "runBy" : {
+      "@id" : "https://w3id.org/transmodel/journeys#runBy"
+    },
+    "finLinea" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea"
+    },
+    "shortName" : {
+      "@id" : "https://w3id.org/transmodel/journeys#shortName"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "madeUpOf" : {
+      "@id" : "https://w3id.org/transmodel/journeys#madeUpOf"
+    },
+    "Operator" : {
+      "@id" : "https://w3id.org/transmodel/organisations#Operator"
+    },
+    "schema.orgalternateName" : {
+      "@id" : "http://schema.orgalternateName"
+    },
+    "characterisedBy" : {
+      "@id" : "https://w3id.org/transmodel/organisations#characterisedBy"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    }
+  }
+}

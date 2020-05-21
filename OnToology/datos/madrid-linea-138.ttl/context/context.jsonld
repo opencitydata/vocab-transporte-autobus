@@ -1,0 +1,133 @@
+{
+  "@context" : {
+    "PointOnRoute" : {
+      "@id" : "https://w3id.org/transmodel/journeys#PointOnRoute"
+    },
+    "Route" : {
+      "@id" : "https://w3id.org/transmodel/journeys#Route"
+    },
+    "stopUse" : {
+      "@id" : "https://w3id.org/transmodel/journeys#stopUse"
+    },
+    "ScheduledStopPoint" : {
+      "@id" : "https://w3id.org/transmodel/journeys#ScheduledStopPoint"
+    },
+    "RoutePoint" : {
+      "@id" : "https://w3id.org/transmodel/journeys#RoutePoint"
+    },
+    "orientedBy" : {
+      "@id" : "https://w3id.org/transmodel/journeys#orientedBy"
+    },
+    "JourneyPattern" : {
+      "@id" : "https://w3id.org/transmodel/journeys#JourneyPattern"
+    },
+    "Linea" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea"
+    },
+    "cabeceraLinea" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea"
+    },
+    "forAlighting" : {
+      "@id" : "https://w3id.org/transmodel/journeys#forAlighting"
+    },
+    "forBoarding" : {
+      "@id" : "https://w3id.org/transmodel/journeys#forBoarding"
+    },
+    "presentedBy" : {
+      "@id" : "https://w3id.org/transmodel/journeys#presentedBy"
+    },
+    "wifi" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#wifi"
+    },
+    "long" : {
+      "@id" : "http://www.opengis.net/doc/IS/geosparql/1.0#long"
+    },
+    "schema.orgname" : {
+      "@id" : "http://schema.orgname"
+    },
+    "schema.orgurl" : {
+      "@id" : "http://schema.orgurl"
+    },
+    "name" : {
+      "@id" : "https://w3id.org/transmodel/journeys#name"
+    },
+    "runBy" : {
+      "@id" : "https://w3id.org/transmodel/journeys#runBy"
+    },
+    "schema.orghasAddress" : {
+      "@id" : "http://schema.orghasAddress"
+    },
+    "Zone" : {
+      "@id" : "https://w3id.org/transmodel/journeys#Zone"
+    },
+    "finLinea" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#finLinea"
+    },
+    "shortName" : {
+      "@id" : "https://w3id.org/transmodel/journeys#shortName"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "madeUpOf" : {
+      "@id" : "https://w3id.org/transmodel/journeys#madeUpOf"
+    },
+    "distance" : {
+      "@id" : "https://w3id.org/transmodel/journeys#distance"
+    },
+    "on" : {
+      "@id" : "https://w3id.org/transmodel/journeys#on"
+    },
+    "zona" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#zona"
+    },
+    "functionalCentroidFor" : {
+      "@id" : "https://w3id.org/transmodel/journeys#functionalCentroidFor"
+    },
+    "Point" : {
+      "@id" : "http://www.opengis.net/doc/IS/geosparql/1.0#Point"
+    },
+    "includedIn" : {
+      "@id" : "https://w3id.org/transmodel/journeys#includedIn"
+    },
+    "order" : {
+      "@id" : "https://w3id.org/transmodel/journeys#order"
+    },
+    "DestinationDisplay" : {
+      "@id" : "https://w3id.org/transmodel/journeys#DestinationDisplay"
+    },
+    "lat" : {
+      "@id" : "http://www.opengis.net/doc/IS/geosparql/1.0#lat"
+    },
+    "panelElectronico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#panelElectronico"
+    },
+    "StopPointInJourneyPattern" : {
+      "@id" : "https://w3id.org/transmodel/journeys#StopPointInJourneyPattern"
+    },
+    "StopArea" : {
+      "@id" : "https://w3id.org/transmodel/journeys#StopArea"
+    },
+    "viewedAs" : {
+      "@id" : "https://w3id.org/transmodel/journeys#viewedAs"
+    },
+    "ubicacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion"
+    },
+    "Parada" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"
+    },
+    "afectadoPorIncidencia" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadoPorIncidencia"
+    },
+    "journeyPatternAdvertisedFor" : {
+      "@id" : "https://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor"
+    },
+    "frontText" : {
+      "@id" : "https://w3id.org/transmodel/journeys#frontText"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    }
+  }
+}
