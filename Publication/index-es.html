@@ -2,7 +2,11 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Vocabulario para la representación de datos sobre el transporte público urbano de autobuses.</title>
+<link rel="stylesheet" href="resources/primer.css" media="screen" />
+<link rel="stylesheet" href="resources/rec.css" media="screen" />
+<link rel="stylesheet" href="resources/extra.css" media="screen" />
+<link rel="stylesheet" href="resources/owl.css" media="screen" />
+<title>Vocabulario para la representación de datos sobre el transporte público urbano de autobuses.</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
@@ -21,7 +25,7 @@ function loadHash() {
 }
 function loadTOC(){
 	//process toc dynamically
-	  var t='<h2>Tabla de contenidos</h2><ul>';i = 1;j=0;
+	  var t='<h2>Índice</h2><ul>';i = 1;j=0;
 	  jQuery(".list").each(function(){
 		if(jQuery(this).is('h2')){
 			if(j>0){
@@ -53,7 +57,7 @@ function loadTOC(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
 <h1>Vocabulario para la representación de datos sobre el transporte público urbano de autobuses.</h1>
-<h2>Fecha de creaci&oacute;n:  2020-05-05</h2>
+<h2>Fecha de creaci&oacute;n:  2020-05-25</h2>
 
 
 <dl>
@@ -84,7 +88,7 @@ function loadTOC(){
 Este vocabulario está siendo desarrollado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" de la "II Convocatoria de Ciudades Inteligentes" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</span>
 </div>
 <div id="toc">
-	      <h2>Tabla de contenidos</h2>
+	      <h2>Índice</h2>
 	      <ul>
 		<li>1. <a href="#intro">Introducción</a>
 		<ul>
@@ -565,7 +569,9 @@ Este vocabulario está siendo desarrollado en el contexto de la actuación sobre
 		  <figcaption>Figura 1. -  Figura 1. -  Diagrama conceptual para la representación de los datos sobre organizaciones y sus líneas del vocabulario de transporte público urbano de autobuses</figcaption>
 		</center>
 		
-		  <p>En esta porción del vocabulario se han reusado conceptos de los modelos tmorg y tmjourney de Transmodel. En primer lugar se tiene el concepto de <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a>. Un Operador puede operar <a href="#http://w3id.org/transmodel/organisations#operating">tmorg:operating</a> varias líneas <a href="#http://w3id.org/transmodel/journeys#Line">tmjourney:Line</a> y cada línea está conformada por varias rutas <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>. La <a href="#Linea">esautob:Linea</a> hereda los atributos de la clase <b>Line</b>  y puede estar afectada por varias incidencias, <a href="#afectadaPorIncidencia">esautob:afectadaPorIncidencia</a>. La clase <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">estraf:Incidencia</a> pertenece al vocabulario de Trafico. Un Operador presta servicio, <a href="#http://w3id.org/transmodel/organisations#servingPTFor">tmorg:servingPTFor</a> para una Autoridad, <a href="#http://w3id.org/transmodel/organisations#Authority">tmorg:Authority</a>. Ambos, Operador y Autoridad, son organizaciones con datos de Contacto, <a href="#http://w3id.org/transmodel/organisations#ContactDetails">tmorg:ContactDetails</a> con atributos (heredados) tales como teléfono o correo electrónico, entre otros.</p>
+		  <p>En esta porción del vocabulario se han reusado conceptos de los modelos <code>tmorg</code> y <code>tmjourney</code> de <b>Transmodel</b>. Un concepto articular es el de <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a>. Un Operador puede operar <a href="#http://w3id.org/transmodel/organisations#operating">tmorg:operating</a> varias líneas <a href="#http://w3id.org/transmodel/journeys#Line">tmjourney:Line</a> y cada línea está conformada por varias rutas <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>, como veremos en la siguiente figura.</p>
+		  <p>La <a href="#Linea">esautob:Linea</a> hereda los atributos de la clase <b>Line</b>  y puede estar afectada por varias incidencias, <a href="#afectadaPorIncidencia">esautob:afectadaPorIncidencia</a>. En este caso hemos reutilizado la clase <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">estraf:Incidencia</a> del vocabulario de <b>Trafico</b> desarrollada por el proyecto.</p>
+		  <p>De vuelta al <code>Operador</code>, presta servicio, <a href="#http://w3id.org/transmodel/organisations#servingPTFor">tmorg:servingPTFor</a> para una <code>Autoridad</code>, <a href="#http://w3id.org/transmodel/organisations#Authority">tmorg:Authority</a>. Ambas dos, Operador y Autoridad, son subclases de la clase <code>tmorg:Organisation</code> que tiene datos de Contacto, <a href="#http://w3id.org/transmodel/organisations#ContactDetails">tmorg:ContactDetails</a> con atributos tales como teléfono, correo electrónico, página web o nombre legal, para los cuales hemos reutilizado la clase <code>schema:ContactPoint</code> del vocabulario <a href="http://schema.org">schema.org</a>.</p>
 		  <!-- código organizaciones -->
 		  <pre class="line-numbers language-xml code-toolbar">
 		    <code class="language-html">
@@ -580,24 +586,12 @@ Este vocabulario está siendo desarrollado en el contexto de la actuación sobre
 		    </code>
 		  </pre>
 		  <ul>
-		    <li>En primer lugar tenemos a la operadora EMT por su URI que es de la clase <a href="#Operator">tmorg:Operator</a>.</li>
+		    <li>En primer lugar tenemos a la operadora <b>EMT</b> que es una instancia de la clase <a href="#Operator">tmorg:Operator</a>.</li>
 		    <li>Tiene unos detalles de contactos en otra URI como veremos a continuación de este ejemplo.</li>
 		    <li>El operador realiza el servicio de transporte público para una autoridad, de la que tenemos la URI asimismo.</li>
 		    <li>Por último el Operador realiza los servicios operativos de una o más líneas, con su/s URIs correspondientes.</li>
 		  </ul>
-		</div>
-		<!-- fin organizaciones -->
-		<div id="rutas">
-		  <h3 class="list">Rutas <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
-		  <p>La Figura 2 muestra las clases y propiedades de las rutas y las paradas:</p>
-		  <center>
-		    <img src="resources/svg/ccaa-bus-ruta.svg" alt="La Figura 2 muestra las clases y propiedades de las rutas y las paradas"/>
-		    <figcaption>La Figura 2 muestra las clases y propiedades de las rutas y las paradas</figcaption>
-		  </center>
-		  <p>En esta porción del vocabulario se han reusado conceptos del modelo <b>tmjourney</b> de Transmodel. En este modelo se manejan los conceptos generales de <a href="#http://w3id.org/transmodel/journeys#LinkSequence">tmjourney:LinkSequence</a>, <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a> y <a href="#http://w3id.org/transmodel/journeys/Point">tmjourney:Point</a>. Un LinkSequence se compone <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> de uno o más PointInLinkSequence, los cuales representan el orden de una secuencia de puntos, por ello tienen el atributo <a href="#http://w3id.org/transmodel/journeys#order">tmjourney:order</a> y el atributo <a href="#http://w3id.org/transmodel/journeys#distanceFromStart">tmjourney:distanceFromStart</a> que representa la distancia desde el inicio de la ruta.</p>
-		  <p>Cada una de las instancias de un PointInLinkSequence está asociada <a href="#http://w3id.org/transmodel/journeys#viewedAs">tmjourney:viewedAs</a> con un Point, y un Point se describe  <a href="#http://w3id.org/transmodel/journeys#aGenericDescription">tmjourney:aGenericDescriptionOf</a> mediante un  <a href="#http://w3id.org/transmodel/journeys#Place">tmjourney:Place</a>. Una <a href="#Parada">esautob:Parada</a> es un Place. La Parada se relaciona con el patrón de geosparql para sus coordenadas y con el vocabulario de Dirección Postal para su dirección.</p>
-		  <p>Una <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a> es un LinkSequence que está compuesto por una secuencia de puntos, <a href="#http://w3id.org/transmodel/journeys#PointOnRoute">tmjourney:PontOnRoute</a> y que a su vez se asocian con puntos, <a href="#http://w3id.org/transmodel/journeys#RoutePoint">tmjourney:RoutePoint</a>. En una ruta pueden haber varios patrones de viaje, <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> que representan diferentes implementaciones de una ruta, a través de la propiedad  <a href="#http://w3id.org/transmodel/journeys#on">tmjourney:on</a>; por ejemplo se puede tener que una ruta no se recorre completa durante ciertos días de la semana. Similar a la ruta, un patrón de viaje puede estar compuesto por una secuencia de puntos,  <a href="#http://w3id.org/transmodel/journeys#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> que a su vez se asocian a puntos, <a href="#http://w3id.org/transmodel/journeys#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a>, en este caso al patrón de viaje se le asocia un texto de señalización del destino, <a href="#http://w3id.org/transmodel/journeys#DestinationDisplay">tmjourney:DestinationDisplay</a>.</p>
-		  <!-- código rutas -->
+		  <p>En cuanto a los detalles de contacto:</p>
 		  <pre class="line-numbers language-xml code-toolbar">
 		    <code class="language-html">
 		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/contactdetails/emt&gt; a tmorg:ContactDetails ;
@@ -613,6 +607,297 @@ Este vocabulario está siendo desarrollado en el contexto de la actuación sobre
 		    <li>La URI de los detalles del contacto de EMT es de la clase <a href="#http://w3id.org/transmodel/journey#ContactDetails">tmorg:ContactDetails</a>.</li>
 		    <li>En los datos de contacto utilizamos propiedades de <a href="http://schema.org">schema.org</a> en vez de Transmodel ya que son ampliamente utilizadas.</li>
 		  </ul>
+		  <p>Tomamos como ejemplo la línea 138 de la EMT de Madrid:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138&gt; a esautob:Linea ;
+		      tmjourney:runBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/operador/emt&gt; ;
+		      dcterms:identifier "138"^^xsd:string ;
+		      dcterms:description "Línea 138, comienzo en Cristo Rey y final en San Ignacio de Loyola"^^xsd:string ;
+		      schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=138&lang=es-ES"^^xsd:anyURI ; 
+		      schema:name "Línea 138"^^xsd:string ;
+		      tmjourney:shortName "138"^^xsd:string ;
+		      tmjourney:presentedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101&gt; ;
+		      esautob:afectadoPorIncidencia &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/incidencia/123456&gt; ;
+		      esautob:cabeceraLinea &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608&gt; ;
+		      esautob:finLinea &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/5481&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b&gt; .
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>La línea 138 es una instancia de la clase <code>esautob:Linea</code>.</li>
+		    <li>Esta operada <code>tmjourney:runBy</code> la EMT.</li>
+		    <li>Su identificador es <code>138</code>.</li>
+		    <li>Su descripción es la información pública de la línea.</li>
+		    <li>Tiene una URL, identificada como tal.</li>
+		    <li>Cuenta con un nombre y un nombre corto. En un caso hemos reutilizado <code>schema:name</code> y en el otro <code>tmjourney:shortName</code>.</li>
+		    <li>Se presenta por <code>tmjourney:presentedBy</code> como <code>lineas-101</code> que veremos a continuación.</li>
+		    <li>Si tuviera una o varias incidencias, se relaciona con las instancias de incidencias de la clase <code>estraf:Incidencia</code> a través de la propiedad <code>esautob:afectadoPorIncidencia</code>.</li>
+		    <li>Como toda línea, tiene una cabecera <code>esautob:cabeceraLinea</code> de línea que apunta a una instancia de una <code>esautob:Parada</code> y un <code>esautob:finLinea</code> que apunta a una instancia de <code>esautob:Parada</code>.</li>
+		    <li>Cada línea puede tener <code>tmjourney:madeUpOf</code> varias rutas, normalmente dos, una de ida y una de vuelta, que desarrollamos más adelante.</li>
+		  </ul>
+		  <p>La <b>Presentación</b> identifica cada línea o grupo de líneas, según el caso. Consta de dos propiedades, <code>tmcommons:colour</code> y <code>tmcommons:textColour</code>.</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101&gt; a esautob:
+		      tmcommons:colour "0072ce"^^xsd:string .
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>En el caso de la línea 138 se presenta <code>tmjourney:presentedBy</code> por el color en <code>tmcommons:colour</code> <b>0072ce</b>, código del color en hexadecimal.</li>
+		    <li>No se utiliza en este ejemplo la otra propiedad <code>tmjourney:textColour</code>.</li>
+		  </ul>
+
+		</div>
+<!-- fin organizaciones -->
+
+<!-- RUTAS -->
+		<div id="rutas">
+		  <h3 class="list">Rutas <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
+		  <p>La Figura 2 muestra las clases y propiedades de las rutas y las paradas:</p>
+		  <center>
+		    <img src="resources/images/ccaa-bus-ruta.png" alt="La Figura 2 muestra las clases y propiedades de las rutas y las paradas"/>
+		    <figcaption>La Figura 2 muestra las clases y propiedades de las rutas y las paradas</figcaption>
+		  </center>
+		  <p>En esta porción del vocabulario se han reusado conceptos del modelo <b>tmjourney</b> de Transmodel y se manejan los conceptos generales de <a href="#http://w3id.org/transmodel/journeys#LinkSequence">tmjourney:LinkSequence</a>, <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a> y <a href="#http://w3id.org/transmodel/journeys/Point">tmjourney:Point</a>. Es decir. toda ruta es una secuencia de enlaces. Una secuencia de enlaces <code>LinkSequence</code> se compone <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> de uno o más <code>PointInLinkSequence</code>, puntos en la secuencia de enlaces, los cuales se ordenan con el atributo <a href="#http://w3id.org/transmodel/journeys#order">tmjourney:order</a> y el atributo <a href="#http://w3id.org/transmodel/journeys#distanceFromStart">tmjourney:distanceFromStart</a> que representa la distancia desde el inicio de la ruta.</p>
+		  <p>Cada una de las instancias de un <code>PointInLinkSequence</code> está asociada <a href="#http://w3id.org/transmodel/journeys#viewedAs">tmjourney:viewedAs</a> con un <code>tmjourney:Point</code>, y este forma parte <code>tmcommons:functionalCentroidFor</code> de una zona <code>tmcommons:Zone</code>. Un <a href="#http://w3id.org/transmodel/journeys#Place">tmjourney:Place</a> es un tipo de <code>Zona</code> y una <code>esautob:Parada</code> es un tipo de <code>tmcommons:Place</code>.</p>
+		  <p>Cada <code>Parada</code> tiene una ubicación, descrita por el vocabulario <b>geosparql</b>, y una dirección, descrita por el patrón del vocabulario de <b>Direccion Postal</b>.</p>
+		  <p>Una <b>Ruta</b> <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a> es una <code>LinkSequence</code> que está compuesta por una secuencia de puntos, en este caso <b>Puntos en Ruta</b> <a href="#http://w3id.org/transmodel/journeys#PointOnRoute">tmjourney:PontOnRoute</a> y que pueden verse <code>tmjourney:viewedAs</code> como <b>Puntos de Ruta</b> <a href="#http://w3id.org/transmodel/journeys#RoutePoint">tmjourney:RoutePoint</a> que puede componer <code>tmcommons:functionalCentroidFor</code> una <b>Zona</b> <code>tmcommons:Zone</code>. Como vemos, se reproduce el esquema central de <code>LinkSequence</code> para <code>Route</code>.</p>
+		  <p>Este esquema también se reproduce en el <b>Patrón de Ruta</b> <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> que <b>funciona en</b>  <a href="#http://w3id.org/transmodel/journeys#on">tmjourney:on</a> una <b>Ruta</b>, pudiendo haber varios patrones de viaje en una ruta. Por ejemplo se puede tener que un patrón que recorre la ruta completa y ciertos días acorta la ruta.</p>
+		  <p>Al igual que en <code>LinkSequence</code>, un <code>Patrón de viaje</code> puede estar compuesto por una secuencia de puntos, <code>Puntos de Parada en el Patrón de Viaje</code> <a href="#http://w3id.org/transmodel/journeys#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> que pueden ser vistos <code>tmjourney:viewedAs</code> como <code>Puntos de Parada Programada</code> <a href="#http://w3id.org/transmodel/journeys#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a> que puede estar <code>Incluido en</code> una <code>Área de Paradas</code> <a href="#http://w3id.org/transmodel/journeys#StopArea">tmjourney:StopArea</a>.</p>
+		  <p>Los <code>Puntos de Parada en Patrón de Viaje</code> pueden indicar el uso que tienen <code>tmjourney:stopUse</code> en la taxonomía <code>tmkosjourney:stop-use-type</code>.</p>
+		  <p>Finalmente, los <code>Puntos de Parada Programada</code> son <code>tmjourney:functionalCentroidFor</code> de un <code>Lugar</code>.</p>
+		  <p>Además, se ha creado la clase <code>esautob:RealTimePassingTime</code> que es un tipo de <code>sosa:Observation</code> que se muestra en <code>tmjourney:PointInLinkSequence</code>. De esta forma se anuncia el tiempo de llegada del próximo autobús de cada línea en cada parada.</p>
+		  
+		    <!-- CÓDIGO RUTAS -->
+		  <p>Dado que hemos visto que la <b>Línea 138</b> cuenta con dos rutas, vamos a ver cómo se representan los datos de cada ruta.</p>
+		  <p>Ruta de ida, de cabecera a final de línea</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a&gt; a tmjourney:Route ;
+		      dcterms:identifier "138a"^^xsd:string ;
+		      dcterms:description "Línea 138 con inicio en Cristo Rey y destino en San Ignacio de Loyola. Ruta con inicio en Cristo Rey y destino en San Ignacio de Loyola"^^xsd:string ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4608&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4022&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-3687&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-737&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-735&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-193&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-173&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-854&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-599&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-601&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-603&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4070&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1452&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1453&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1454&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1457&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4633&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1459&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1461&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1463&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1465&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1467&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1469&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1471&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1472&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1474&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1476&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1478&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-1484&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-575&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4505&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-578&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-580&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-582&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-3149&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-653&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-651&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-5481&gt; .
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>La ruta 138a es una instancia de <code>Ruta</code>.</li>
+		    <li>Identificamos esta instancia de ruta como <code>138a</code>.</li>
+		    <li>La descripción indica que es una ruta de la línea 138 y que esta ruta tiene inicio en Cristo Rey y destino en San Ignacio de Loyola.</li>
+		    <li>Esta ruta esta hecha de <code>tmjourney:madeUpOf</code> instancias de puntos en ruta <code>tmjourney:PointOnRoute</code>. Cada uno de ellos está identificado, como veremos luego, con el nombre de la ruta separado del número de la parada por un guión medio.</li>
+		  </ul>
+		  <p>Cada <code>tmjourney:PointOnRoute</code> indica su orden en esa ruta:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138a-4608&gt; a tmjourney:PointOnRoute ;
+		      dcterms:identifier "138a-4608"^^xsd:string ;
+		      tmjourney:order "1"^^xsd:integer ;
+		      tmjourney:viewedAs &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608&gt; .
+		  </pre>
+		  </code>
+		  <ul>
+		    <li>Cada instancia de <code>Punto en Ruta</code> tiene un identificador que se utiliza para su URI.</li>
+		    <li>Con la propiedad <code>tmjourney:order</code> se indica el orden en la ruta.</li>
+		    <li>Se indica que este <code>Punto en Ruta</code> es una forma de ver un <code>Punto de Ruta</code> <code>tmjourney:RoutePoint</code>.</li>
+		  </ul>
+		  <p>Un <code>Punto de Ruta</code> se utiliza para representar una <code>Zona</code>:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608&gt; a tmjourney:RoutePoint ;
+		      tmjourney:functionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608&gt; .
+		    </code>
+		  </pre>
+		  <p>La <code>Zona</code> también se identifica con el identificador de la parada:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/zone/4608&gt; a tmjourney:Zone ;
+		      dcterms:identifier "4608"^^xsd:string ;
+		      dcterms:description "Zona que rodea la parada 4608"^^xsd:string ;
+		      schema:name "4608"^^xsd:string .
+		    </code>
+		  </pre>
+		  <p>Para cada <code>Ruta</code> puede haber uno o más <code>Patrones de Viaje</code>. Vemos uno de ellos:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1&gt; a tmjourney:JourneyPattern ;
+		      dcterms:identifier "138a1"^^xsd:string ;
+		      schema:name "138a1"^^xsd:string ;
+		      tmjourney:distance "11.194"^^xsd:double ; 
+		      tmjourney:on &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a&gt; ;
+		      tmjourney:journeyPatternAdvertisedFor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4022&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-3687&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-737&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-735&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-193&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-173&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-854&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-599&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-601&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-603&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4070&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1452&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1453&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1454&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1457&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4633&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1459&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1461&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1463&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1465&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1467&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1469&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1471&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1472&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1474&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1476&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1478&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-1484&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-575&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4505&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-578&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-580&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-582&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-3149&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-653&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-651&gt; ;
+		      tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-5481&gt; .
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>Se identifica la instancia de este <code>Patrón de Viaje</code> como <b>138a1</b> por ser el primero de la ruta <b>138a</b>.</li>
+		    <li>La distancia total de la ruta es de once kilómetros y ciento noventa y cuatro.</li>
+		    <li>El destino del patrón de viaje se anuncia a través de una instancia de <code>tmjourney:journeyPatternAdvertisedFor</code> que veremos luego.</li>
+		    <li>El patrón de viaje está compuesto de una serie de <code>Puntos de parada en patrón de viaje</code>, identificados por el número de ruta seguido del número de parada, separados por el guión medio.</li>
+		  </ul>
+		  <p>Vemos el destino del patrón de viaje a través de <code>DestinationDisplay</code>:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1&gt; a tmjourney:DestinationDisplay ;
+		      dcterms:identifier "138a1" ;
+		      tmjourney:frontText "San Ignacio de Loyola"^^xsd:string .
+		    </code>
+		  </pre>
+		  <p>Una instancia de <code>StopPointInJourneyPattern</code> toma también la misma nomenclatura para su identificación:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608&gt; a tmjourney:StopPointInJourneyPattern ;
+		      dcterms:identifier "138a1-4608"^^xsd:string ;
+		      tmjourney:order "1"^^xsd:integer ;
+		      tmjourney:stopUse &lt;http://w3id.org/transmodel/kos/journeys/stop-use-type/pass-through&gt; ;
+		      tmjourney:viewedAs &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/scheduledstoppoint/138a1-4608&gt; .
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>Un <code>Punto de Parada en un Patrón de Ruta</code> también tiene un orden.</li>
+		    <li>La propiedad <code>tmjourney:stopUse</code> conecta con la taxonomía <code>tmkosjourney:stop-use-type</code> que indica el uso que tiene esa parada.</li>
+		  </ul>
+		  <p>El <code>Punto de Parada Programada</code> sigue la misma nomenclatura:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/schedulestoppoint/138a1-4608&gt; a tmjourney:ScheduledStopPoint ;
+		      tmjourney:includedIn &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey&gt; ;
+		      tmjourney:forAlighting "false"^^xsd:boolean ;
+		      tmjourney:forBoarding "true"^^xsd:boolean .
+
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>La propiedad <code>tmjourney:includedIn</code> le sitúa en un área donde habrá más paradas.</li>
+		    <li>Las propiedades <code>tmjourney:forAligning</code> y <code>tmjourney:forBoarding</code> indican si se puede subir o no en la parada. Por ejemplo, la primera parada es solo de subida mientras que la última es solo de bajada.</li>
+		  </ul>
+		  <p>El <code>Área de Paradas</code> no indica más que su nombre y su identificación:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey&gt; a tmjourney:StopArea ;
+		      dcterms:identifier "cristorey"^^xsd:string ;
+		      dcterms:name "Cristo Rey"^^xsd:string .
+		    </code>
+		  </pre>
+		  <p>Cada <code>Parada</code> cuenta con esta información:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608&gt; a esautob:Parada ;
+		      dcterms:identifier "4608"^^xsd:string ;
+		      dcterms:description "Cristo Rey"^^xsd:string ;
+		      schema:name "Cristo Rey"^^xsd:string ;
+		      schema:url "https://emtmadrid.es/paradas/#"^^xsd:anyURI ;
+		      esautob:wifi "false"^^xsd:boolean ;
+		      esautob:panelElectronico "true"^^xsd:boolean ;
+		      esautob:zona "A"^^xsd:string ;
+		      esautob:ubicacion &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/4608&gt; ;
+		      schema:hasAddress &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/cristorey&gt; .
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>La instancia de <code>Parada</code> tiene un identificador que sirve además para crear otras identificaciones de esta ontología.</li>
+		    <li>Puede tener una URL</li>
+		    <li>Puede tener conexión WiFi o no</li>
+		    <li>Puede tener un panel electrónico de información donde se informa del tiempo de llega del próximo autobús para la línea a la línea u otro tipo de información como, por ejemplo, el tiempo.</li>
+		    <li>La parada puede pertenecer a una zona, sin explicitar si se trata de una zona de tarificación, de la ciudad o de otro tipo.</li>
+		    <li>La ubicación está representada por una instancia de la clase <code>geosparql:Point</code> a través de la propiedad <code>esautob:ubicacion</code> que cuenta con las coordenadas geográficas como veremos a continuación.</li>
+		    <li>Y su dirección está representada por una instancia de la clase <code>esdir:DireccionPostal</code> del vocabulario de direcciones postales.</li>
+		  </ul>
+		  <p>Además, la clase <code>esautob:RealTimePassingTime</code> muestra el tiempo de llegada del próximo vehículo de una línea en una parada:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/realtimepassingtime/4608-138a1-1&gt; a esautob:RealTimePassingTime ;
+		      sosa:resultTime "2020-05-13T12:45:05"^^xsd:dateTime ;
+		      esautob:expectedArrivalBus "PT15M"^^xsd:duration ;
+		      sosa:hasFeatureOfInterest &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608&gt; .
+
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/realtimepassingtime/4608-138a1-2&gt; a esautob:RealTimePassingTime ;
+		      sosa:resultTime "2020-05-13T12:55:05"^^xsd:dateTime ;
+		      esautob:expectedArrivalBus "PT3M"^^xsd:duration ;
+		      sosa:hasFeatureOfInterest &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608&gt; .
+
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>Cada instancia de <code>esautob:RealTimePassingTime</code>, un tipo de <code>sosa:Observation</code> se crea siguiendo la nomenclatura invertida de los puntos ya que lo primero a identificar es la Parada seguido del Viaje del vehículo seguido del identificador para esa parada y ese viaje.</li>
+		    <li>Cada observación tiene una marca de tiempo <code>sosa:resultTime</code>.</li>
+		    <li>La propiedad <code>esautob:expectedArrivalBus</code> indica en minutos --en este caso, 3 minutos-- cuánto tardará en llegar el siguiente autobús para esa línea.</li>
+		    <li>Como toda observación <code>sosa:Observation</code> se muestra en alguna parte, en este caso en un <code>StopPointInJourneyPattern</code>.</li>
+		    </ul>
 		</div>
 		<!-- Fin rutas -->
 		<div id="viajes">
@@ -622,10 +907,144 @@ Este vocabulario está siendo desarrollado en el contexto de la actuación sobre
 		  <img src="resources/svg/ccaa-bus-viaje.svg" alt="La Figura 3 muestra las clases y propiedades de los  viajes (en diferentes horarios y frecuencias) que se pueden realizar para cada patrón de viaje"/>
 		    <figcaption>La Figura 3 muestra las clases y propiedades de los  viajes (en diferentes horarios y frecuencias) que se pueden realizar para cada patrón de viaje</figcaption>
 		</center>
-		<!-- código viajes -->
-		<p>En esta parte del vocabulario el concepto central es el de viaje de vehículo <a href="#http://w3id.org/transmodel/journeys#VehicleJourney">tmjourney:VehicleJourney</a> que se realizan <a href="#http://w3id.org/transmodel/journeys#madeUsing">tmjourney:madeUsing</a> para un patrón de viaje. Un viaje también está compuesto <a href="#http://w3id.org/transmodel/journeys#timedFrom">tmjourney:timedFrom</a> de una secuencia de puntos con registro de tiempos planificados,  <a href="#http://w3id.org/transmodel/journeys#TimingPointInJourneyPattern">tmjourney:TimingPointInJourneyPattern</a>. Cada uno de estos elementos de esta secuencia está asociado con la clase que representa los tiempos planificados, <a href="#http://w3id.org/transmodel/journeys#TimetabledPassingTime">tmjourney:TimetabledPassingTime</a>. La clase <a href="#TiempoEsperaReal">esautob:TiempoEsperaReal</a> representa los últimos tiempo de espera registrados para un punto de un viaje en un patrón de una ruta.</p>
-		<p>El viaje también se asocia con información de frecuencia mínima, máxima y planificada que se encuentra en la clase <a href="#http://w3id.org/transmodel/journeys#HeadwayInterval">tmjourney:HeadwayInterval</a>. Cada viaje se realiza <a href="#http://w3id.org/transmodel/journeys#workedOn">tmjourney:workedOn</a> siguiendo los parámetros de un tipo de día <a href="#http://w3id.org/transmodel/journeys#DayType">tmjourney:DayType</a>. Además se tiene el calendario de viajes, <a href="#http://w3id.org/transmodel/journeys#ServiceCalendar">tmjourney:ServiceCalendar</a> que contiene el conjunto de asignaciones de tipo de día <a href="#http://w3id.org/transmodel/journeys#DayTypeAssignment">tmjourney:DayTypeAssignment</a> para un cierto período. Las asignaciones de tipo de día especifican <a href="#http://w3id.org/transmodel/journeys#specifying">tmjourney:specifying</a> uno o varios tipos de día.</p>
-		  <p>Adicionalmente, en este vocabulario se han utilizado esquemas de conceptos SKOS para representar la dirección de una ruta (ida, vuelta) <a href="#http://w3id.org/transmodel/journeys#orientedBy">tmjourney:orientedBy</a> y el tipo de uso de una parada <a href="#http://w3id.org/transmodel/journeys#stopUse">tmjourney:stopUse</a>.</p>
+		<!-- CÓDIGO VIAJES -->
+		  <p>En esta parte del vocabulario el concepto central es el de <code>Viaje de Vehículo</code> <a href="#http://w3id.org/transmodel/journeys#VehicleJourney">tmjourney:VehicleJourney</a>. Son los viajes que se realizan <a href="#http://w3id.org/transmodel/journeys#madeUsing">tmjourney:madeUsing</a> para un <code>Patrón de viaje</code>.</p>
+		  <p>Cada <code>Viaje del Vehículo</code> trabaja <a href="#http://w3id.org/transmodel/journeys#workedOn">tmjourney:workedOn</a> en un Tipo de Día <a href="#http://w3id.org/transmodel/journeys#DayType">tmjourney:DayType</a>. Por otro lado hay un calendario de servicio <a href="#http://w3id.org/transmodel/journeys#ServiceCalendar">tmjourney:ServiceCalendar</a> que tiene una fecha de inicio indicado por <a href="#http://w3id.org/transmodel/journeys#from">tmjourney:from</a> y una de fin indicada por <a href="#http://w3id.org/transmodel/journeys#to">tmjourney:to</a> que está definida por <a href="#http://w3id.org/transmodel/journeys#definedBy">tmjourney:definedBy</a> la clase <a href="#http://w3id.org/transmodel/journeys#DayTypeAssignment">tmjourney:DayTypeAssignment</a> que especifica el <code>Tipo de Día</code>.</p>
+		  <p>El viaje también se asocia con información horarios de primera y última salida en la clase <a href="#http://w3id.org/transmodel/journeys#HeadwayJourneyGroup">tmjourney:HeadwayJourneyGroup</a> que está determinada por un intervalo de cabecera <a href="#http://w3id.org/transmodel/journeys#HeadwayInterval">tmjourney:HeadwayInterval</a> que indica la frecuencia mínima y máxima de cada grupo de viajes.</p>
+		  <p>Cada <code>Vehicle Journey</code> toma tiempos <a href="#http://w3id.org/transmodel/journeys#timedFrom">tmjourney:timedFrom</a> de un <code>Punto de Control en el Patrón de Ruta</code> <a href="#http://w3id.org/transmodel/journeys#TimingPointInJourneyPattern">TimingPointInJourneyPattern</a> que es a su vez un tipo de <code>tmjourney:PointInLinkSequence</code>.</p>
+		  <p>Adicionalmente, se ha utilizado la taxonomía <code>tmkosjourney:direction-type</pre> para representar el movimiento del viaje del vehículo.</p>
+		  <!-- CÓDIGO VIAJE VEHÍCULO -->
+		  <p>Veamos un un ejemplo de <code>VehicleJourney</code>. Tomamos el <code>JourneyPattern</code> <b>138a1</b> que es el recorrido completo de ida (de cabecera a fin) en la <code>Ruta</code> <b>138a</b> (de cabecera a fin) en la línea 138. Por cada <code>Intervalo de Cabecera</code> se crea un <code>HeadwayJourneyGroup</code> y el/los <code>Viaje/s de Vehículo</code> que correspondan.</p>
+		  <p>En este caso hay tres tipos de día:</p>
+		  <ul>
+		    <li>Laborable</li>
+		    <li>Sábado</li>
+		    <li>Festivo</li>
+		  </ul>
+		  <p>El domingo es festivo; el sábado, cuando es laborable, tiene tipo de día propio pero cuando es festivo se rige por el tipo de día festivo.</p>
+		  <p>Cada tipo de día puede tener dos horarios:</p>
+		  <ul>
+		    <li>Valle, con menor frecuencia, normalmente al inicio y al final de la jornada.</li>
+		    <li>Llano, el horario con frecuencia normal.</li>
+		  </ul>
+		  <p>Para cada uno de esos horarios hay un <code>VehicleJourney</code>:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/138a1-laborable-valle-inicio&gt; a tmjourney:VehicleJourney ;
+		      dcterms:identifier "138a1-laborable-valle-inicio"^^xsd:string ;
+		      tmjourney:journeyDuration "P1D"^^xsd:duration ;
+		      tmjourney:departureTime "06:15:00+02:00"^^xsd:time ;
+		      tmjourney:madeUsing &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a1&gt; ;
+		      tmjourney:workedOn &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable&gt;  ;
+		      tmjourney:composedOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-valle-inicio-1&gt; ;
+		      tmjourney:directionType &lt;http://w3id.org/transmodel/kos/journeys/direction-type/clockwise&gt; .
+		    </code>
+		  </pre>
+		  <p>El <code>Vehicle Journey</code> <b>138a1-laborable-valle-inicio</b> corresponde al <code>Viaje del Vehículo</code> que se realiza en la <b>línea 138</b>, en la <b>ruta 138a</b>, en el <b>patrón de viaje 138a1</b> en <b>tipo de día laborable</b> y en <b>horario valle al inicio de la jornada</b>:</p>
+		  <ul>
+		    <li>Su duración <code>journeyDuration</code> es de un día.</li>
+		    <li>Usa el patrón de viaje <code>madeUsing</code> 138a1.</li>
+		    <li>Funciona <code>workedOn</code> en un tipo de día laborable.</li>
+		    <li>Se compone <code>tmjourney:composedOf</code> de un horario <code>HeadwayJourneyGroup</code> 138a1-laborable-valle-inicio-1.</li>
+		    <li>Su dirección <code>directionType</code> es <code>clockwise</code>, de cabecera a fin.</li>
+		  </ul>
+		  <pre>
+		    <code>
+		      
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable&gt; a tmjourney:DayType ;
+		      dcterms:identifier "laborable"^^xsd:string ;
+		      dcterms:description "Normalmente de lunes a viernes, salvo que sea fiesta; el sábado es laborable pero tiene día especial" ;
+		      schema:name "Día laborable"^^xsd:string ;
+		      tmcommons:shortName "Día laborable"^^xsd:string ;
+		      tmjourney:earliestTime "05:30:00"^^xsd:time .
+		    </code>
+		  </pre>
+		  <p>El tipo de día laborable da información sobre el tipo de día: identificación, descripción, nombre en <code>schema:name</code> y el inicio del tipo de día en <code>tmjourney:earliestTime</code>.</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable-valle-inicio&gt; a tmjourney:HeadwayJourneyGroup ;
+		      tmjourney:identifier "138a1-laborable-valle-inicio"^^xsd:string ;
+		      tmjourney:firstDepartureTime "06:15:00+02:00"^^xsd:time ;
+		      tmjourney:lastDepartureTime "07:53:00+02:00"^^xsd:time ;
+		      tmjourney:determinedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-laborable-valle-inicio&gt; .
+		    </code>
+		  </pre>
+		  <p>El horario <b>138a1-laborable-valle-inicio</b> tiene:</p>
+		  <ul>
+		    <li>Una primera salida <code>firstDepartureTime</code> del autobús.</li>
+		    <li>Una última salida <code>lastDepartureTime</code> del autobús.</li>
+		    <li>Con una frecuencia determinada, reflejada en <code>HeadwayInterval</code> <b>138a1-laborable-valle-inicio</b>.</li>
+		  </ul>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayinterval/138a1-laborable-valle-inicio&gt; a tmjourney:HeadwayInterval ;
+		      tmjourney:minimumHeadwayInterval "P7M"^^xsd:duration ;
+		      tmjourney:maximumHeadwayInterval "P15M"^^xsd:duration ;
+		      tmjourney:scheduledHeadwayInterval "7-15 min"^^xsd:string .
+
+		    </code>
+		    </pre>
+		  <p>La frecuencia se indica en <code>tmjourney:HeadwayInterval</code>:</p>
+		  <ul>
+		    <li>Frecuencia máxima <code>minimumHeadwayInterval</code>.</li>
+		    <li>Frecuencia máxima <code>maximumHeadwayInterval</code>.</li>
+		    <li>Arco de frecuencias <code>tmjourney:scheduledHeadwayInterval</code>.</li>
+		  </ul>
+		  <p>Por su parte, el calendario de servicio <code>tmjourney:ServiceCalendar</code> informa del periodo de días que se ocupa y define asignaciones de tipos de día. Pongamos por caso que la EMT tuviera estos calendarios:</p>
+		  <ul>
+		    <li>Horario de invierno, temporada normal, casi todo el año.</li>
+		    <li>Temporada baja, segunda quincena de julio y primera de septiembre.</li>
+		    <li>Horario de verano, mes de agosto.</li>
+		    <li>Horario de Semana Santa</li>
+		  </ul>
+		  <p>Al tener una fecha de inicio y una de fin, cada vez cambia de calendario es uno nuevo. Por ejemplo, este sería el calendario del <b>Horario de invierno</b> para el mes de mayo. Al ser después de Semana Santa, que tiene su propio calendario, esta calendario del horario de invierno es el segundo del año:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/horarioinvierno-2&gt; a tmjourney:ServiceCalendar ;
+		      dcterms:identifier "Horario de invierno de Semana Santa a Julio"^^xsd:string ;
+		      dcterms:description "Horario de invierno en su segundo periodo, del final de Semana Santa a la segunda quincena de julio"^^xsd:string ;
+		      schema:name "Horario de invierno de 2020"^^xsd:string ;
+		      tmcommons:shortName "Horario invierno 2020"^^xsd:string ; 
+		      tmjourney:from "2020-04-09:00:00:01+02:00"^^xsd:dateTime ;
+		      tmjourney:to "2020-07-14:23:59:59+02:00"^^xsd:dateTime ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200501&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200502&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200503&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200504&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200505&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200506&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200507&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200508&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200509&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200510&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200511&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200512&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200513&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200514&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200515&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200516&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200517&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200518&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200519&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200520&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200521&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200522&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200523&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200524&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200525&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200526&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200527&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200528&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200529&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200530&gt; ;
+		      tmjourney:definedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200531&gt; .
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>Con <code>tmjourney:from</code> si indica el inicio de este calendario.</li>
+		    <li>Con <code>tmjourney:to</code> se indica el final de este calendario.</li>
+		    <li>Cada día de este calendario está definido por <code>tmjourney:definedBy</code> a un <code>tmjourney:DayTypeAssignment</code>.</li>
+		  </ul>
 		  <pre class="line-numbers language-xml code-toolbar">
 		    <code class="language-html">
 		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138&gt; a esautob:Linea ;
@@ -633,7 +1052,7 @@ Este vocabulario está siendo desarrollado en el contexto de la actuación sobre
 		      dcterms:identifier "138"^^xsd:string ;
 		      dcterms:description "Línea 138, comienzo en Hospital Clínico y final en Avda. Aviación"^^xsd:string ;
 		      schema:url "https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=138&lang=es-ES"^^xsd:anyURI ;
-		      tmjourney:name "Línea 138"^^xsd:string ;
+		      schema:name "Línea 138"^^xsd:string ;
 		      tmjourney:shortName "138"^^xsd:string ;
 		      tmjourney:presentedBy &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/lineas-101&gt; ;
 		      esautob:cabeceraLinea &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608&gt; ;
@@ -650,9 +1069,20 @@ Este vocabulario está siendo desarrollado en el contexto de la actuación sobre
 		    <li>En este caso y normalmente, la cabecera de línea es una parada y el final de línea otra.</li>
 		    <li>Está compuesta de dos rutas, la 138a que va de cabecera de línea a final de línea, y la 138b que va de final de línea a cabecera, como veremos luego en detalle.</li>
 		  </ul>
-		  
+		  <p>Finalmente, el <code>tmjourney:DayTypeAssignment</code> especifica con <code>tmjourney:specifying</code> el tipo de día que es para ver que frecuencias y horarios tiene. En este caso vemos el 14 de mayo de 2020:</p>
+		  <pre>
+		    <code>
+		      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytypeassignment/20200514&gt; a tmjourney:DayTypeAssignment ;
+		      tmjourney:date "2020-05-14"^^xsd:date ;
+		      tmjourney:specifying &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/daytype/laborable&gt; .
+		    </code>
+		  </pre>
+		  <ul>
+		    <li>La fecha es con <code>tmjourney:date</code>.</li>
+		    <li>La asociación con el tipo de día <code>DayType</code> a través de <code>tmjourney:specifying</code>.</li>
+		  </ul>
 		</div>
-		<!-- fin viajaes -->
+		<!-- fin viajes -->
 	    </div>
 	    <!-- fin description -->
    
