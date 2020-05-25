@@ -261,7 +261,7 @@ The vocabulary has been divided into three main parts:
     <!-- http://w3id.org/transmodel/journeys#aGenericDescriptionOf -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#aGenericDescriptionOf">
-      <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#Place"/>
+      <rdfs:domain rdf:resource="http://w3id.org/transmodel/commons#Place"/>
         <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#ScheduledStopPoint"/>
         <rdfs:comment xml:lang="en">This property points out a Place, which is a super class of esautob:Parada, is a genericDescription of both a ScheduledStopPoint and of RoutePoint</rdfs:comment>
 	<rdfs:comment xml:lang="es">Esta propiedad señala que un Lugar, que es la superclase de esautob:parada, es una descripción genérica de tanto una Parada Planificada como un Punto de Ruta.</rdfs:comment>
@@ -333,7 +333,6 @@ The vocabulary has been divided into three main parts:
    <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#StopArea"/>
       <rdfs:comment xml:lang="en">A Scheduled Stop Point can be next to other Stop Points so they can be included in a Stop Area.</rdfs:comment>
       <rdfs:comment xml:lang="es">Una Parada Programada (Scheduled Stop Point) puede estar próxima a otras por lo que pueden todas ellas formas parte de una zona de Paradas.</rdfs:comment>
-      <rdfs:comment xml:lang="es">CHECK, ToDo: por definir si esta zona de Paradas se llama así Stop Area o de otra manera.</rdfs:comment>
       <rdfs:label xml:lang="en">Included In</rdfs:label>
       <rdfs:label xml:lang="es">Incluida en</rdfs:label>
     </owl:ObjectProperty>
@@ -344,7 +343,6 @@ The vocabulary has been divided into three main parts:
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:comment xml:lang="en">Relationship between entities made up of other entities</rdfs:comment>
 	<rdfs:comment xml:lang="es">Relación entre entidades hechas de otras entidades.</rdfs:comment>
-	<rdfs:comment xml:lang="es">CHECK, ToDo, hay que revisar si emplear propiedades más específicas para relacionar línea con ruta, ruta con puntos y ruta con viajes.</rdfs:comment>
         <rdfs:label xml:lang="en">made Up Of</rdfs:label>
 	<rdfs:label xml:lang="es">se compone de</rdfs:label>
     </owl:ObjectProperty>
@@ -361,20 +359,6 @@ The vocabulary has been divided into three main parts:
 	<rdfs:label xml:lang="es">se hace con</rdfs:label>
     </owl:ObjectProperty>
     
-    <!-- http://w3id.org/transmodel/organisations#managing -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/organisations#managing">
-      <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-      <rdfs:domain rdf:resource="http://w3id.org/transmodel/organisations#Authority"/>
-      <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#JourneyPattern"/>
-      <rdfs:label xml:lang="es">Gestionando</rdfs:label>
-      <rdfs:label xml:lang="en">Managing</rdfs:label>
-      <rdfs:comment xml:lang="es">Relación entre la autoridad de transporte y los patrones de viaje.</rdfs:comment>
-      <rdfs:comment xml:lang="en">Relationship between Transport Authority and Journey Patterns</rdfs:comment>
-      <rdfs:comment xml:lang="es">CHECK, ToDo, Propiedad inversa del original de transmodel madeUpOf. También hay que revisar si emplear propiedades más específicas para relacionar línea con ruta, ruta con puntos y ruta con viajes.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
         <!-- http://w3id.org/transmodel/journeys#prescribing -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#prescribing">
@@ -758,10 +742,11 @@ The vocabulary has been divided into three main parts:
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/resultTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#RealTimePassingTime"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="es">Esta propiedad establece la fecha/hora de la observación.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property sets the dateTime of the observation</rdfs:comment>
+	
         <rdfs:label xml:lang="es">Hora Observación</rdfs:label>
         <rdfs:label xml:lang="en">Phenomenon Time</rdfs:label>
     </owl:DatatypeProperty>
@@ -1149,7 +1134,7 @@ The vocabulary has been divided into three main parts:
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada -->
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada">
-	<rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/journeys#Place"/>
+	<rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/commons#Place"/>
         <rdfs:comment xml:lang="en">A Stop of the public transport service of urban buses</rdfs:comment>
         <rdfs:comment xml:lang="es">Una parada del servicio público de transporte de autobuses urbanos.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
@@ -1257,7 +1242,6 @@ The vocabulary has been divided into three main parts:
 
 
     <!-- http://w3id.org/transmodel/journeys#Point -->
-    <!-- CHECK, quizás no la usamos -->
 
     <owl:Class rdf:about="http://w3id.org/transmodel/journeys#Point">
       <rdfs:comment xml:lang="en">A Point is a 0-dimensional Node of the Network used for the spatial description of the network. Point may be located by a Location</rdfs:comment>
@@ -1380,10 +1364,9 @@ The vocabulary has been divided into three main parts:
     <!-- http://w3id.org/transmodel/journeys#StopArea -->
 
     <owl:Class rdf:about="http://w3id.org/transmodel/journeys#StopArea">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/journeys#Place"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/commons#Place"/>
         <rdfs:comment xml:lang="en">A group of Scheduled Stop Points close to each other</rdfs:comment>
 	<rdfs:comment xml:lang="es">Un grupo de Paradas que están próximas entre sí.</rdfs:comment>
-	<rdfs:comment xml:lang="es">CHECK, ToDo: revisar sus relaciones con estación, stop place, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Stop Area</rdfs:label>
 	<rdfs:label xml:lang="es">Paradas</rdfs:label>
     </owl:Class>
@@ -1575,9 +1558,9 @@ The vocabulary has been divided into three main parts:
       <rdfs:comment xml:lang="es">Un Punto de Información, por ejemplo, la sección de Contacto en la web de la entidad que participa de alguna manera en el Transporte Público de Autobuses.</rdfs:comment>
     </owl:Class>
 
-    <!--  http://vocab.ciudadesabiertas.es/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal -->
+    <!--  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal -->
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
       <rdfs:label xml:lang="en">Postal Address</rdfs:label>
       <rdfs:label xml:lang="es">Dirección postal</rdfs:label>
       <rdfs:comment xml:lang="en">A postal address according to the esdir vocabulary.</rdfs:comment>
