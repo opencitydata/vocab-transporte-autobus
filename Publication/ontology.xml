@@ -12,26 +12,26 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus">
         <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus/1.0.0"/>
-        <dc:abstract xml:lang="es">El vocabulario de Autobús trabaja con el estándar europeo TransModel (EN 12896 realizado por el CEN, Comité Europeo de Normalización) que ha sido adoptado por el reglamento europeo 2017/1926 y que sigue la directiva europea sobre servicios inteligentes de transporte (Directiva 2010/40/UE sobre ITS,Intelligent Transport System).
-Desde diciembre de 2019 este reglamento ha entrado en vigor y dictamina que cualquier operador o autoridad de transporte europea debe ofrecer sus datos en formatos compatibles con Transmodel.
-Esta ontología se basa en el trabajo previo realizado durante el proyecto SNAP (snap-project.eu) donde se realizó una primera versión de la ontología transmodel.
-En general se han reusado los siguientes conceptos de Transmodel: Operador, Autoridad, Línea, Ruta, Puntos en una Ruta, Patrón de Viaje, Puntos en un Patrón de Viaje, Parada, Viaje asociado a un Patrón de Viaje, Horarios y Frecuencias de un Viaje y Calendario de Servicio.
-Este vocabulario realiza otras relaciones: con el concepto de Incidencia que se ha desarrollado en el vocabulario de Tráfico del mismo proyecto de Ciudades Abiertas; con el vocabularios de Dirección Postal; con geosparql para la representación geográfica.
+        <dc:abstract xml:lang="es">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto &quot;Plataforma de Gobierno Abierto, Colaborativa e Interoperable&quot; de la &quot;II Convocatoria de Ciudades Inteligentes&quot; del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.
+	El vocabulario de Autobús trabaja con el estándar europeo TransModel (EN 12896 realizado por el CEN, Comité Europeo de Normalización) que ha sido adoptado por el reglamento europeo 2017/1926 y que sigue la directiva europea sobre servicios inteligentes de transporte (Directiva 2010/40/UE sobre ITS,Intelligent Transport System).
+	Desde diciembre de 2019 este reglamento ha entrado en vigor y dictamina que cualquier operador o autoridad de transporte europea debe ofrecer sus datos en formatos compatibles con Transmodel.
+	Esta ontología se basa en el trabajo previo realizado durante el proyecto SNAP (snap-project.eu) donde se realizó una primera versión de la ontología transmodel.
+	En general se han reusado los siguientes conceptos de Transmodel: Operador, Autoridad, Línea, Ruta, Puntos en una Ruta, Patrón de Viaje, Puntos en un Patrón de Viaje, Parada, Viaje asociado a un Patrón de Viaje, Horarios y Frecuencias de un Viaje y Calendario de Servicio.
+	Este vocabulario realiza otras relaciones: con el concepto de Incidencia que se ha desarrollado en el vocabulario de Tráfico del mismo proyecto de Ciudades Abiertas; con el vocabularios de Dirección Postal; con geosparql para la representación geográfica.
 El vocabulario se ha dividido en tres grandes partes:
 - Organizaciones (autoridad y operador) y sus líneas
 - Rutas y puntos de las mismas, incluidas las paradas.
-- Viajes y patrones de viaje
-</dc:abstract>
-        <dc:abstract xml:lang="en">The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been adopted by the European regulation 2017/1926 and follows the European directive on intelligent transport services (Directive 2010/40/EU on ITS,Intelligent Transport System).
-Since December 2019 this regulation has come into force and dictates that any European operator or transport authority must offer its data in formats compatible with Transmodel.
-This ontology is based on the previous work carried out during the SNAP project (snap-project.eu) where a first version of the Transmodel ontology was developed.
-In general, the following Transmodel concepts have been reused: Operator, Authority, Line, Route, Points on a Route, Trip Pattern, Points on a Trip Pattern, Stop, Trip associated to a Trip Pattern, Timetables and Frequencies of a Trip and Service Calendar.
-This vocabulary makes other relations: with the concept of Incidence that has been developed in the Traffic vocabulary of the same Open Cities project; with the Postal Address vocabulary; with geosparql for the geographical representation.
+- Viajes y patrones de viaje</dc:abstract>
+        <dc:abstract xml:lang="en">This vocabulary has been developed in the context of the action on open data of the project &quot;Platform of Open, Collaborative and Interoperable Government&quot; of the &quot;II Call for Intelligent Cities&quot; of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry.
+	The Bus Vocabulary works with the European standard TransModel (EN 12896 made by the CEN, European Committee for Standardization) which has been adopted by the European regulation 2017/1926 and which follows the European directive on intelligent transport services (Directive 2010/40/EU on ITS,Intelligent Transport System).
+	Since December 2019 this regulation has come into force and dictates that any European operator or transport authority must offer its data in formats compatible with Transmodel.
+	This ontology is based on the previous work carried out during the SNAP project (snap-project.eu) where a first version of the Transmodel ontology was developed.
+	In general, the following Transmodel concepts have been reused: Operator, Authority, Line, Route, Points on a Route, Trip Pattern, Points on a Trip Pattern, Stop, Trip associated to a Trip Pattern, Timetables and Frequencies of a Trip and Service Calendar.
+	This vocabulary makes other relations: with the concept of Incidence that has been developed in the Traffic vocabulary of the same Open Cities project; with the Postal Address vocabulary; with geosparql for the geographical representation.
 The vocabulary has been divided into three main parts:
 - Organizations (authority and operator) and their lines
 - Routes and points thereof, including stops.
-- Journeys and travel patterns
-	</dc:abstract>
+- Journeys and travel patterns.</dc:abstract>
         <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</dc:contributor>
@@ -45,7 +45,7 @@ The vocabulary has been divided into three main parts:
         <dc:creator>Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dc:creator>
         <dc:creator>Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
-        <dc:description xml:lang="es">Este vocabulario está siendo desarrollado en el contexto de la actuación sobre datos abiertos del proyecto &quot;Plataforma de Gobierno Abierto, Colaborativa e Interoperable&quot; de la &quot;II Convocatoria de Ciudades Inteligentes&quot; del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</dc:description>
+        <dc:description xml:lang="es">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto &quot;Plataforma de Gobierno Abierto, Colaborativa e Interoperable&quot; de la &quot;II Convocatoria de Ciudades Inteligentes&quot; del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</dc:description>
         <dc:description xml:lang="en">This vocabulary is being developed in the context of the action on open data of the project &quot;Platform of Open, Collaborative and Interoperable Government&quot; of the &quot;II Call for Intelligent Cities&quot; of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry.</dc:description>
         <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/transporte/autobus</dc:identifier>
         <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
@@ -59,10 +59,10 @@ The vocabulary has been divided into three main parts:
         <terms:publisher xml:lang="es">Ontology Engineering Group - Universidad Politécnica de Madrid</terms:publisher>
         <vann:preferredNamespacePrefix>esautob</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#"/>
-        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos	propuestos en las reuniones del grupo.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This version has been generated within the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts proposed at the group&apos;s meetings.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto &quot;Plataforma de Gobierno Abierto, Colaborativa e Interoperable&quot; de la &quot;II Convocatoria de Ciudades Inteligentes&quot; del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This vocabulary has been developed in the context of the action on open data of the project &quot;Platform of Open, Collaborative and Interoperable Government&quot; of the &quot;II Call for Intelligent Cities&quot; of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry.</rdfs:comment>
         <owl:versionInfo xml:lang="en">This is the initial version of the Traffic ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate.</owl:versionInfo>
-        <owl:versionInfo xml:lang="es">Versión 1.0 de la ontología de Autobús que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
+        <owl:versionInfo xml:lang="es">Versión 1.0 de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -128,6 +128,13 @@ The vocabulary has been divided into three main parts:
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/title -->
 
 
@@ -138,14 +145,9 @@ The vocabulary has been divided into three main parts:
     <!-- http://purl.org/dc/terms/created -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -207,6 +209,13 @@ The vocabulary has been divided into three main parts:
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -226,6 +235,13 @@ The vocabulary has been divided into three main parts:
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -235,6 +251,21 @@ The vocabulary has been divided into three main parts:
      -->
 
 
+    
+
+
+    <!-- http://schema.org/address -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/address">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"/>
+        <rdfs:comment xml:lang="es">La dirección de una Parada.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The address of a Stop Point</rdfs:comment>
+        <rdfs:label xml:lang="es">Dirección</rdfs:label>
+        <rdfs:label xml:lang="en">Has Address</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -258,10 +289,10 @@ The vocabulary has been divided into three main parts:
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea"/>
         <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
         <rdfs:comment xml:lang="es">Relación de una línea que está afectada por una incidencia.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship of a line affected by an incidence.</rdfs:comment>
+        <rdfs:domain></rdfs:domain>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus"/>
         <rdfs:label xml:lang="en">line affected by an incidence</rdfs:label>
         <rdfs:label xml:lang="es">línea afectada por incidencia</rdfs:label>
@@ -301,54 +332,34 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#generadoPorIncidencia -->
 
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion">
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#generadoPorIncidencia">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://www.opengis.net/spec/geosparql#Point"/>
-        <rdfs:comment xml:lang="en">Stop Point Location according to WGS84</rdfs:comment>
-        <rdfs:comment xml:lang="es">Ubicación de la Parada según coordenadas WGS84</rdfs:comment>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+        <rdfs:comment xml:lang="es">Relación de un patrón de viaje de una ruta que se ha creado por una incidencia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship of a JourneyPattern of a Route which has been created by an Incidence.</rdfs:comment>
         <rdfs:domain></rdfs:domain>
-        <rdfs:label xml:lang="en">Stop Point Location</rdfs:label>
-        <rdfs:label xml:lang="es">Ubicación Parada</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus"/>
+        <rdfs:label xml:lang="en">JourneyPattern generated by an Incidenceline affected by an incidence</rdfs:label>
+        <rdfs:label xml:lang="es">patrón de ruta generado por Incidencia</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/transmodel/commons#at -->
+    <!-- http://w3id.org/transmodel/journeys#aFunctionalCentroidFor -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/commons#at">
+    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#aFunctionalCentroidFor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#TimingPointInJourneyPattern"/>
-        <rdfs:comment xml:lang="es">la relación entre una frecuencia de paso y el punto de control.</rdfs:comment>
-        <rdfs:comment xml:lang="en">the relationship between a timetabled passing time and a timing point.</rdfs:comment>
-        <rdfs:label xml:lang="en">at</rdfs:label>
-        <rdfs:label xml:lang="es">en</rdfs:label>
+        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#Point"/>
+        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#Zone"/>
+        <rdfs:comment xml:lang="es">Esta propiedad permite la conexión de un Punto con una Zona.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property allows connecting a Point with a Zone.</rdfs:comment>
+        <rdfs:label xml:lang="es">Un centroide funcional para</rdfs:label>
+        <rdfs:label xml:lang="en">aFunctionalCentroidFor</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#aGenericDescriptionOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#aGenericDescriptionOf">
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#Place"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#ScheduledStopPoint"/>
-        <rdfs:comment xml:lang="es">Esta propiedad señala que un Lugar, que es la superclase de esautob:parada, es una descripción genérica de tanto una Parada Planificada como un Punto de Ruta.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property points out a Place, which is a super class of esautob:Parada, is a genericDescription of both a ScheduledStopPoint and of RoutePoint</rdfs:comment>
-        <rdfs:label xml:lang="en">A Generic Description</rdfs:label>
-        <rdfs:label xml:lang="es">Descripción Genérica</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#at -->
-
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#at"/>
     
 
 
@@ -376,21 +387,6 @@ The vocabulary has been divided into three main parts:
         <rdfs:comment xml:lang="en">This property sets the relationship between Service Calendar and Day Type Assignment</rdfs:comment>
         <rdfs:label xml:lang="en">defined By</rdfs:label>
         <rdfs:label xml:lang="es">definición por</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#describedBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#describedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#DayType"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#PropertyOfDay"/>
-        <rdfs:comment xml:lang="es">Relaciona un día tipo descrito por sus propiedades en Property of Day.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property asign a DayType to the specific Property of Day</rdfs:comment>
-        <rdfs:label xml:lang="en">described By</rdfs:label>
-        <rdfs:label xml:lang="es">descripción por</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -434,36 +430,6 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#endingAt -->
-
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#endingAt">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#OperatingPeriod"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#OperatingDay"/>
-        <rdfs:comment xml:lang="en">Property to connect an Operating Period to the related Operating Days, indicating when it ends</rdfs:comment>
-        <rdfs:comment xml:lang="es">endingAt conecta un Periodo Operativo a días operativos indicando cuándo termina.</rdfs:comment>
-        <rdfs:label xml:lang="en">ending at</rdfs:label>
-        <rdfs:label xml:lang="es">termina en</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#for -->
-
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#for">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#VehicleJourney"/>
-        <rdfs:comment xml:lang="en">A general property that allows associating a TimetabledPassingTime with a VehicleJourney.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una propiedad general que permite conectar una Hora de Paso Programada (TimetabledPassingTime) con el viaje de un vehículo (Vehicle Journey)es.</rdfs:comment>
-        <rdfs:label xml:lang="en">for</rdfs:label>
-        <rdfs:label xml:lang="es">para</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://w3id.org/transmodel/journeys#includedIn -->
 
 
@@ -472,7 +438,6 @@ The vocabulary has been divided into three main parts:
         <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#ScheduledStopPoint"/>
         <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#StopArea"/>
         <rdfs:comment xml:lang="en">A Scheduled Stop Point can be next to other Stop Points so they can be included in a Stop Area.</rdfs:comment>
-        <rdfs:comment xml:lang="es">CHECK, ToDo: por definir si esta zona de Paradas se llama así Stop Area o de otra manera.</rdfs:comment>
         <rdfs:comment xml:lang="es">Una Parada Programada (Scheduled Stop Point) puede estar próxima a otras por lo que pueden todas ellas formas parte de una zona de Paradas.</rdfs:comment>
         <rdfs:label xml:lang="en">Included In</rdfs:label>
         <rdfs:label xml:lang="es">Incluida en</rdfs:label>
@@ -485,11 +450,10 @@ The vocabulary has been divided into three main parts:
 
     <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#madeUpOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:comment xml:lang="es">CHECK, ToDo, hay que revisar si emplear propiedades más específicas para relacionar línea con ruta, ruta con puntos y ruta con viajes.</rdfs:comment>
         <rdfs:comment xml:lang="es">Relación entre entidades hechas de otras entidades.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship between entities made up of other entities</rdfs:comment>
+        <rdfs:label xml:lang="es">compuesto por</rdfs:label>
         <rdfs:label xml:lang="en">made Up Of</rdfs:label>
-        <rdfs:label xml:lang="es">se compone de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -509,17 +473,17 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#operatingPeriod -->
+    <!-- http://w3id.org/transmodel/journeys#on -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#operatingPeriod">
+    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#on">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#DayTypeAssignment"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#OperatingPeriod"/>
-        <rdfs:comment xml:lang="es">Periodo operativo asignado a un día tipo operativo</rdfs:comment>
-        <rdfs:comment xml:lang="en">operating period assigned to a Day Type Assignment</rdfs:comment>
-        <rdfs:label xml:lang="en">operating period</rdfs:label>
-        <rdfs:label xml:lang="es">periodo operativo</rdfs:label>
+        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#JourneyPattern"/>
+        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#Route"/>
+        <rdfs:comment xml:lang="es">Esta propiedad conecta el patrón de viaje con la ruta en la que trabaja.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property connects the JourneyPattern with the Route where it works</rdfs:comment>
+        <rdfs:label xml:lang="es">en</rdfs:label>
+        <rdfs:label xml:lang="en">on</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -532,7 +496,7 @@ The vocabulary has been divided into three main parts:
         <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#JourneyPattern"/>
         <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#DestinationDisplay"/>
         <rdfs:comment xml:lang="en">A Journey Pattern is prescribing a Destination Display</rdfs:comment>
-        <rdfs:comment xml:lang="en">Un Patrón de Viaje que anuncia su destino de alguna forma</rdfs:comment>
+        <rdfs:comment xml:lang="en">Un patrón de viaje que anuncia su destino de alguna forma</rdfs:comment>
         <rdfs:label xml:lang="es">Prescribe</rdfs:label>
         <rdfs:label xml:lang="en">Prescribing</rdfs:label>
     </owl:ObjectProperty>
@@ -564,20 +528,6 @@ The vocabulary has been divided into three main parts:
         <rdfs:comment xml:lang="en">The assignment of operational characteristics, expressed by DayType, to a particular OperatingDay within a ServiceCalendar</rdfs:comment>
         <rdfs:label xml:lang="es">especifica</rdfs:label>
         <rdfs:label xml:lang="en">specifying</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#startingAt -->
-
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#startingAt">
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#OperatingPeriod"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#OperatingDay"/>
-        <rdfs:comment xml:lang="en">Property to connect an Operating Period to the related Operating Days, indicating when it starts</rdfs:comment>
-        <rdfs:comment xml:lang="es">startingAt conecta un Periodo Operativo con un Día Operativo indicando cuándo comienza.</rdfs:comment>
-        <rdfs:label xml:lang="es">empieza en</rdfs:label>
-        <rdfs:label xml:lang="en">starting At</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -638,21 +588,6 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#within -->
-
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#within">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#ServiceCalendar"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#OperatingPeriod"/>
-        <rdfs:comment xml:lang="es">Esta propiedad establece la relación entre un Calendario de Servicio y un Periodo Operativo.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property sets the relationship between Vehicle Journey and Day Type.</rdfs:comment>
-        <rdfs:label xml:lang="es">dentro de</rdfs:label>
-        <rdfs:label xml:lang="en">within</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://w3id.org/transmodel/journeys#workedOn -->
 
 
@@ -684,22 +619,6 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/organisations#managing -->
-
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/organisations#managing">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/organisations#Authority"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#JourneyPattern"/>
-        <rdfs:comment xml:lang="es">CHECK, ToDo, Propiedad inversa del original de transmodel madeUpOf. También hay que revisar si emplear propiedades más específicas para relacionar línea con ruta, ruta con puntos y ruta con viajes.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Relación entre la autoridad de transporte y los patrones de viaje.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship between Transport Authority and Journey Patterns</rdfs:comment>
-        <rdfs:label xml:lang="es">Gestionando</rdfs:label>
-        <rdfs:label xml:lang="en">Managing</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://w3id.org/transmodel/organisations#operating -->
 
 
@@ -715,16 +634,16 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/organisations#servingPTFrom -->
+    <!-- http://w3id.org/transmodel/organisations#servingPTFor -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/organisations#servingPTFrom">
+    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/organisations#servingPTFor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/transmodel/organisations#Operator"/>
         <rdfs:range rdf:resource="http://w3id.org/transmodel/organisations#Authority"/>
-        <rdfs:comment xml:lang="es">Esta propiedad indica para qué Autoridad está trabajando la Operadora.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Esta propiedad indica para qué Autoridad está trabajando la entidad operadora.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property points out for with Authority is working for the Operator</rdfs:comment>
-        <rdfs:label xml:lang="en">Serving Public Transport From</rdfs:label>
+        <rdfs:label xml:lang="en">Serving Public Transport For</rdfs:label>
         <rdfs:label xml:lang="es">Sirve el Transporte Público para</rdfs:label>
     </owl:ObjectProperty>
     
@@ -745,17 +664,62 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://www.w3.org/2006/vcard#hasAddress -->
+    <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard#hasAddress">
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"/>
-        <rdfs:comment xml:lang="es">La dirección de una Parada.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The address of a Stop Point</rdfs:comment>
-        <rdfs:label xml:lang="es">Dirección</rdfs:label>
-        <rdfs:label xml:lang="en">Has Address</rdfs:label>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#RealTimePassingTime"/>
+        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#PointInLinkSequence"/>
+        <rdfs:comment xml:lang="es">La observación esautob:RealTimePassingTime aparece en tmjourney:PointInLinkSequence.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Observation esautob:RealTimePassingTime has a feature of Interest which is tmjourney:PointInLinkSequece</rdfs:comment>
+        <rdfs:label xml:lang="es">Aparece en</rdfs:label>
+        <rdfs:label xml:lang="en">has Feature Of Interest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/madeBySensor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
+        <rdfs:comment xml:lang="en">Relación entre una Observación y un Sensor que realiza la Observación.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Relation between an Observation and the Sensor which made the Observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">made by sensor</rdfs:label>
+        <rdfs:label xml:lang="es">realizada por sensor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/observedProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
+        <rdfs:comment xml:lang="es">Relación que enlaza la propiedad que se observa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">observed property</rdfs:label>
+        <rdfs:label xml:lang="es">propiedad observada</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/observes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
+        <rdfs:comment xml:lang="es">Relación entre un Sensor y una Propiedad Observada que es capaz de obtener observaciones.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="es">Observa</rdfs:label>
+        <rdfs:label xml:lang="en">observes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -772,6 +736,13 @@ The vocabulary has been divided into three main parts:
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/description -->
 
 
@@ -780,9 +751,9 @@ The vocabulary has been divided into three main parts:
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
+                    <rdf:Description rdf:about="http://w3id.org/transmodel/commons#Zone"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#DayType"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#DayTypeAssignment"/>
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#PropertyOfDay"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#Route"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#ServiceCalendar"/>
                 </owl:unionOf>
@@ -806,15 +777,13 @@ The vocabulary has been divided into three main parts:
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
+                    <rdf:Description rdf:about="http://w3id.org/transmodel/commons#Zone"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#DayType"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#DayTypeAssignment"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#HeadwayInterval"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#LinkSequence"/>
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#OperatingDay"/>
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#OperatingPeriod"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#PointInLinkSequence"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#StopArea"/>
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#VehicleJourney"/>
                 </owl:unionOf>
             </owl:Class>
@@ -913,11 +882,10 @@ The vocabulary has been divided into three main parts:
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
+                    <rdf:Description rdf:about="http://w3id.org/transmodel/commons#Zone"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#DayType"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#Line"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#LinkSequence"/>
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#OperatingDay"/>
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#OperatingPeriod"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#ServiceCalendar"/>
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#StopArea"/>
                 </owl:unionOf>
@@ -987,6 +955,21 @@ The vocabulary has been divided into three main parts:
     
 
 
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#expectedArrivalTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#expectedArrivalTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#RealTimePassingTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <rdfs:comment xml:lang="en">Expecected arrival time of a Bus at a Stop Place, esautob:RealTimePassingTime.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tiempo de llegada prevista para un autobús en una parada, duración de esautob:RealTimePassingTime</rdfs:comment>
+        <rdfs:label xml:lang="en">Expected Arrival Time</rdfs:label>
+        <rdfs:label xml:lang="es">Tiempo de llegada previsto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#panelElectronico -->
 
 
@@ -1022,10 +1005,10 @@ The vocabulary has been divided into three main parts:
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#zona">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The Stop Place is part of a Zone.</rdfs:comment>
         <rdfs:comment xml:lang="es">Zona a la que pertenece la Parada.</rdfs:comment>
+        <rdfs:domain></rdfs:domain>
         <rdfs:label xml:lang="es">Zona</rdfs:label>
         <rdfs:label xml:lang="en">Zone</rdfs:label>
     </owl:DatatypeProperty>
@@ -1133,7 +1116,6 @@ The vocabulary has been divided into three main parts:
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#Line"/>
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#OperatingDay"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -1160,36 +1142,6 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#arrivalTime -->
-
-
-    <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#arrivalTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Arrival time scheduled at a Timing Point in Journey Pattern expressed as a property in TimetabledPassingTime.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Hora de llegada programada en un Punto de control de un Viaje expresada como propiedad en TimetabledPassingTime.</rdfs:comment>
-        <rdfs:label xml:lang="en">Arrival Time</rdfs:label>
-        <rdfs:label xml:lang="es">Hora de llegada</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#calendarDate -->
-
-
-    <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#calendarDate">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#OperatingDay"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Calendar Date of a Operating Day.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Fecha de calendario para un Día Operativo.</rdfs:comment>
-        <rdfs:label xml:lang="en">Calendar Date</rdfs:label>
-        <rdfs:label xml:lang="es">Fecha de calendario</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://w3id.org/transmodel/journeys#date -->
 
 
@@ -1205,34 +1157,12 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#dayLength -->
-
-
-    <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#dayLength">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#OperatingDay"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Day Length for a Operating Day.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Duración de un Día Operativo.</rdfs:comment>
-        <rdfs:label xml:lang="en">Day Length</rdfs:label>
-        <rdfs:label xml:lang="es">Duración de un día</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://w3id.org/transmodel/journeys#departureTime -->
 
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#departureTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
-                    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#VehicleJourney"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#VehicleJourney"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Departure time scheduled for a Vehicle Journey.</rdfs:comment>
         <rdfs:comment xml:lang="es">Hora de salida programada del viaje de un vehículo.</rdfs:comment>
@@ -1272,30 +1202,15 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#earliestDepartureTime -->
-
-
-    <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#earliestDepartureTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Earliest Departure Time at a Timing Point in Journey Pattern expressed as a property in TimetabledPassingTime.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Hora de salida más temprana programada en un Punto de control de un Viaje expresada como propiedad en TimetabledPassingTime.</rdfs:comment>
-        <rdfs:label xml:lang="en">Earliest Departure Time</rdfs:label>
-        <rdfs:label xml:lang="es">Hora de salida más temprana</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://w3id.org/transmodel/journeys#earliestTime -->
 
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#earliestTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#OperatingDay"/>
+        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#DayType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Earliest Time for a Operating Day.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Hora más temprana programada para un Día Operativo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Earliest time for the beginning of a service a certain Day Type.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Hora más temprana para el inicio de un servicio un cierto día tipo.</rdfs:comment>
         <rdfs:label xml:lang="en">Earliest Time</rdfs:label>
         <rdfs:label xml:lang="es">Hora más temprana</rdfs:label>
     </owl:DatatypeProperty>
@@ -1310,7 +1225,7 @@ The vocabulary has been divided into three main parts:
         <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#HeadwayJourneyGroup"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="es">La hora de inicio de un Viaje de un Vehículo.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The time of begining of a Vehicle Journey.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The time of beginning of a Vehicle Journey.</rdfs:comment>
         <rdfs:label xml:lang="en">First departure time</rdfs:label>
         <rdfs:label xml:lang="es">Primera hora de salida</rdfs:label>
     </owl:DatatypeProperty>
@@ -1322,7 +1237,7 @@ The vocabulary has been divided into three main parts:
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#forAlighting">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#StopPointInJourneyPattern"/>
+        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#ScheduledStopPoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="es">Esta propiedad indica si la parada se puede usar para bajarse o no.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property allows describing whether the stop may be used for alighting.</rdfs:comment>
@@ -1337,11 +1252,27 @@ The vocabulary has been divided into three main parts:
 
     <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#forBoarding">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#StopPointInJourneyPattern"/>
+        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#ScheduledStopPoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="es">Esta propiedad indica si se puede montar en la parada.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property allows describing whether the stop may be used for boarding</rdfs:comment>
         <rdfs:label xml:lang="en">for Boarding</rdfs:label>
+        <rdfs:label xml:lang="es">para subirse</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/transmodel/journeys#from -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#from">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#ServiceCalendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="es">Esta propiedad permite describir el inicio de un calendario de servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property allows describing the beginning of a Service Calendar</rdfs:comment>
+        <rdfs:label xml:lang="es">desde</rdfs:label>
+        <rdfs:label xml:lang="en">from</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1420,21 +1351,6 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#latestArrivalTime -->
-
-
-    <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#latestArrivalTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">Latest Arrival Time at a Timing Point in Journey Pattern expressed as a property in TimetabledPassingTime.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Última hora de llegada programada en un Punto de control de un Viaje expresada como propiedad en TimetabledPassingTime.</rdfs:comment>
-        <rdfs:label xml:lang="en">Lastest Arrival Time</rdfs:label>
-        <rdfs:label xml:lang="es">Última hora de llegada</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://w3id.org/transmodel/journeys#maximumHeadwayInterval -->
 
 
@@ -1495,17 +1411,86 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#waitingTime -->
+    <!-- http://w3id.org/transmodel/journeys#to -->
 
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#waitingTime">
+    <owl:DatatypeProperty rdf:about="http://w3id.org/transmodel/journeys#to">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
+        <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#ServiceCalendar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="es">Esta propiedad permite describir el fin de un calendario de servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property allows describing the end of a Service Calendar</rdfs:comment>
+        <rdfs:label xml:lang="es">hasta</rdfs:label>
+        <rdfs:label xml:lang="en">to</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="es">Latitud en WGS84</rdfs:comment>
+        <rdfs:comment xml:lang="en">Latitude in WGS84</rdfs:comment>
+        <rdfs:label>latitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="es">Longitud en WGS84</rdfs:comment>
+        <rdfs:comment xml:lang="en">Longitude in WGS84</rdfs:comment>
+        <rdfs:label>longitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/resultTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/resultTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#RealTimePassingTime"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="es">Tiempo de espera programado en un Punto de control de un Viaje expresada como propiedad en TimetabledPassingTime.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Waiting Time at a Timing Point in Journey Pattern expressed as a property in TimetabledPassingTime.</rdfs:comment>
-        <rdfs:label xml:lang="es">Tiempo de espera</rdfs:label>
-        <rdfs:label xml:lang="en">Waiting Time</rdfs:label>
+        <rdfs:comment xml:lang="es">Esta propiedad establece la fecha/hora de la observación.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property sets the dateTime of the observation</rdfs:comment>
+        <rdfs:label xml:lang="es">Hora Observación</rdfs:label>
+        <rdfs:label xml:lang="en">Phenomenon Time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://datos.ign.es/def/geo_core#xETRS89 -->
+
+
+    <owl:DatatypeProperty rdf:about="https://datos.ign.es/def/geo_core#xETRS89">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
+        <rdfs:comment xml:lang="es">Coordenada X en metros (ETRS89)</rdfs:comment>
+        <rdfs:comment xml:lang="en">X-Coordinate in meters (ETRS89)</rdfs:comment>
+        <rdfs:label>xETRS89</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://datos.ign.es/def/geo_core#yETRS89 -->
+
+
+    <owl:DatatypeProperty rdf:about="https://datos.ign.es/def/geo_core#yETRS89">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
+        <rdfs:comment xml:lang="es">Coordenada Y en metros (ETRS89)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Y-Coordinate in meters (ETRS89)</rdfs:comment>
+        <rdfs:label>yETRS89</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1539,6 +1524,7 @@ The vocabulary has been divided into three main parts:
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea">
         <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/journeys#Line"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/transmodel/journeys#JourneyPattern"/>
         <rdfs:comment xml:lang="en">Line of the public transport service of urban buses</rdfs:comment>
         <rdfs:comment xml:lang="es">Línea del servicio público de transporte de autobuses urbanos</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus"/>
@@ -1552,7 +1538,9 @@ The vocabulary has been divided into three main parts:
 
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/journeys#Place"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/commons#Place"/>
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <owl:disjointWith rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
         <rdfs:comment xml:lang="en">A Stop of the public transport service of urban buses</rdfs:comment>
         <rdfs:comment xml:lang="es">Una parada del servicio público de transporte de autobuses urbanos.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
@@ -1562,11 +1550,11 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal -->
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#RealTimePassingTime -->
 
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#TiempoEsperaReal">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#RealTimePassingTime">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:comment xml:lang="es">Tiempo de espera actualizado</rdfs:comment>
         <rdfs:comment xml:lang="en">Waiting time up to date</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
@@ -1576,10 +1564,19 @@ The vocabulary has been divided into three main parts:
     
 
 
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico -->
+
+
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
+    
+
+
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia -->
 
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <owl:disjointWith rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Parada"/>
         <rdfs:comment xml:lang="en">Incidence in the traffic system of a city</rdfs:comment>
         <rdfs:comment xml:lang="es">Incidencia que ocurre en el sistema de tráfico de una ciudad</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
@@ -1603,14 +1600,48 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal -->
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico -->
 
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#Parada -->
+
+
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Parada"/>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico -->
+
+
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal -->
+
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">
         <rdfs:comment xml:lang="en">A postal address according to the esdir vocabulary.</rdfs:comment>
         <rdfs:comment xml:lang="es">Una dirección postal según el vocabulario esdir.</rdfs:comment>
         <rdfs:label xml:lang="es">Dirección postal</rdfs:label>
         <rdfs:label xml:lang="en">Postal Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/transmodel/commons#Place -->
+
+
+    <owl:Class rdf:about="http://w3id.org/transmodel/commons#Place">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/commons#Zone"/>
+        <rdfs:comment xml:lang="en">A geographic Place of any type which may be specified as the origin or destination of a Trip. A Place may be represented as a Point (dimension 0), a Road section (dimension 1) or a Zone (dimension 2)</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un lugar geográfico de cualquier tipo que puede usarse como el origen o el destino de un Viaje. Debe representarse por un Punto (dimensión 0 en topología), una ruta (una dimensión en topología) o una zona (dos dimensiones en topología).</rdfs:comment>
+        <rdfs:label xml:lang="es">Lugar</rdfs:label>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
     </owl:Class>
     
 
@@ -1635,6 +1666,18 @@ The vocabulary has been divided into three main parts:
         <rdfs:comment xml:lang="en">This class is used to represent a Line, or any other object, in a map</rdfs:comment>
         <rdfs:label xml:lang="es">Presentación</rdfs:label>
         <rdfs:label xml:lang="en">Presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/transmodel/commons#Zone -->
+
+
+    <owl:Class rdf:about="http://w3id.org/transmodel/commons#Zone">
+        <rdfs:comment xml:lang="en">A two-dimensional PLACE within the service area of a public transport operator (administrative zone, TARIFF ZONE, ACCESS ZONE, etc.).</rdfs:comment>
+        <rdfs:comment xml:lang="es">La Zona es un Lugar (Place) de dos dimensiones que ese encuentra en el área que sirve un operador de transporte público. Puede ser una zona administrativa, una zona tarifaria, una zona de acceso o algo más concreto.</rdfs:comment>
+        <rdfs:label xml:lang="es">Zona</rdfs:label>
+        <rdfs:label xml:lang="en">Zone</rdfs:label>
     </owl:Class>
     
 
@@ -1748,54 +1791,6 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://w3id.org/transmodel/journeys#OperatingDay -->
-
-
-    <owl:Class rdf:about="http://w3id.org/transmodel/journeys#OperatingDay">
-        <rdfs:comment xml:lang="en">A day of public transport operation of which the characteristics are defined within in a specific ServiceCalendar. An OperatingDay may last more than 24 hours.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un día operativo del transporte públicos con las características que se definen en el Calendario de Servicio. Un día operativo puede durar más de 24 horas.</rdfs:comment>
-        <rdfs:label xml:lang="es">Día operativo</rdfs:label>
-        <rdfs:label xml:lang="en">Operating Day</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#OperatingPeriod -->
-
-
-    <owl:Class rdf:about="http://w3id.org/transmodel/journeys#OperatingPeriod">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/transmodel/journeys#endingAt"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/transmodel/journeys#OperatingDay"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/transmodel/journeys#startingAt"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/transmodel/journeys#OperatingDay"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A continuous interval of time between two Operating Day which will be used to define validities</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un periodo de tiempo entre dos días operativos que servirán para definir validaciones del servicio.</rdfs:comment>
-        <rdfs:label xml:lang="en">Operating Period</rdfs:label>
-        <rdfs:label xml:lang="es">Periodo operativo</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#Place -->
-
-
-    <owl:Class rdf:about="http://w3id.org/transmodel/journeys#Place">
-        <rdfs:comment xml:lang="en">A geographic Place of any type which may be specified as the origin or destination of a Trip. A Place may be represented as a Point (dimension 0), a Road section (dimension 1) or a Zone (dimension 2)</rdfs:comment>
-        <rdfs:comment xml:lang="es">Un lugar geográfico de cualquier tipo que puede usarse como el origen o el destino de un Viaje. Debe representarse por un Punto (dimensión 0 en topología), una ruta (una dimensión en topología) o una zona (dos dimensiones en topología).</rdfs:comment>
-        <rdfs:label xml:lang="es">Lugar</rdfs:label>
-        <rdfs:label xml:lang="en">Place</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/transmodel/journeys#Point -->
 
 
@@ -1813,12 +1808,6 @@ The vocabulary has been divided into three main parts:
 
     <owl:Class rdf:about="http://w3id.org/transmodel/journeys#PointInJourneyPattern">
         <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/journeys#PointInLinkSequence"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/transmodel/journeys#at"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/transmodel/journeys#TimetabledPassingTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/transmodel/journeys#prescribing"/>
@@ -1875,18 +1864,6 @@ The vocabulary has been divided into three main parts:
         <rdfs:comment xml:lang="es">Un Punto de Ruta se usa para definir una Ruta con su orden en esa Ruta.</rdfs:comment>
         <rdfs:label xml:lang="en">Point on Route</rdfs:label>
         <rdfs:label xml:lang="es">Punto en la ruta</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#PropertyOfDay -->
-
-
-    <owl:Class rdf:about="http://w3id.org/transmodel/journeys#PropertyOfDay">
-        <rdfs:comment xml:lang="en">A property which a day may possess, such as school holiday, weekday, summer, winter, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Una propiedad que puede tener un día para identificarlo: vacaciones de verano, día de la semana, día de verano, etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">Property Of Day</rdfs:label>
-        <rdfs:label xml:lang="es">Propiedad de Día</rdfs:label>
     </owl:Class>
     
 
@@ -1962,9 +1939,8 @@ The vocabulary has been divided into three main parts:
 
 
     <owl:Class rdf:about="http://w3id.org/transmodel/journeys#StopArea">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/journeys#Place"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/transmodel/commons#Place"/>
         <rdfs:comment xml:lang="en">A group of Scheduled Stop Points close to each other</rdfs:comment>
-        <rdfs:comment xml:lang="es">CHECK, ToDo: revisar sus relaciones con estación, stop place, etc.</rdfs:comment>
         <rdfs:comment xml:lang="es">Un grupo de Paradas que están próximas entre sí.</rdfs:comment>
         <rdfs:label xml:lang="es">Paradas</rdfs:label>
         <rdfs:label xml:lang="en">Stop Area</rdfs:label>
@@ -1981,18 +1957,6 @@ The vocabulary has been divided into three main parts:
         <rdfs:comment xml:lang="es">Un Punto en el Patrón de Viaje que se ve como una Parada Planificada</rdfs:comment>
         <rdfs:label xml:lang="es">Parada en Patrón de Viaje</rdfs:label>
         <rdfs:label xml:lang="en">Stop Point In Journey Pattern</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/transmodel/journeys#TimetabledPassingTime -->
-
-
-    <owl:Class rdf:about="http://w3id.org/transmodel/journeys#TimetabledPassingTime">
-        <rdfs:comment xml:lang="en">Long-term planned time data concerning public transport vehicles passing a particular POINT IN JOURNEY PATTERN on a specified VEHICLE JOURNEY for a certain DAY TYPE</rdfs:comment>
-        <rdfs:comment xml:lang="es">Tiempo de paso de los vehículos de transporte público en un punto del patrón de viaje para un viaje ve un vehículo concreto en un cierto día tipo</rdfs:comment>
-        <rdfs:label xml:lang="es">Tiempo de paso estipulado</rdfs:label>
-        <rdfs:label xml:lang="en">Timetabled Passing Time</rdfs:label>
     </owl:Class>
     
 
@@ -2020,6 +1984,13 @@ The vocabulary has been divided into three main parts:
         <rdfs:label xml:lang="en">VehicleJourney</rdfs:label>
         <rdfs:label xml:lang="es">Viaje de un vehículo</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://w3id.org/transmodel/journeys#Zone -->
+
+
+    <owl:Class rdf:about="http://w3id.org/transmodel/journeys#Zone"/>
     
 
 
@@ -2078,23 +2049,25 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://www.opengis.net/spec/geosparql#Feature -->
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
 
 
-    <owl:Class rdf:about="http://www.opengis.net/spec/geosparql#Feature">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/spec/geosparql#SpatialObject"/>
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:comment xml:lang="es">Esta clase representa una característica de alto nivel, equivalente a GFI_Feature definida en ISP 19156 y es una supercale para todos los tipos de características espaciales.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156, and it is superclass of all feature types.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql"/>
+        <rdfs:label xml:lang="es">Característica geográfica</rdfs:label>
         <rdfs:label xml:lang="en">Feature</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.opengis.net/spec/geosparql#Geometry -->
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
 
 
-    <owl:Class rdf:about="http://www.opengis.net/spec/geosparql#Geometry">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/spec/geosparql#SpatialObject"/>
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <rdfs:comment xml:lang="es">Esta clase representa el tipo de geometría de alto nivel. Es equivalente a GFI_Geometry definida en ISO 19156 y es superclase de todos los tipos geométricos.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the top-level geometry type. This class is equivalent to GFI_Geometry defined in ISO 19156, and it is superclass of all geometry types.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql"/>
@@ -2104,29 +2077,29 @@ The vocabulary has been divided into three main parts:
     
 
 
-    <!-- http://www.opengis.net/spec/geosparql#Point -->
+    <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
 
 
-    <owl:Class rdf:about="http://www.opengis.net/spec/geosparql#Point">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/spec/geosparql#Geometry"/>
-        <rdfs:comment xml:lang="es">Se representa un tipo de punto de alto nivel. Esta clase es equivalente a GFI_Point definida en ISO 19156 y es superclase de todos los tipos de puntos.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This class represents the top-level point type. This class is equivalent to GFI_Point defined in ISO 19156, and it is superclass of all point types.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql"/>
-        <rdfs:label xml:lang="en">Geosparql Point</rdfs:label>
-        <rdfs:label xml:lang="es">Punto Geosparql</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.opengis.net/spec/geosparql#SpatialObject -->
-
-
-    <owl:Class rdf:about="http://www.opengis.net/spec/geosparql#SpatialObject">
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject">
         <rdfs:comment xml:lang="es">Esta clase representa un tipo de objeto espacial de alto nivel. Es equivalente a GFI SpatialObject difinido en ISO 19156 y es una superclase de todos los tipos de objetos espaciales.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents the top-level spatial object type. This class is equivalent to GFI_SpatialObject defined in ISO 19156, and it is superclass of all spatial object types.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql"/>
         <rdfs:label xml:lang="es">Objeto Espacial</rdfs:label>
-        <rdfs:label xml:lang="en">SpatialObject</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/sf#Point -->
+
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/sf#Point">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <rdfs:comment xml:lang="es">Se representa un tipo de punto de alto nivel. Esta clase es equivalente a GFI_Point definida en ISO 19156 y es superclase de todos los tipos de puntos.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the top-level point type. This 	class is equivalent to GFI_Point defined in ISO 19156, and it is superclass of all point types.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
+        <rdfs:label xml:lang="en">Geographic Point</rdfs:label>
+        <rdfs:label xml:lang="es">Punto geográfico</rdfs:label>
     </owl:Class>
     
 
@@ -2139,7 +2112,9 @@ The vocabulary has been divided into three main parts:
         <terms:issued>2004-02-xx</terms:issued>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
-        <skos:definition>An abstract idea or notion; a unit of thought.</skos:definition>
+        <rdfs:label xml:lang="es">Concepto</rdfs:label>
+        <skos:definition xml:lang="en">An abstract idea or notion; a unit of thought.</skos:definition>
+        <skos:definition xml:lang="es">Una idea o noción abstracta; una unidad de pensamiento.</skos:definition>
     </owl:Class>
     
 
@@ -2151,8 +2126,10 @@ The vocabulary has been divided into three main parts:
         <terms:issued>2004-02-xx</terms:issued>
         <rdfs:comment xml:lang="en">A concept scheme may be defined to include concepts from different sources.</rdfs:comment>
         <rdfs:comment xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un esquema de conceptos definido para incluir conceptos de distintas fuentes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
         <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <rdfs:label xml:lang="es">Esquema de conceptos</rdfs:label>
         <skos:definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</skos:definition>
     </owl:Class>
     
@@ -2166,6 +2143,58 @@ The vocabulary has been divided into three main parts:
         <rdfs:comment xml:lang="en">Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_</rdfs:comment>
         <rdfs:label xml:lang="es">Organización</rdfs:label>
         <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <rdfs:comment xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">Feature Of Interest</rdfs:label>
+        <skos:definition xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</skos:definition>
+        <skos:example xml:lang="en">When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
+        <rdfs:comment xml:lang="en">An observable quality (property, characteristic) of a FeatureOfInterest.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">Observable Property</rdfs:label>
+        <skos:definition xml:lang="en">An observable quality (property, characteristic) of a FeatureOfInterest.</skos:definition>
+        <skos:example xml:lang="en">The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation">
+        <rdfs:comment xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+        <skos:definition xml:lang="en">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</skos:definition>
+        <skos:example xml:lang="en">The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <rdfs:comment xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</skos:definition>
+        <skos:example xml:lang="en">Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.</skos:example>
     </owl:Class>
     
 
@@ -2232,6 +2261,19 @@ The vocabulary has been divided into three main parts:
     
 
 
+    <!-- http://w3id.org/transmodel/kos/journeys/stop-use-type/ -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/transmodel/kos/journeys/stop-use-type/">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="es">Tipo de parada en el viaje de un vehículo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of stop in a vehicle journey.</rdfs:comment>
+        <rdfs:label xml:lang="es">tipo de parada</rdfs:label>
+        <rdfs:label xml:lang="en">type of stop</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2241,6 +2283,13 @@ The vocabulary has been divided into three main parts:
      -->
 
 
+    <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Fecha de creación del recurso.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="es">Creado</rdfs:label>
+        <rdfs:label xml:lang="en">Created</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
@@ -2251,6 +2300,6 @@ The vocabulary has been divided into three main parts:
 
 
 
-<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 

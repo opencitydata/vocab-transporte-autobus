@@ -1,6 +1,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
 <http://vocab.ciudadesabiertas.es/def/transporte/autobus/1.0.0> a prov:Entity;
 	 dc:title "Vocabulario para la representación de datos sobre el transporte público urbano de autobuses.";
 	 prov:wasAttributedTo :agent0;

@@ -10,15 +10,16 @@
 	 xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
 	 xmlns:geocore="https://datos.ign.es/def/geo_core#"
 	 xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+	 xmlns:org="http://www.w3.org/ns/org#"
 	 xmlns:owl="http://www.w3.org/2002/07/owl#"
 	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	 xmlns:schema="http://schema.org"
+	 xmlns:sf="http://www.opengis.net/ont/sf#"
 	 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 	 xmlns:sosa="http://w3.org/ns/sosa"
 	 xmlns:tmcommons="http://w3id.org/transmodel/commons#"
 	 xmlns:tmjourney="http://w3id.org/transmodel/journeys#"
-	 xmlns:tmkos="http://w3id.org/transmodel/kos/"
 	 xmlns:tmkoscommons="http://w3id.org/transmodel/kos/commons/"
 	 xmlns:tmkosjourney="http://w3id.org/transmodel/kos/journeys/"
 	 xmlns:tmorg="http://w3id.org/transmodel/organisations#"
@@ -45,28 +46,29 @@
         <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
         <dc:title xml:lang="es">Vocabulario para la representación de datos sobre el transporte público urbano de autobuses.</dc:title>
         <dc:title xml:lang="en">Vocabulary for the representation of data on public transport by bus.</dc:title>
-	<dc:description xml:lang="es" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Este vocabulario está siendo desarrollado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" de la "II Convocatoria de Ciudades Inteligentes" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</dc:description>
+	<dc:description xml:lang="es"
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" de la "II Convocatoria de Ciudades Inteligentes" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</dc:description>
 	<dc:description xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This vocabulary is being developed in the context of the action on open data of the project "Platform of Open, Collaborative and Interoperable Government" of the "II Call for Intelligent Cities" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry.</dc:description>
-	<dc:abstract xml:lang="es" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El vocabulario de Autobús trabaja con el estándar europeo TransModel (EN 12896 realizado por el CEN, Comité Europeo de Normalización) que ha sido adoptado por el reglamento europeo 2017/1926 y que sigue la directiva europea sobre servicios inteligentes de transporte (Directiva 2010/40/UE sobre ITS,Intelligent Transport System).
-Desde diciembre de 2019 este reglamento ha entrado en vigor y dictamina que cualquier operador o autoridad de transporte europea debe ofrecer sus datos en formatos compatibles con Transmodel.
-Esta ontología se basa en el trabajo previo realizado durante el proyecto SNAP (snap-project.eu) donde se realizó una primera versión de la ontología transmodel.
-En general se han reusado los siguientes conceptos de Transmodel: Operador, Autoridad, Línea, Ruta, Puntos en una Ruta, Patrón de Viaje, Puntos en un Patrón de Viaje, Parada, Viaje asociado a un Patrón de Viaje, Horarios y Frecuencias de un Viaje y Calendario de Servicio.
-Este vocabulario realiza otras relaciones: con el concepto de Incidencia que se ha desarrollado en el vocabulario de Tráfico del mismo proyecto de Ciudades Abiertas; con el vocabularios de Dirección Postal; con geosparql para la representación geográfica.
+	<dc:abstract xml:lang="es" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" de la "II Convocatoria de Ciudades Inteligentes" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.
+	El vocabulario de Autobús trabaja con el estándar europeo TransModel (EN 12896 realizado por el CEN, Comité Europeo de Normalización) que ha sido adoptado por el reglamento europeo 2017/1926 y que sigue la directiva europea sobre servicios inteligentes de transporte (Directiva 2010/40/UE sobre ITS,Intelligent Transport System).
+	Desde diciembre de 2019 este reglamento ha entrado en vigor y dictamina que cualquier operador o autoridad de transporte europea debe ofrecer sus datos en formatos compatibles con Transmodel.
+	Esta ontología se basa en el trabajo previo realizado durante el proyecto SNAP (snap-project.eu) donde se realizó una primera versión de la ontología transmodel.
+	En general se han reusado los siguientes conceptos de Transmodel: Operador, Autoridad, Línea, Ruta, Puntos en una Ruta, Patrón de Viaje, Puntos en un Patrón de Viaje, Parada, Viaje asociado a un Patrón de Viaje, Horarios y Frecuencias de un Viaje y Calendario de Servicio.
+	Este vocabulario realiza otras relaciones: con el concepto de Incidencia que se ha desarrollado en el vocabulario de Tráfico del mismo proyecto de Ciudades Abiertas; con el vocabularios de Dirección Postal; con geosparql para la representación geográfica.
 El vocabulario se ha dividido en tres grandes partes:
 - Organizaciones (autoridad y operador) y sus líneas
 - Rutas y puntos de las mismas, incluidas las paradas.
-- Viajes y patrones de viaje
-</dc:abstract>
-<dc:abstract xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bus Vocabulary works with the European standard TransModel (EN 12896 made by CEN, European Committee for Standardization) which has been adopted by the European regulation 2017/1926 and follows the European directive on intelligent transport services (Directive 2010/40/EU on ITS,Intelligent Transport System).
-Since December 2019 this regulation has come into force and dictates that any European operator or transport authority must offer its data in formats compatible with Transmodel.
-This ontology is based on the previous work carried out during the SNAP project (snap-project.eu) where a first version of the Transmodel ontology was developed.
-In general, the following Transmodel concepts have been reused: Operator, Authority, Line, Route, Points on a Route, Trip Pattern, Points on a Trip Pattern, Stop, Trip associated to a Trip Pattern, Timetables and Frequencies of a Trip and Service Calendar.
-This vocabulary makes other relations: with the concept of Incidence that has been developed in the Traffic vocabulary of the same Open Cities project; with the Postal Address vocabulary; with geosparql for the geographical representation.
+- Viajes y patrones de viaje</dc:abstract>
+<dc:abstract xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This vocabulary has been developed in the context of the action on open data of the project "Platform of Open, Collaborative and Interoperable Government" of the "II Call for Intelligent Cities" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry.
+	The Bus Vocabulary works with the European standard TransModel (EN 12896 made by the CEN, European Committee for Standardization) which has been adopted by the European regulation 2017/1926 and which follows the European directive on intelligent transport services (Directive 2010/40/EU on ITS,Intelligent Transport System).
+	Since December 2019 this regulation has come into force and dictates that any European operator or transport authority must offer its data in formats compatible with Transmodel.
+	This ontology is based on the previous work carried out during the SNAP project (snap-project.eu) where a first version of the Transmodel ontology was developed.
+	In general, the following Transmodel concepts have been reused: Operator, Authority, Line, Route, Points on a Route, Trip Pattern, Points on a Trip Pattern, Stop, Trip associated to a Trip Pattern, Timetables and Frequencies of a Trip and Service Calendar.
+	This vocabulary makes other relations: with the concept of Incidence that has been developed in the Traffic vocabulary of the same Open Cities project; with the Postal Address vocabulary; with geosparql for the geographical representation.
 The vocabulary has been divided into three main parts:
-- Organizations (authority and operator) and their lines.
+- Organizations (authority and operator) and their lines
 - Routes and points thereof, including stops.
-- Journeys and travel patterns.
-	</dc:abstract>
+- Journeys and travel patterns.</dc:abstract>
 	<vann:preferredNamespacePrefix>esautob</vann:preferredNamespacePrefix>
 	<vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#"/>
 	<dct:publisher xml:lang="es">Ontology Engineering Group - Universidad Politécnica de Madrid</dct:publisher>
@@ -75,8 +77,8 @@ The vocabulary has been divided into three main parts:
 	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-05</dct:created>
         <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-07</dct:issued>
         <dct:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</dct:license>
-        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos propuestos en las reuniones del grupo.</rdfs:comment>
-	<rdfs:comment xml:lang="en">This version has been generated within the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts proposed at the group's meetings.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto "Plataforma de Gobierno Abierto, Colaborativa e Interoperable" de la "II Convocatoria de Ciudades Inteligentes" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.</rdfs:comment>
+	<rdfs:comment xml:lang="en">This vocabulary has been developed in the context of the action on open data of the project "Platform of Open, Collaborative and Interoperable Government" of the "II Call for Intelligent Cities" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry.</rdfs:comment>
         <owl:versionInfo xml:lang="es">Versión 1.0 de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
 	<owl:versionInfo xml:lang="en">This is the initial version of the Traffic ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate.</owl:versionInfo>
     </owl:Ontology>
@@ -193,14 +195,7 @@ The vocabulary has been divided into three main parts:
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia">
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-      <rdfs:domain>
-	<owl:Class>
-	  <owl:unionOf rdf:parseType="Collection">
-	    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea"/>
-	    <rdf:Description rdf:about="http://w3id.org/transmodel/journeys#JourneyPattern"/>
-	  </owl:unionOf>
-	</owl:Class>
-      </rdfs:domain>
+      <rdfs:domain rdfs:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Linea"/>
       <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
       <rdfs:comment xml:lang="es">Relación de una línea que está afectada por una incidencia.</rdfs:comment>
       <rdfs:comment xml:lang="en">Relationship of a line affected by an incidence.</rdfs:comment>
@@ -237,18 +232,20 @@ The vocabulary has been divided into three main parts:
         <rdfs:label xml:lang="en">Line End Stop Point</rdfs:label>
     </owl:ObjectProperty>
 
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#generadoPorIncidencia -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#ubicacion">
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/autobus#generadoPorIncidencia">
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-      <rdfs:domain rdfs:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus#Parada"/>
-      <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Point"/>
-      <rdfs:comment xml:lang="es">Ubicación de la Parada según coordenadas WGS84</rdfs:comment>
-      <rdfs:comment xml:lang="en">Stop Point Location according to WGS84</rdfs:comment>
-      <rdfs:label xml:lang="es">Ubicación Parada</rdfs:label>
-      <rdfs:label xml:lang="en">Stop Point Location</rdfs:label>
+      <rdfs:domain rdfs:resource="http://w3id.org/transmodel/journeys#JourneyPattern"/>
+      <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+      <rdfs:comment xml:lang="es">Relación de un patrón de viaje de una ruta que se ha creado por una incidencia.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Relationship of a JourneyPattern of a Route which has been created by an Incidence.</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/autobus"/>
+      <rdfs:label xml:lang="es">patrón de ruta generado por Incidencia</rdfs:label>
+      <rdfs:label xml:lang="en">JourneyPattern generated by an Incidenceline affected by an incidence</rdfs:label>
     </owl:ObjectProperty>
-    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
     
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
@@ -507,18 +504,6 @@ The vocabulary has been divided into three main parts:
       <rdfs:label xml:lang="es">Sirve el Transporte Público para</rdfs:label>
     </owl:ObjectProperty>
 
-    <!-- http://schema.org/contactPoint -->
-
-    <owl:ObjectProperty rdf:about="http://schema.org/contactPoint">
-      <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-      <rdfs:domain rdf:resource="http://w3id.org/transmodel/organisations#Organisation"/>
-      <rdfs:range rdf:resource="http://schema.org/ContactPoint"/>
-      <rdfs:comment xml:lang="en">A contact point for a person or organization.</rdfs:comment>
-      <rdfs:comment xml:lang="es">Un Punto de Información de Contacto para una persona u organización.</rdfs:comment>
-      <rdfs:label xml:lang="en">Contact Point</rdfs:label>
-      <rdfs:label xml:lang="es">Punto de Información</rdfs:label>
-    </owl:ObjectProperty>
-
     <!-- http://schema.org/address -->
 
     <owl:ObjectProperty rdf:about="http://schema.org/address">
@@ -531,7 +516,20 @@ The vocabulary has been divided into three main parts:
       <rdfs:label xml:lang="es">Dirección</rdfs:label>
     </owl:ObjectProperty>
 
-        <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
+    <!-- http://schema.org/contactPoint -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/contactPoint">
+      <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+      <rdfs:domain rdf:resource="http://w3id.org/transmodel/organisations#Organisation"/>
+      <rdfs:range rdf:resource="http://schema.org/ContactPoint"/>
+      <rdfs:comment xml:lang="en">A contact point for a person or organization.</rdfs:comment>
+      <rdfs:comment xml:lang="es">Un Punto de Información de Contacto para una persona u organización.</rdfs:comment>
+      <rdfs:label xml:lang="en">Contact Point</rdfs:label>
+      <rdfs:label xml:lang="es">Punto de Información</rdfs:label>
+    </owl:ObjectProperty>
+
+
+    <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
 
 	<owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
 	  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -548,21 +546,39 @@ The vocabulary has been divided into three main parts:
 
     <!-- http://www.w3.org/ns/sosa/madeBySensor -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor"/>
-    
-
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
+      <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
+      <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+      <rdfs:label xml:lang="en">made by sensor</rdfs:label>
+      <rdfs:label xml:lang="es">realizada por sensor</rdfs:label>
+      <rdfs:comment xml:lang="es">Relation between an Observation and the Sensor which made the Observation.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Relación entre una Observación y un Sensor que realiza la Observación.</rdfs:comment>
+    </owl:ObjectProperty>
 
     <!-- http://www.w3.org/ns/sosa/observedProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty"/>
-       
-
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty">
+      <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
+      <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+      <rdfs:label xml:lang="en">observed property</rdfs:label>
+      <rdfs:label xml:lang="es">propiedad observada</rdfs:label>
+      <rdfs:comment xml:lang="es">Relación que enlaza la propiedad que se observa.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</rdfs:comment>
+    </owl:ObjectProperty>
 
     <!-- http://www.w3.org/ns/sosa/observes -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes"/>
-
-
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
+      <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
+      <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
+      <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+      <rdfs:label xml:lang="en">observes</rdfs:label>
+      <rdfs:label xml:lang="es">Observa</rdfs:label>
+      <rdfs:comment xml:lang="es">Relación entre un Sensor y una Propiedad Observada que es capaz de obtener observaciones.</rdfs:comment>
+      <rdfs:comment xml:lang="en">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</rdfs:comment>
+    </owl:ObjectProperty>
 
 
     <!-- 
@@ -636,7 +652,7 @@ The vocabulary has been divided into three main parts:
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
 
-    <owl:DatatypeProperty rdf:about=="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
       <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
       <rdfs:comment xml:lang="es">Latitud en WGS84</rdfs:comment>
@@ -646,7 +662,7 @@ The vocabulary has been divided into three main parts:
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
 
-    <owl:DatatypeProperty rdf:about=="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
       <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
       <rdfs:comment xml:lang="es">Longitud en WGS84</rdfs:comment>
