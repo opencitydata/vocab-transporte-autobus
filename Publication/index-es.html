@@ -658,11 +658,11 @@ function loadTOC(){
   <div id="vehicle-journey">
     <h3 id="vehicle-journey-headline" class="list">Viaje del vehículo<span class="backlink">volver a <a href="#toc">índice</a></span></h3>
     
-    <p>Además de línea, ruta y patrón de viaje, en Transmodel está el concepto viaje del vehículo <a href="#VehicleJourney">tmjourney:VehicleJourney</a> que representa el modelo de viaje que realiza el vehículo usando <a href="#madeUsing">tmjourney:madeUsing</a> patrones de viaje <a href="#JourneyPattern">tmjourney:JourneyPattern</a>.</p>
-    <p>Su dirección <a href="#directionType">tmjourney:directionType</a> se establece por una taxonomía <a href="#direction-type">tmkosjourney:direction-type</a> del proyecto Transmodel.</p>
-    <p>El viaje del vehículo <a href="#VehicleJourney">tmjourney:VehicleJourney</a> puede tomar los tiempos <a href="#timedFrom">tmjourney:timedFrom</a> de un punto de control en el patrón de viaje <a href="#TimingPointInJourneyPattern">tmjourney:TimingPointInJourneyPattern</a>, que es una subclase de un punto en una secuencia de enlaces <a href="#PointInLinkSequence">tmjourney:PointInLinkSequence</a>.</p>
-    <p>Cada uno está compuesto <a href="#composedOf">tmjourney:composedOf</a> de un grupo de viajes de cabecera <a href="#HeadwayJourneyGroup">tmjourney:HeadwayJourneyGroup</a> que está determinado por <a href="#determinedBy">tmjourney:determinedBy</a> un intervalo de cabecera <a href="#HeadwayInterval">tmjourney:HeadwayInterval</a>. Y cada uno trabaja <a href="#workedOn">tmjourney:workedOn</a> en un tipo de día <a href="#DayType">DayType</a>.</p>
-    <p>Finalmente, un calendario de servicio <a href="#ServiceCalendar">tmjourney:ServiceCalendar</a> establece una fecha de inicio <a href="#from">tmjourney:from</a> y una fecha de fin <a href="#to">tmjourney:to</a> y se define por <a href="#definedBy">tmjourney:definedBy</a> una asignación de día tipo <a href="#DayTypeAssignment">tmjourney:DayTypeAssignment</a> que establece una fecha <a href="#date">tmjourney:date</a> y está especificando un tipo de día <a href="#DayType">tmjourney:DayType</a>.</p>
+    <p>Además de línea, ruta y patrón de viaje, en Transmodel está el concepto viaje del vehículo <a href="#http://w3id.org/transmodel/journeys#VehicleJourney">tmjourney:VehicleJourney</a> que representa el modelo de viaje que realiza el vehículo usando <a href="#http://w3id.org/transmodel/journeys#madeUsing">tmjourney:madeUsing</a> patrones de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a>.</p>
+    <p>Su dirección <a href="#http://w3id.org/transmodel/journeys#directionType">tmjourney:directionType</a> se establece por una taxonomía <a href="#http://w3id.org/transmodel/journeys#direction-type">tmkosjourney:direction-type</a> del proyecto Transmodel.</p>
+    <p>El viaje del vehículo <a href="#http://w3id.org/transmodel/journeys#VehicleJourney">tmjourney:VehicleJourney</a> puede tomar los tiempos <a href="#http://w3id.org/transmodel/journeys#timedFrom">tmjourney:timedFrom</a> de un punto de control en el patrón de viaje <a href="#http://w3id.org/transmodel/journeys#TimingPointInJourneyPattern">tmjourney:TimingPointInJourneyPattern</a>, que es una subclase de un punto en una secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>.</p>
+    <p>Cada uno está compuesto <a href="#http://w3id.org/transmodel/journeys#composedOf">tmjourney:composedOf</a> de un grupo de viajes de cabecera <a href="#http://w3id.org/transmodel/journeys#HeadwayJourneyGroup">tmjourney:HeadwayJourneyGroup</a> que está determinado por <a href="#http://w3id.org/transmodel/journeys#determinedBy">tmjourney:determinedBy</a> un intervalo de cabecera <a href="#http://w3id.org/transmodel/journeys#HeadwayInterval">tmjourney:HeadwayInterval</a>. Y cada uno trabaja <a href="#http://w3id.org/transmodel/journeys#workedOn">tmjourney:workedOn</a> en un tipo de día <a href="#http://w3id.org/transmodel/journeys#DayType">DayType</a>.</p>
+    <p>Finalmente, un calendario de servicio <a href="#http://w3id.org/transmodel/journeys#ServiceCalendar">tmjourney:ServiceCalendar</a> establece una fecha de inicio <a href="#http://w3id.org/transmodel/journeys#from">tmjourney:from</a> y una fecha de fin <a href="#http://w3id.org/transmodel/journeys#to">tmjourney:to</a> y se define por <a href="#http://w3id.org/transmodel/journeys#definedBy">tmjourney:definedBy</a> una asignación de día tipo <a href="#http://w3id.org/transmodel/journeys#DayTypeAssignment">tmjourney:DayTypeAssignment</a> que establece una fecha <a href="#http://w3id.org/transmodel/journeys#date">tmjourney:date</a> y está especificando un tipo de día <a href="#http://w3id.org/transmodel/journeys#DayType">tmjourney:DayType</a>.</p>
     
     <div><center><img src="resources/images/vehicle-journey.png" alt="Los viajes del vehículo, horarios de cabecera, intervalos, tipos de día, calendarios de servicio y su asignación a día tipo."/><figcaption>Figura 6. - Los viajes del vehículo, horarios de cabecera, intervalos, tipos de día, calendarios de servicio y su asignación a día tipo</figcaption></center></div>
   </div>
@@ -673,12 +673,12 @@ function loadTOC(){
     <!-- EXAMPLES -->
     <div id="figure-operator-authority">
       <h4>Operador y autoridad</h4>
-      <p>Tanto un operador <a href="#Operator">tmorg:Operator</a> como una <a href="#Authority">tmorg:Authority</a> son tipos de organización <a href="#Organisation">tmjourney:Organisation</a>. En este caso se crean instancias de uno y otro: un operador de servicios de transporte, la Empresa Municipal de Transportes de Madrid EMT y una autoridad, el Consorcio Regional de Transportes de Madrid CRTM.</p>
+      <p>Tanto un operador <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a> como una <a href="#http://w3id.org/transmodel/organisations#Authority">tmorg:Authority</a> son tipos de organización <a href="#http://w3id.org/transmodel/organisations#Organisation">tmorg:Organisation</a>. En este caso se crean instancias de uno y otro: un operador de servicios de transporte, la Empresa Municipal de Transportes de Madrid EMT y una autoridad, el Consorcio Regional de Transportes de Madrid CRTM.</p>
       <div><center><img src="resources/images/autobus-operador-autoridad.png" alt="Detalle del diagrama de Operador y Autoridad."/><figcaption>Figura 7. - Detalle del diagrama de Operador y Autoridad</figcaption></center></div>
       <ul>
-	<li>Ambas tienen <a href="#characterisedBy">tmorg:characterisedBy</a> información de contacto <a href="#ContactDetails">tmorg:ContactDetails</a>.</li>
-	<li>La relación entre Operador y Autoridad se muestra en la propiedad <a href="#servingPTServiceFrom">tmorg:servingPTServiceFrom</a> que indica que la EMT sirve el transporte público del CRTM.</li>
-	<li>Como operador, la EMT opera <a href="#operating">tmjourney:operating</a> diversas líneas <a href="#Linea">esautob:Linea</a>: 110, 138 y 172, con sus correspondientes URIs.</li>
+	<li>Ambas tienen <a href="#http://w3id.org/transmodel/organisations#characterisedBy">tmorg:characterisedBy</a> información de contacto <a href="#http://w3id.org/transmodel/organisations#ContactDetails">tmorg:ContactDetails</a>.</li>
+	<li>La relación entre Operador y Autoridad se muestra en la propiedad <a href="#http://w3id.org/transmodel/organisations#servingPTFor">tmorg:servingPTFor</a> que indica que la EMT sirve el transporte público del CRTM.</li>
+	<li>Como operador, la EMT opera <a href="#http://w3id.org/transmodel/organisations#operating">tmjourney:operating</a> diversas líneas <a href="#Linea">esautob:Linea</a>: 110, 138 y 172, con sus correspondientes URIs.</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/operator/emt&gt; a tmorg:Operator ;
@@ -694,16 +694,16 @@ function loadTOC(){
     </div><!-- fin figure-operator -->
     <div id="figure-contactdetails">
       <h4>Información de contacto</h4>
-      <p>Para representar los datos de contacto del operador o de la autoridad se crea una instancia de la clase <a href="#ContactDetails">tmorg:ContactDetails</a>.</p>
+      <p>Para representar los datos de contacto del operador o de la autoridad se crea una instancia de la clase <a href="#http://w3id.org/transmodel/organisations#ContactDetails">tmorg:ContactDetails</a>.</p>
       <div><center><img src="resources/images/autobus-contactdetails.png" alt="Detalle del diagrama de ContactDetails ."/><figcaption>Figura 8. - Detalle del diagrama de ContactDetails </figcaption></center></div>
       <p>Cuenta con las siguientes propiedades:</p>
       <ul>
-	<li>Un teléfono <a href="#telephone">schema:telephone</a>.</li>
-	<li>Un correo electrónico <a href="#email">schema:email</a>.</li>
-	<li>Una dirección web <a href="#url">schema:url</a>.</li>
-	<li>Una dirección postal <a href="#address">schema:address</a>.</li>
-	<li>El nombre legal <a href="#legalName">schema:legalName</a>.</li>
-	<li>y por último, un nombre alternativo <a href="#alternateName">schema:alternateName</a>, con el que se le conoce.</li>
+	<li>Un teléfono <a href="#http://schema.org/telephone">schema:telephone</a>.</li>
+	<li>Un correo electrónico <a href="#http://schema.org/email">schema:email</a>.</li>
+	<li>Una dirección web <a href="#http://schema.org/url">schema:url</a>.</li>
+	<li>Una dirección postal <a href="#http://schema.org/address">schema:address</a>.</li>
+	<li>El nombre legal <a href="#http://schema.org/legalName">schema:legalName</a>.</li>
+	<li>y por último, un nombre alternativo <a href="#http://schema.org/alternateName">schema:alternateName</a>, con el que se le conoce.</li>
       </ul>
       <p>Ejemplo de los detalles de contacto del operador EMT:</p>
       <pre>
@@ -723,16 +723,16 @@ function loadTOC(){
       <div><center><img src="resources/images/autobus-linea.png" alt="Detalle del diagrama de Línea ."/><figcaption>Figura 9. - Detalle del diagrama de Línea </figcaption></center></div>
       <p>Línea cuenta con las siguientes propiedades:</p>
       <ul>
-	<li>La línea 138 está operada <a href="#runBy">tmjourney:runBy</a> por el operador <a href="#Operator">tmorg:Operator</a> EMT.</li>
-	<li>Su identificador <a href="#identifier">dcterms:identifier</a> es el nombre de la línea, en este caso 138.</li>
-	<li>Su descripción <a href="#description">dcterms:description</a> explica el nombre o número de la línea, dónde comienza y dónde termina.</li>
-	<li>Puede tener una URL <a href="#url">schema:url</a>.</li>
-	<li>Su nombre <a href="#name">schema:name</a> es el nombre por el que se conoce a la línea, en este caso &quot;Línea 138&quot;.</lI>
-	<li>Y también un nombre corto <a href="#shortName">tmjourney:shortName</a>, 138.</li>
-	<li>Se presenta con un tipo de presentación <a href="#Presentation">tmcommons:Presentation</a> según el tipo de línea o grupo de líneaas.</li>
-	<li>La línea puede estar afectada <a href="#afectadaPorIncidencia">esautob:afectadaPorIncidencia</a> por incidencias <a href="#Incidencia">estraf:Incidencia</a>, en este caso por varias.</li>
-	<li>Cada línea tiene paradas <a href="#Parada">esautob:Parada</a> que es cabecera de línea <a href="#cabeceraLinea">esautob:cabeceraLinea</a> y <a href="#finLinea">esautob:finLinea</a>.</li>
-	<li>Finalmente, cada línea está compuesta <a href="#madeUpOf">tmjourney:madeUpOf</a> por rutas <a href="#Route">tmjourney:Route</a>, normalmente una de ida y una de vuelta.</li>
+	<li>La línea 138 está operada <a href="#http://w3id.org/transmodel/journeys#runBy">tmjourney:runBy</a> por el operador <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a> EMT.</li>
+	<li>Su identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a> es el nombre de la línea, en este caso 138.</li>
+	<li>Su descripción <a href="#http://purl.org/dc/terms/description">dcterms:description</a> explica el nombre o número de la línea, dónde comienza y dónde termina.</li>
+	<li>Puede tener una URL <a href="#http://schema.org/url">schema:url</a>.</li>
+	<li>Su nombre <a href="#http://schema.org/name">schema:name</a> es el nombre por el que se conoce a la línea, en este caso &quot;Línea 138&quot;.</lI>
+	<li>Y también un nombre corto <a href="#http://w3id.org/transmodel/commons#shortName">tmcommons:shortName</a>, 138.</li>
+	<li>Se presenta con un tipo de presentación <a href="#http://w3id.org/transmodel/commons#Presentation">tmcommons:Presentation</a> según el tipo de línea o grupo de líneaas.</li>
+	<li>La línea puede estar afectada <a href="#afectadaPorIncidencia">esautob:afectadaPorIncidencia</a> por incidencias <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">estraf:Incidencia</a>, en este caso por varias.</li>
+	<li>Cada línea tiene paradas <a href="#Parada">esautob:Parada</a> que es cabecera de línea <a href="#cabeceraLinea">esautob:cabeceraLinea</a> y <a href="#finalLinea">esautob:finalLinea</a>.</li>
+	<li>Finalmente, cada línea está compuesta <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> por rutas <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>, normalmente una de ida y una de vuelta.</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138&gt; a esautob:Linea ;
@@ -752,10 +752,10 @@ function loadTOC(){
 	tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a&gt; ;
 	tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b&gt; .
       </pre>
-      <p>La presentación de la línea son instancias de la clase <a href="#Presentation">tmcommons:Presentation</a> que tienen dos propiedades:</p>
+      <p>La presentación de la línea son instancias de la clase <a href="#http://w3id.org/transmodel/commons#Presentation">tmcommons:Presentation</a> que tienen dos propiedades:</p>
       <ul>
-	<li>El color de fondo con <a href="#colour">tmcommons:colour</a>.</li>
-	<li>El color del texto con <a href="#textColour">tmcommons:textColour</a>.</li>
+	<li>El color de fondo con <a href="#http://w3id.org/transmodel/commons#colour">tmcommons:colour</a>.</li>
+	<li>El color del texto con <a href="#http://w3id.org/transmodel/commons#textColour">tmcommons:textColour</a>.</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/210&gt; a tmcommons:Presentation ;
@@ -765,7 +765,7 @@ function loadTOC(){
     </div>
     <!-- fin figure-linea -->
     <div id="figure-incidencia">
-      <h4>Incidencia</h4>
+      <h4>Incidencia</h4> (ER)
       <p>Para representar las incidencias se utiliza la clase <a href="#Incidencia">estraf:Incidencia</a> del vocabulario de tráfico.</p>
       <div><center><img src="resources/images/autobus-incidencia.png" alt="Detalle del diagrama de Incidencia ."/><figcaption>Figura 10. - Detalle del diagrama de Incidencia </figcaption></center></div>
       <p>Se crea una instancia que cuenta con las siguientes propiedades</p>
