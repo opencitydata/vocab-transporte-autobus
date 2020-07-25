@@ -857,10 +857,10 @@ function loadTOC(){
 	tmjourney:distanceFromStart "247"^^xsd:double ;
 	tmjourney:viewedAs &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4022&gt; .
       </pre>
-      <p>El punto de ruta <a href="#http://w3id.org/transmodel/journeys#RoutePoint">tmjourney:RoutePoint</a> relaciona los puntos en ruta con los puntos físicos, es decir, las paradas <a href="#Parada">esautob:Parada</a>, al ser los puntos en ruta centroides funcionales <a href="#http://w3id.org/transmodel/commons#aFunctionalCentroidFor">tmjourney:aFunctionalCentroidFor</a> para una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a> que es la superclase de <a href="#http://w3id.org/transmodel/commons#Place">tmcommons:Place</a> y ésta a su vez de la parada, como se muestra más adelante.</p>
+      <p>El punto de ruta <a href="#http://w3id.org/transmodel/journeys#RoutePoint">tmjourney:RoutePoint</a> relaciona los puntos en ruta con los puntos físicos, es decir, las paradas <a href="#Parada">esautob:Parada</a>, al ser los puntos en ruta centroides funcionales <a href="#http://w3id.org/transmodel/commons#aFunctionalCentroidFor">tmcommons:aFunctionalCentroidFor</a> para una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a> que es la superclase de <a href="#http://w3id.org/transmodel/commons#Place">tmcommons:Place</a> y ésta a su vez de la parada, como se muestra más adelante.</p>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608&gt; a tmjourney:RoutePoint ;
-	tmjourney:aFunctionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recureso/transporte/autobus/parada/4608&gt; .
+	tmcommons:aFunctionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recureso/transporte/autobus/parada/4608&gt; .
       </pre>
     </div>
     <!-- fin figure-pointonroute-routepoint -->
@@ -900,7 +900,7 @@ function loadTOC(){
     <!-- fin figure-stoppointinjourneypattern -->
     <div id="figure-scheduledstoppoint">
       <h4>ScheduledStopPoint</h4>
-      <p>El punto de parada planificada <a href="#http://w3id.org/transmodel/journeys#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a>, como subclase del punto <a href="#http://w3id.org/transmodel/journeys#Point">tmjourney:Point</a>, es el centroide funcional <a href="#http://w3id.org/transmodel/commons#aFunctionalCentroidFor">tmjourney:aFunctionalCentroidFor</a> para una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a>, que es la súperclase de <a href="#http://w3id.org/transmodel/commons#Place">#tmcommons:Place</a> y esta a su vez de <a href="#Parada">esautob:Parada</a>.</p>
+      <p>El punto de parada planificada <a href="#http://w3id.org/transmodel/journeys#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a>, como subclase del punto <a href="#http://w3id.org/transmodel/journeys#Point">tmjourney:Point</a>, es el centroide funcional <a href="#http://w3id.org/transmodel/commons#aFunctionalCentroidFor">tmcommons:aFunctionalCentroidFor</a> para una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a>, que es la súperclase de <a href="#http://w3id.org/transmodel/commons#Place">#tmcommons:Place</a> y esta a su vez de <a href="#Parada">esautob:Parada</a>.</p>
       <div><center><img src="resources/images/autobus-scheduledstoppoint.png" alt="Detalle del diagrama de ScheduledStopPoint ."/><figcaption>Figura 16. - Detalle del diagrama de ScheduledStopPoint </figcaption></center></div>
       <p>Sus propiedades son:</p>
       <ul>
@@ -911,7 +911,7 @@ function loadTOC(){
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/schedulestoppoint/138a1-4608&gt; a tmjourney:ScheduledStopPoint ;
 	tmjourney:includedIn &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey&gt; ;
-	tmjourney:aFunctionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608&gt; ;
+	tmcommons:aFunctionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608&gt; ;
 	tmjourney:forAlighting "false"^^xsd:boolean ;
 	tmjourney:forBoarding "true"^^xsd:boolean .
 	
