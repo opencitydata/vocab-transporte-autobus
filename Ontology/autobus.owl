@@ -190,6 +190,17 @@ The vocabulary has been divided into three main parts:
 	 ///////////////////////////////////////////////////////////////////////////////////////
     -->
 
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+      <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+      <rdfs:domain rdfs:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+      <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+      <rdfs:comment xml:lang="en">A spatial representation for a given feature.</rdfs:comment>
+      <rdfs:comment xml:lang="es">Una representación espacial para una característica espacial dada</rdfs:comment>
+      <rdfs:label xml:lang="en">hasGeometry</rdfs:label>
+      <rdfs:label xml:lang="es">tiene geometría</rdfs:label>
+    </owl:ObjectProperty>
     
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/autobus#afectadaPorIncidencia -->
 
@@ -314,15 +325,15 @@ The vocabulary has been divided into three main parts:
 	<rdfs:label xml:lang="es">Tipo de Dirección</rdfs:label>
     </owl:ObjectProperty>
 
-    <!-- http://w3id.org/transmodel/journeys#functionalCentroidFor -->
+    <!-- http://w3id.org/transmodel/commons#functionalCentroidFor -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/journeys#aFunctionalCentroidFor">
+    <owl:ObjectProperty rdf:about="http://w3id.org/transmodel/commons#functionalCentroidFor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/transmodel/journeys#Point"/>
-        <rdfs:range rdf:resource="http://w3id.org/transmodel/journeys#Zone"/>
+        <rdfs:range rdf:resource="http://w3id.org/transmodel/commons#Zone"/>
         <rdfs:comment xml:lang="en">This property allows connecting a Point with a Zone.</rdfs:comment>
 	<rdfs:comment xml:lang="es">Esta propiedad permite la conexión de un Punto con una Zona.</rdfs:comment>
-        <rdfs:label xml:lang="en">aFunctionalCentroidFor</rdfs:label>
+        <rdfs:label xml:lang="en">functionalCentroidFor</rdfs:label>
 	<rdfs:label xml:lang="es">Un centroide funcional para</rdfs:label>
     </owl:ObjectProperty>
 
@@ -650,6 +661,16 @@ The vocabulary has been divided into three main parts:
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
     </owl:DatatypeProperty>
 
+    <!-- http://www.opengis.net/ont/geosparql#asWKT -->
+    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asWKT">
+      <rdfs:label xml:lang="en">asWKT</rdfs:label>
+      <rdfs:label xml:lang="es">como WKT</rdfs:label>
+      <rdfs:comment xml:lang="en">The WKT serialization of a geometry </rdfs:comment>
+      <rdfs:comment xml:lang="es">La serialización de una geometría en WKT o Well Known Terms</rdfs:comment>
+      <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+      <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#wktLiteral"/>
+    </owl:DatatypeProperty>
+
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
@@ -707,6 +728,18 @@ The vocabulary has been divided into three main parts:
     <!-- http://schema.org/datePosted -->
 
     <owl:DatatypeProperty rdf:about="http://schema.org/datePosted">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="es">La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The end date and time of the incidence (in ISO 8601 date format).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+        <rdfs:label xml:lang="es">fecha de publicación de incidencia</rdfs:label>
+        <rdfs:label xml:lang="en">posted incidence date</rdfs:label>
+    </owl:DatatypeProperty>
+
+        <!-- http://schema.org/dateCreated -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/dateCreated">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="es">La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)</rdfs:comment>

@@ -723,7 +723,6 @@ function loadTOC(){
       <div><center><img src="resources/images/autobus-linea.png" alt="Detalle del diagrama de Línea ."/><figcaption>Figura 9. - Detalle del diagrama de Línea </figcaption></center></div>
       <p>Línea cuenta con las siguientes propiedades:</p>
       <ul>
-	<li>La línea 138 está operada <a href="#http://w3id.org/transmodel/journeys#runBy">tmjourney:runBy</a> por el operador <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a> EMT.</li>
 	<li>Su identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a> es el nombre de la línea, en este caso 138.</li>
 	<li>Su descripción <a href="#http://purl.org/dc/terms/description">dcterms:description</a> explica el nombre o número de la línea, dónde comienza y dónde termina.</li>
 	<li>Puede tener una URL <a href="#http://schema.org/url">schema:url</a>.</li>
@@ -866,7 +865,7 @@ function loadTOC(){
     <!-- fin figure-pointonroute-routepoint -->
     <div id="figure-journeypattern">
       <h4>Journey Pattern, patrones de viaje y destino</h4>
-      <p>El patrón de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> trabaja en <a href="#http://w3id.org/transmodel/journeys#on">tmjourney:on</a> una ruta <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>. Ambas clases son subclases de la clase secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#LinkSequence">tmjourney:LinkSequence</a>. Está hecha de <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> puntos de parada en el patrón de viaje <a href="#http://w3id.org/transmodel/journeys#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> que son subclases de <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>. Su destino se anuncia a través de la relación <a href="#http://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor">tmjourney:journeyPatternAdvertisedFor</a> en un <a href="#http://w3id.org/transmodel/journeys#DestinationDisplay">tmjourney:DestinationDisplay</a>.</p>
+      <p>El patrón de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> trabaja en <a href="#http://w3id.org/transmodel/journeys#on">tmjourney:on</a> una ruta <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>. Ambas clases son subclases de la clase secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#LinkSequence">tmjourney:LinkSequence</a>. Está hecha de <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> puntos de parada en el patrón de viaje <a href="#http://w3id.org/transmodel/journeys#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> que son subclases de <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>. Su destino se anuncia a través de la relación <a href="#http://w3id.org/transmodel/journeys#prescribing">tmjourney:prescribing</a> en un <a href="#http://w3id.org/transmodel/journeys#DestinationDisplay">tmjourney:DestinationDisplay</a>.</p>
       <div><center><img src="resources/images/autobus-journeypattern.png" alt="Detalle del diagrama de JourneyPattern y DestinationDisplay ."/><figcaption>Figura 13. - Detalle del diagrama de JourneyPattern y DestinationDisplay </figcaption></center></div>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a2&gt; a tmjourney:JourneyPattern ;
@@ -874,7 +873,7 @@ function loadTOC(){
 	schema:name "138a2"^^xsd:string ;
 	tmjourney:distance "11,194"^^xsd:double ; 
 	tmjourney:on &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a&gt; ;
-	tmjourney:journeyPatternAdvertisedFor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1&gt; ;
+	tmjourney:prescribing &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/destinationdisplay/138a1&gt; ;
 	esautob:generadoPorIncidencia &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/incidencia/29059944-A068-B55BF2FAC51F&gt; ;
 	tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608&gt; ;
 	tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-5481&gt; .
