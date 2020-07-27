@@ -122,29 +122,29 @@ function loadTOC(){
 <caption> <a href="#ns"> Tabla 1</a>: Namespaces utilizados en el documento </caption>
 <tbody>
   <tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
-  <tr><td><b>direccion-postal</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal&gt;</td></tr>
+  <tr><td><b>esdir</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#&gt;</td></tr>
   <tr><td><b>esautob</b></td><td>&lt;http://vocab.ciudadesabiertas.es/def/transporte/autobus#&gt;</td></tr>
   <tr><td><b>estraf</b></td><td>&l;http://vocab.ciudadesabiertas.es/def/transporte/trafico#&gt;</td></tr>
   <tr><td><b>geo</b></td><td>&lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;</td></tr>
-  <tr><td><b>geo-core</b></td><td>&lt;https://datos.ign.es/def/geo_core&gt;</td></tr>
-  <tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/ont/geosparql&gt;</td></tr>
-  <tr><td><b>org</b></td><td>&lt;http://www.w3.org/ns/org&gt;</td></tr>
+  <tr><td><b>geo_core</b></td><td>&lt;https://datos.ign.es/def/geo_core#&gt;</td></tr>
+  <tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/ont/geosparql#&gt;</td></tr>
+  <tr><td><b>org</b></td><td>&lt;http://www.w3.org/ns/org#&gt;</td></tr>
   <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
   <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
   <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-  <tr><td><b>schema-org</b></td><td>&lt;http://schema.org&gt;</td></tr>
-  <tr><td><b>sf</b></td><td>&lt;http://www.opengis.net/ont/sf&gt;</td></tr>
-  <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
-  <tr><td><b>sosa</b></td><td>&lt;http://www.w3.org/ns/sosa&gt;</td></tr>
+  <tr><td><b>schema</b></td><td>&lt;http://schema.org/&gt;</td></tr>
+  <tr><td><b>sf</b></td><td>&lt;http://www.opengis.net/ont/sf#&gt;</td></tr>
+  <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
+  <tr><td><b>sosa</b></td><td>&lt;http://www.w3.org/ns/sosa#&gt;</td></tr>
   <tr><td><b>spec</b></td><td>&lt;http://www.opengis.net/spec&gt;</td></tr>
-  <tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
-  <tr><td><b>tmcommons</b></td><td>&lt;http://w3id.org/transmodel/commons&gt;</td></tr>
+  <tr><td><b>dcterms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+  <tr><td><b>tmcommons</b></td><td>&lt;http://w3id.org/transmodel/commons#&gt;</td></tr>
   <tr><td><b>tmkoscommons</b></td><td>&lt;http://w3id.org/transmodel/kos/commons/&gt;</td></tr>
   <tr><td><b>tmkosjourney</b></td><td>&lt;http://w3id.org/transmodel/kos/journeys/&gt;</td></tr>
-  <tr><td><b>tmjourney</b></td><td>&lt;http://w3id.org/transmodel/journeys&gt;</td></tr>
-  <tr><td><b>tmorg</b></td><td>&lt;http://w3id.org/transmodel/organisations&gt;</td></tr>
-  <tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
-  <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+  <tr><td><b>tmjourney</b></td><td>&lt;http://w3id.org/transmodel/journeys#&gt;</td></tr>
+  <tr><td><b>tmorg</b></td><td>&lt;http://w3id.org/transmodel/organisations#&gt;</td></tr>
+  <tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+  <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
 </tbody>
 </table>
 </div><!-- fin ns -->
@@ -416,8 +416,8 @@ function loadTOC(){
       <a href="#http://w3id.org/transmodel/journeys#timedFrom" title="http://w3id.org/transmodel/journeys#timedFrom">toma de tiempo</a>
     </li>
     <li>
-      <a href="#http://w3id.org/transmodel/journeys#aFunctionalCentroidFor"
-         title="http://w3id.org/transmodel/journeys#aFunctionalCentroidFor">Un centroide funcional para</a>
+      <a href="#http://w3id.org/transmodel/journeys#aaFunctionalCentroidFor"
+         title="http://w3id.org/transmodel/journeys#aaFunctionalCentroidFor">Un centroide funcional para</a>
     </li>
   </ul><h4>Propiedades de datos</h4><ul class="hlist">
     <li>
@@ -612,19 +612,19 @@ function loadTOC(){
     <li>Información en tiempo real (tiempo de llegada del bus a la parada, previsión de tiempo en el trayecto, etc.)</li>
   </ul>
   <p>La Figura 1 muestra las clases y propiedades del vocabulario de tráfico. El principal objetivo de este vocabulario es permitir la representación del servicio público de autobuses urbanos, tanto de sus líneas como sus rutas o sus incidencias.</p>
-  <p>En la parte de arriba a la derecha se muestra el <b>patrón org</b> dado que se reutiliza la clase <a href="#Organization">org:Organization</a> de ese vocabulario para el vocabulario de Transmodel que es un vocabulario en el que se apoya específicamente este de autobuses y que lo convierte en compatible con el estándar europeo para el intercambio de datos de transporte terrestre.</p>
+  <p>En la parte de arriba a la derecha se muestra el <b>patrón org</b> dado que se reutiliza la clase <a href="#http://www.w3.org/ns/org#Organization">org:Organization</a> de ese vocabulario para el vocabulario de Transmodel que es un vocabulario en el que se apoya específicamente este de autobuses y que lo convierte en compatible con el estándar europeo para el intercambio de datos de transporte terrestre.</p>
   <p>Del conjunto de vocabularios de Transmodel reutilizamos tmorg referido a las organizaciones que tienen algún papel en el sistema de transporte público; de tmjourney que se dedica a los aspectos propios de los viajes; y a tmcommons que aborda los conceptos comunes.</p>
-  <p>En este caso, <a href="#Organisation">tmorg:Organisation</a> es subclase de org:Organization que tiene las subclases <a href="#Operator">tmorg:Operator</a> para las empresas operadoras de transporte y <a href="#Authority">tmorg:Authority</a> para las autoridades de transporte.</p>
-  <p>Es la empresa operadora <a href="#Operator">tmorg:Operator</a> la que opera <a href=#operating">tmorg:operating</a> una <a href=#Line">tmjourney:Line</a>. Se ha creado la subclase <a href="#Linea">esautob:Linea</a> para relacionarlas con las incidencias <a href="#Incidencia">estraf:Incidencia</a> del vocabulario de tráfico a través de la propiedad <a href="#afectadaPorIncidencia">esautob:afectadaPorIncidencia</a>.</p>
-  <p>Las líneas están compuestas por <a href="#madeUpOf">tmjourney:madeUpOf</a> rutas <a href="#Route">tmjourney:Route</a>, que es donde funcionan <a href="#on">tmjourney:on</a> los patrones de viaje <a href="#JourneyPattern">tmjourney:JourneyPattern</a>.</p>
+  <p>En este caso, <a href="#http://w3id.org/transmodel/organisations#Organisation">tmorg:Organisation</a> es subclase de org:Organization que tiene las subclases <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a> para las empresas operadoras de transporte y <a href="#http://w3id.org/transmodel/organisations#Authority">tmorg:Authority</a> para las autoridades de transporte.</p>
+  <p>Es la empresa operadora <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a> la que opera <a href="#http://w3id.org/transmodel/organisations#operating">tmorg:operating</a> una <a href="#http://w3id.org/transmodel/journeys#Line">tmjourney:Line</a>. Se ha creado la subclase <a href="#Linea">esautob:Linea</a> para relacionarlas con las incidencias <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">estraf:Incidencia</a> del vocabulario de tráfico a través de la propiedad <a href="#afectadaPorIncidencia">esautob:afectadaPorIncidencia</a>.</p>
+  <p>Las líneas están compuestas por <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> rutas <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>, que es donde funcionan <a href="#http://w3id.org/transmodel/journeys#on">tmjourney:on</a> los patrones de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a>.</p>
   
   <div><center><img src="resources/images/vocabulario-autobus.png" alt="Diagrama del vocabulario de autobús de la iniciativa Ciudades Abiertas"/><figcaption>Figura 1. - Vocabulario para la representación de datos sobre el servicio público de autobuses urbanos.</figcaption></center></div>
   <p></p>
   <div id="link-sequence">
     <h3 id="link-sequence-headline" class="list">Secuencia de enlaces<span class="backlink">volver a <a href="#toc">índice</a></span></h3>
-    <p>Uno de los conceptos más ricos de Transmodel es el de las rutas. Para explicarlo se ha realizado este diagrama donde se ve cómo se despliega la representación de la información de una ruta. Como aparecía en el diagrama anterior, un patrón de viaje <a href="#JourneyPattern">tmjourney:JourneyPattern</a> funciona en una ruta <a href="#Route">tmjourney:Route</a>. Pero además, ambas clases son subclases de una secuencia de enlaces <a href="#LinkSequence">tmjourney:LinkSequence</a>.</p>
-    <p>Las secuencias de enlaces <a href="#LinkSequence">tmjourney:LinkSequence</a> se componen de <a href="#madeUpOf">tmjourney:madeUpOf</a> puntos en la secuencia de enlaces <a href="#PointInLinkSequence">tmjourney:PointInLinkSequence</a>, que se pueden ver como <a href="#viewedAs">tmjourney:viewedAs</a> puntos <a href="#Point">tmjourney:Point</a>, los cuales son un centroide funcional para una zona <a href="#Zone">tmcommons:Zone</a>, clase de la cual será subclase <a href="#Place">tmcommons:Place</a> de la que a su vez es subclase la clase de nueva creación <a href="#Parada">esautob:Parada</a>.</p>
-    <p>Por cada costado de esta línea troncal se desarrollan las relaciones de ruta <a href="#Route">tmjourney:Route</a>, con punto en ruta <a href="#PointOnRoute">tmjourney:PointOnRoute</a> y punto de ruta <a href="#RoutePoint">tmjourney:RoutePoint</a> por un lado y con parada en el patrón de viaje <a href="#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> y parada planificada <a href="#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a> en el otro.</p>
+    <p>Uno de los conceptos más ricos de Transmodel es el de las rutas. Para explicarlo se ha realizado este diagrama donde se ve cómo se despliega la representación de la información de una ruta. Como aparecía en el diagrama anterior, un patrón de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> funciona en una ruta <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>. Pero además, ambas clases son subclases de una secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#LinkSequence">tmjourney:LinkSequence</a>.</p>
+    <p>Las secuencias de enlaces <a href="#http://w3id.org/transmodel/journeys#LinkSequence">tmjourney:LinkSequence</a> se componen de <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> puntos en la secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>, que se pueden ver como <a href="#http://w3id.org/transmodel/journeys#viewedAs">tmjourney:viewedAs</a> puntos <a href="#http://w3id.org/transmodel/journeys#Point">tmjourney:Point</a>, los cuales son un centroide funcional para una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a>, clase de la cual será subclase <a href="#http://w3id.org/transmodel/commons#Place">tmcommons:Place</a> de la que a su vez es subclase la clase de nueva creación <a href="#Parada">esautob:Parada</a>.</p>
+    <p>Por cada costado de esta línea troncal se desarrollan las relaciones de ruta <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>, con punto en ruta <a href="#http://w3id.org/transmodel/journeys#PointOnRoute">tmjourney:PointOnRoute</a> y punto de ruta <a href="#http://w3id.org/transmodel/journeys#RoutePoint">tmjourney:RoutePoint</a> por un lado y con parada en el patrón de viaje <a href="#http://w3id.org/transmodel/journeys#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> y parada planificada <a href="#http://w3id.org/transmodel/journeys#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a> en el otro.</p>
     
     <div><center><img src="resources/images/link-sequence.png" alt="Sección del vocabulario centrado en la secuencia de enlaces, con las subclases ruta y patrón de viaje."/><figcaption>Figura 2. - Sección del vocabulario centrado en la secuencia de enlaces, con las subclases ruta y patrón de viaje.</figcaption></center></div>
   </div>
@@ -632,7 +632,7 @@ function loadTOC(){
   <div id="parada">
     <h3 id="parada-headline" class="list">Parada<span class="backlink">volver a <a href="#toc">índice</a></span></h3>
 
-    <p>Una zona <a href="#Zone">tmcommons:Zone</a> es la superclase de lugar <a href="#Place">tmcommons:Place</a> y esta a su vez de la clase de nueva creación <a href="#Parada">esautob:Parada</a>. La <a href="#Parada">esautob:Parada</a> tiene una dirección <a href="#address">schema:address</a> que se relaciona con la dirección postal <a href="#DireccionPostal">esdir:DireccionPostal</a> del vocabulario de callejero <b>esdir</b>.</p>
+    <p>Una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a> es la superclase de lugar <a href="#http://w3id.org/transmodel/commons#Place">tmcommons:Place</a> y esta a su vez de la clase de nueva creación <a href="#Parada">esautob:Parada</a>. La <a href="#Parada">esautob:Parada</a> tiene una dirección <a href="#http://schema.org/address">schema:address</a> que se relaciona con la dirección postal <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">esdir:DireccionPostal</a> del vocabulario de callejero <b>esdir</b>.</p>
     <p>También una línea <a href="#Linea">esautob:Linea</a> se relaciona con <a href="#Parada">esautob:Parada</a> a través de las propiedades creadas cabecera de línea <a href="#cabeceraLinea">esautob:cabeceraLinea</a> y <a href="#finalLinea">esautob:finalLinea</a>.</p>
 
     <div><center><img src="resources/images/parada.png" alt="Diagrama de Parada y cómo se relaciona con Place, Dirección postal y línea"/><figcaption>Figura 3. - Diagrama de Parada y cómo se relaciona con Place, Dirección postal y línea.</figcaption></center></div>
@@ -641,7 +641,7 @@ function loadTOC(){
   <div id="patron-geo">
     <h3 id="patron-geo-headline" class="list">Patrón geo<span class="backlink">volver a <a href="#toc">índice</a></span></h3>
 
-    <p>Además, la <a href="#Parada">esautob:Parada</a>, en tanto que subclase de <a href="#Feature">geosparql:Feature</a>, se relaciona con el patrón de geolocalización compuesto por los vocabularios <b>geo</b>, <b>sf</b>, <b>geo_core</b> y <b>geosparql</b> y obtiene la geolocalización a través de la propiedad <a href="#hasGeometry">geosparql:hasGeometry</a> que lo relaciona con el punto <a href="#Point">sf:Point</a> como subclase de <a href="#Geometry">geosparql:Geometry</a>. Las coordenadas, longitud y latitud en formato WGS84 y ETRS89 se encuentran como atributos de punto <a href="#Point">sf:Point</a>.</p>
+    <p>Además, la <a href="#Parada">esautob:Parada</a>, en tanto que subclase de <a href="#http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a>, se relaciona con el patrón de geolocalización compuesto por los vocabularios <b>geo</b>, <b>sf</b>, <b>geo_core</b> y <b>geosparql</b> y obtiene la geolocalización a través de la propiedad <a href="#http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a> que lo relaciona con el punto <a href="#http://www.opengis.net/ont/sf#Point">sf:Point</a> como subclase de <a href="#http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>. Las coordenadas, longitud y latitud en formato WGS84 y ETRS89 se encuentran como atributos de punto <a href="#http://www.opengis.net/ont/sf#Point">sf:Point</a>.</p>
     
     <div><center><img src="resources/images/patron-geo.png" alt="Geolocalización de las paradas a través del patrón Geo"/><figcaption>Figura 4. - Geolocalización de las paradas a través del patrón Geo.</figcaption></center></div>
   </div>
@@ -650,7 +650,7 @@ function loadTOC(){
   <div id="patron-sosa">
     <h3 id="patron-sosa-headline" class="list">Patrón SOSA<span class="backlink">volver a <a href="#toc">índice</a></span></h3>
 
-    <p>Para representar el tiempo de paso del próximo vehículo se ha creado la clase <a href="#RealTimePassingTime">esautob:RealTimePassingTime</a> que como subclase de <a href="#Observation">sosa:Observation</a> tiene como característica de interés el punto en la secuencia de enlaces <a href="#PointInLinkSequence">tmjourney:PointInLinkSequence</a>, la superclase de ruta <a href="#Route">tmjourney:Route</a> y <a href="#JourneyPattern">tmjourney:JourneyPattern</a>.</p>
+    <p>Para representar el tiempo de paso del próximo vehículo se ha creado la clase <a href="#RealTimePassingTime">esautob:RealTimePassingTime</a> que como subclase de <a href="#http://www.w3.org/ns/sosa/Observation">sosa:Observation</a> tiene como característica de interés el punto en la secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>, la superclase de ruta <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a> y <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a>.</p>
     
     <div><center><img src="resources/images/patron-sosa.png" alt="Patrón SOSA del vocabulario de autobuses: tiempo de llegada del próximo autobús."/><figcaption>Figura 5. - Patrón SOSA del vocabulario de autobuses: tiempo de llegada del próximo autobús.</figcaption></center></div>
   </div>
@@ -658,11 +658,11 @@ function loadTOC(){
   <div id="vehicle-journey">
     <h3 id="vehicle-journey-headline" class="list">Viaje del vehículo<span class="backlink">volver a <a href="#toc">índice</a></span></h3>
     
-    <p>Además de línea, ruta y patrón de viaje, en Transmodel está el concepto viaje del vehículo <a href="#VehicleJourney">tmjourney:VehicleJourney</a> que representa el modelo de viaje que realiza el vehículo usando <a href="#madeUsing">tmjourney:madeUsing</a> patrones de viaje <a href="#JourneyPattern">tmjourney:JourneyPattern</a>.</p>
-    <p>Su dirección <a href="#directionType">tmjourney:directionType</a> se establece por una taxonomía <a href="#direction-type">tmkosjourney:direction-type</a> del proyecto Transmodel.</p>
-    <p>El viaje del vehículo <a href="#VehicleJourney">tmjourney:VehicleJourney</a> puede tomar los tiempos <a href="#timedFrom">tmjourney:timedFrom</a> de un punto de control en el patrón de viaje <a href="#TimingPointInJourneyPattern">tmjourney:TimingPointInJourneyPattern</a>, que es una subclase de un punto en una secuencia de enlaces <a href="#PointInLinkSequence">tmjourney:PointInLinkSequence</a>.</p>
-    <p>Cada uno está compuesto <a href="#composedOf">tmjourney:composedOf</a> de un grupo de viajes de cabecera <a href="#HeadwayJourneyGroup">tmjourney:HeadwayJourneyGroup</a> que está determinado por <a href="#determinedBy">tmjourney:determinedBy</a> un intervalo de cabecera <a href=#HeadwayInterval">tmjourney:HeadwayInterval</a>. Y cada uno trabaja <a href="#workedOn">tmjourney:workedOn</a> en un tipo de día <a href="#DayType">DayType</a>.</p>
-    <p>Finalmente, un calendario de servicio <a href="#ServiceCalendar">tmjourney:ServiceCalendar</a> establece una fecha de inicio <a href="#from">tmjourney:from</a> y una fecha de fin <a href="#to">tmjourney:to</a> y se define por <a href="#definedBy">tmjourney:definedBy</a> una asignación de día tipo <a href="#DayTypeAssignment">tmjourney:DayTypeAssignment</a> que establece una fecha <a href="#date">tmjourney:date</a> y está especificando un tipo de día <a href="#DayType">tmjourney:DayType</a>.</p>
+    <p>Además de línea, ruta y patrón de viaje, en Transmodel está el concepto viaje del vehículo <a href="#http://w3id.org/transmodel/journeys#VehicleJourney">tmjourney:VehicleJourney</a> que representa el modelo de viaje que realiza el vehículo usando <a href="#http://w3id.org/transmodel/journeys#madeUsing">tmjourney:madeUsing</a> patrones de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a>.</p>
+    <p>Su dirección <a href="#http://w3id.org/transmodel/journeys#directionType">tmjourney:directionType</a> se establece por una taxonomía <a href="http://w3id.org/transmodel/kos/journeys/direction-type">tmkosjourney:direction-type</a> del proyecto Transmodel.</p>
+    <p>El viaje del vehículo <a href="#http://w3id.org/transmodel/journeys#VehicleJourney">tmjourney:VehicleJourney</a> puede tomar los tiempos <a href="#http://w3id.org/transmodel/journeys#timedFrom">tmjourney:timedFrom</a> de un punto de control en el patrón de viaje <a href="#http://w3id.org/transmodel/journeys#TimingPointInJourneyPattern">tmjourney:TimingPointInJourneyPattern</a>, que es una subclase de un punto en una secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>.</p>
+    <p>Cada uno está compuesto <a href="#http://w3id.org/transmodel/journeys#composedOf">tmjourney:composedOf</a> de un grupo de viajes de cabecera <a href="#http://w3id.org/transmodel/journeys#HeadwayJourneyGroup">tmjourney:HeadwayJourneyGroup</a> que está determinado por <a href="#http://w3id.org/transmodel/journeys#determinedBy">tmjourney:determinedBy</a> un intervalo de cabecera <a href="#http://w3id.org/transmodel/journeys#HeadwayInterval">tmjourney:HeadwayInterval</a>. Y cada uno trabaja <a href="#http://w3id.org/transmodel/journeys#workedOn">tmjourney:workedOn</a> en un tipo de día <a href="#http://w3id.org/transmodel/journeys#DayType">DayType</a>.</p>
+    <p>Finalmente, un calendario de servicio <a href="#http://w3id.org/transmodel/journeys#ServiceCalendar">tmjourney:ServiceCalendar</a> establece una fecha de inicio <a href="#http://w3id.org/transmodel/journeys#from">tmjourney:from</a> y una fecha de fin <a href="#http://w3id.org/transmodel/journeys#to">tmjourney:to</a> y se define por <a href="#http://w3id.org/transmodel/journeys#definedBy">tmjourney:definedBy</a> una asignación de día tipo <a href="#http://w3id.org/transmodel/journeys#DayTypeAssignment">tmjourney:DayTypeAssignment</a> que establece una fecha <a href="#http://w3id.org/transmodel/journeys#date">tmjourney:date</a> y está especificando un tipo de día <a href="#http://w3id.org/transmodel/journeys#DayType">tmjourney:DayType</a>.</p>
     
     <div><center><img src="resources/images/vehicle-journey.png" alt="Los viajes del vehículo, horarios de cabecera, intervalos, tipos de día, calendarios de servicio y su asignación a día tipo."/><figcaption>Figura 6. - Los viajes del vehículo, horarios de cabecera, intervalos, tipos de día, calendarios de servicio y su asignación a día tipo</figcaption></center></div>
   </div>
@@ -673,12 +673,12 @@ function loadTOC(){
     <!-- EXAMPLES -->
     <div id="figure-operator-authority">
       <h4>Operador y autoridad</h4>
-      <p>Tanto un operador <a href="#Operator">tmorg:Operator</a> como una <a href="#Authority">tmorg:Authority</a> son tipos de organización <a href="#Organisation">tmjourney:Organisation</a>. En este caso se crean instancias de uno y otro: un operador de servicios de transporte, la Empresa Municipal de Transportes de Madrid EMT y una autoridad, el Consorcio Regional de Transportes de Madrid CRTM.</p>
+      <p>Tanto un operador <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a> como una <a href="#http://w3id.org/transmodel/organisations#Authority">tmorg:Authority</a> son tipos de organización <a href="#http://w3id.org/transmodel/organisations#Organisation">tmorg:Organisation</a>. En este caso se crean instancias de uno y otro: un operador de servicios de transporte, la Empresa Municipal de Transportes de Madrid EMT y una autoridad, el Consorcio Regional de Transportes de Madrid CRTM.</p>
       <div><center><img src="resources/images/autobus-operador-autoridad.png" alt="Detalle del diagrama de Operador y Autoridad."/><figcaption>Figura 7. - Detalle del diagrama de Operador y Autoridad</figcaption></center></div>
       <ul>
-	<li>Ambas tienen <a href="#characterisedBy">tmorg:characterisedBy</a> información de contacto <a href="#ContactDetails">tmorg:ContactDetails</a>.</li>
-	<li>La relación entre Operador y Autoridad se muestra en la propiedad <a href="#servingPTServiceFrom">tmorg:servingPTServiceFrom</a> que indica que la EMT sirve el transporte público del CRTM.</li>
-	<li>Como operador, la EMT opera <a href="#operating">tmjourney:operating</a> diversas líneas <a href="#Linea">esautob:Linea</a>: 110, 138 y 172, con sus correspondientes URIs.</li>
+	<li>Ambas tienen <a href="#http://w3id.org/transmodel/organisations#characterisedBy">tmorg:characterisedBy</a> información de contacto <a href="#http://w3id.org/transmodel/organisations#ContactDetails">tmorg:ContactDetails</a>.</li>
+	<li>La relación entre Operador y Autoridad se muestra en la propiedad <a href="#http://w3id.org/transmodel/organisations#servingPTFor">tmorg:servingPTFor</a> que indica que la EMT sirve el transporte público del CRTM.</li>
+	<li>Como operador, la EMT opera <a href="#http://w3id.org/transmodel/organisations#operating">tmjourney:operating</a> diversas líneas <a href="#Linea">esautob:Linea</a>: 110, 138 y 172, con sus correspondientes URIs.</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/madrid/operator/emt&gt; a tmorg:Operator ;
@@ -694,16 +694,16 @@ function loadTOC(){
     </div><!-- fin figure-operator -->
     <div id="figure-contactdetails">
       <h4>Información de contacto</h4>
-      <p>Para representar los datos de contacto del operador o de la autoridad se crea una instancia de la clase <a href="#ContactDetails">tmorg:ContactDetails</a>.</p>
+      <p>Para representar los datos de contacto del operador o de la autoridad se crea una instancia de la clase <a href="#http://w3id.org/transmodel/organisations#ContactDetails">tmorg:ContactDetails</a>.</p>
       <div><center><img src="resources/images/autobus-contactdetails.png" alt="Detalle del diagrama de ContactDetails ."/><figcaption>Figura 8. - Detalle del diagrama de ContactDetails </figcaption></center></div>
       <p>Cuenta con las siguientes propiedades:</p>
       <ul>
-	<li>Un teléfono <a href="#telephone">schema:telephone</a>.</li>
-	<li>Un correo electrónico <a href="#email">schema:email</a>.</li>
-	<li>Una dirección web <a href="#url">schema:url</a>.</li>
-	<li>Una dirección postal <a href="#address">schema:address</a>.</li>
-	<li>El nombre legal <a href="#legalName">schema:legalName</a>.</li>
-	<li>y por último, un nombre alternativo <a href="#alternateName">schema:alternateName</a>, con el que se le conoce.</li>
+	<li>Un teléfono <a href="#http://schema.org/telephone">schema:telephone</a>.</li>
+	<li>Un correo electrónico <a href="#http://schema.org/email">schema:email</a>.</li>
+	<li>Una dirección web <a href="#http://schema.org/url">schema:url</a>.</li>
+	<li>Una dirección postal <a href="#http://schema.org/address">schema:address</a>.</li>
+	<li>El nombre legal <a href="#http://schema.org/legalName">schema:legalName</a>.</li>
+	<li>y por último, un nombre alternativo <a href="#http://schema.org/alternateName">schema:alternateName</a>, con el que se le conoce.</li>
       </ul>
       <p>Ejemplo de los detalles de contacto del operador EMT:</p>
       <pre>
@@ -723,16 +723,16 @@ function loadTOC(){
       <div><center><img src="resources/images/autobus-linea.png" alt="Detalle del diagrama de Línea ."/><figcaption>Figura 9. - Detalle del diagrama de Línea </figcaption></center></div>
       <p>Línea cuenta con las siguientes propiedades:</p>
       <ul>
-	<li>La línea 138 está operada <a href="#runBy">tmjourney:runBy</a> por el operador <a href="#Operator">tmorg:Operator</a> EMT.</li>
-	<li>Su identificador <a href="#identifier">dcterms:identifier</a> es el nombre de la línea, en este caso 138.</li>
-	<li>Su descripción <a href="#description">dcterms:description</a> explica el nombre o número de la línea, dónde comienza y dónde termina.</li>
-	<li>Puede tener una URL <a href="#url">schema:url</a>.</li>
-	<li>Su nombre <a href="#name">schema:name</a> es el nombre por el que se conoce a la línea, en este caso &quot;Línea 138&quot;.</lI>
-	<li>Y también un nombre corto <a href="#shortName">tmjourney:shortName</a>, 138.</li>
-	<li>Se presenta con un tipo de presentación <a href="#Presentation">tmcommons:Presentation</a> según el tipo de línea o grupo de líneaas.</li>
-	<li>La línea puede estar afectada <a href="#afectadaPorIncidencia">esautob:afectadaPorIncidencia</a> por incidencias <a href="#Incidencia">estraf:Incidencia</a>, en este caso por varias.</li>
-	<li>Cada línea tiene paradas <a href="#Parada">esautob:Parada</a> que es cabecera de línea <a href="#cabeceraLinea">esautob:cabeceraLinea</a> y <a href="#finLinea">esautob:finLinea</a>.</li>
-	<li>Finalmente, cada línea está compuesta <a href="#madeUpOf">tmjourney:madeUpOf</a> por rutas <a href="#Route">tmjourney:Route</a>, normalmente una de ida y una de vuelta.</li>
+	<li>La línea 138 está operada <a href="#http://w3id.org/transmodel/journeys#runBy">tmjourney:runBy</a> por el operador <a href="#http://w3id.org/transmodel/organisations#Operator">tmorg:Operator</a> EMT.</li>
+	<li>Su identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a> es el nombre de la línea, en este caso 138.</li>
+	<li>Su descripción <a href="#http://purl.org/dc/terms/description">dcterms:description</a> explica el nombre o número de la línea, dónde comienza y dónde termina.</li>
+	<li>Puede tener una URL <a href="#http://schema.org/url">schema:url</a>.</li>
+	<li>Su nombre <a href="#http://schema.org/name">schema:name</a> es el nombre por el que se conoce a la línea, en este caso &quot;Línea 138&quot;.</lI>
+	<li>Y también un nombre corto <a href="#http://w3id.org/transmodel/commons#shortName">tmcommons:shortName</a>, 138.</li>
+	<li>Se presenta con un tipo de presentación <a href="#http://w3id.org/transmodel/commons#Presentation">tmcommons:Presentation</a> según el tipo de línea o grupo de líneaas.</li>
+	<li>La línea puede estar afectada <a href="#afectadaPorIncidencia">esautob:afectadaPorIncidencia</a> por incidencias <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">estraf:Incidencia</a>, en este caso por varias.</li>
+	<li>Cada línea tiene paradas <a href="#Parada">esautob:Parada</a> que es cabecera de línea <a href="#cabeceraLinea">esautob:cabeceraLinea</a> y <a href="#finalLinea">esautob:finalLinea</a>.</li>
+	<li>Finalmente, cada línea está compuesta <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> por rutas <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>, normalmente una de ida y una de vuelta.</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/linea/138&gt; a esautob:Linea ;
@@ -752,10 +752,10 @@ function loadTOC(){
 	tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138a&gt; ;
 	tmjourney:madeUpOf &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/route/138b&gt; .
       </pre>
-      <p>La presentación de la línea son instancias de la clase <a href="#Presentation">tmcommons:Presentation</a> que tienen dos propiedades:</p>
+      <p>La presentación de la línea son instancias de la clase <a href="#http://w3id.org/transmodel/commons#Presentation">tmcommons:Presentation</a> que tienen dos propiedades:</p>
       <ul>
-	<li>El color de fondo con <a href="#colour">tmcommons:colour</a>.</li>
-	<li>El color del texto con <a href="#textColour">tmcommons:textColour</a>.</li>
+	<li>El color de fondo con <a href="#http://w3id.org/transmodel/commons#colour">tmcommons:colour</a>.</li>
+	<li>El color del texto con <a href="#http://w3id.org/transmodel/commons#textColour">tmcommons:textColour</a>.</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/presentation/210&gt; a tmcommons:Presentation ;
@@ -765,28 +765,28 @@ function loadTOC(){
     </div>
     <!-- fin figure-linea -->
     <div id="figure-incidencia">
-      <h4>Incidencia</h4>
-      <p>Para representar las incidencias se utiliza la clase <a href="#Incidencia">estraf:Incidencia</a> del vocabulario de tráfico.</p>
+      <h4>Incidencia</h4> 
+      <p>Para representar las incidencias se utiliza la clase <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">estraf:Incidencia</a> del vocabulario de tráfico.</p>
       <div><center><img src="resources/images/autobus-incidencia.png" alt="Detalle del diagrama de Incidencia ."/><figcaption>Figura 10. - Detalle del diagrama de Incidencia </figcaption></center></div>
       <p>Se crea una instancia que cuenta con las siguientes propiedades</p>
       <ul>
-	<li>Para crear la URI de la incidencia se ha elegido el valor del identificador <a href="#identifier">dcterms:identifier</a>.</li>
-	<li>La descripción de la misma aparece en la propiedad <a href="#description">dcterms:description</a>.</li>
-	<li>El título <a href="#title">dcterms:title</a> es una descripción corta de la misma.</li>
-	<li>Para ofrecer más información, incluidas imágenes o gráficos se puede relacionar con un adjunto a través de la propiedad de nueva creación <a href="#incidenciaAdjunto">esautob:incidenciaAdjunto</a> que enlaza con una URI, en este caso con la URI de un PDF como los de las incidencias de la EMT de Madrid.</li>
-	<li>Cuenta con la propiedad de la fecha de creación <a href="#dateCreated">schema:dateCreated</a>, la del comienzo de la incidencia <a href="#startDate">schema:startDate</a> y del fin con <a href="#endDate">schema:endDate</a>.</li>
-	<li>La propiedad <a href="#esRecurrente">estraf:esRecurrente</a> indica si se trata de una incidencia recurrente o no. Por ejemplo, si fuera fruto del mercadillo semanal.</li>
-	<li>Con <a href="#numSentidos">estraf:numSentidos</a> se puede indicar el número de sentidos a los que afecta y <a href="#numCarriles">estraf:numCarriles</a> el número de carriles afectados.</li>
-	<li>Para la geolocalización, en tanto que subclase de <a href="#Feature">geosparql:Feature</a>, cuenta con la propiedad <a href="#hasGeometry">geosparql:hasGeometry</a> que apunta a una instancia de un punto geográfico <a href="#Point">sf:Point</a>.</li>
-	<li>Esa incidencia puede ocurrir <a href="#incidenciaEnTramo">estraf:incidenciaEnTramo</a> en un <a href="#Tramo">estraf:Tramo</a>.</li>
-	<li>Por último, pude ser un tipo de incidencia <a href="#tipoIncidencia">estraf:tipoIncidencia</a> que enlaza con la taxonomía <a href="#tipo-incidencia">estrafkos:tipo-incidencia</a>.</li>
+	<li>Para crear la URI de la incidencia se ha elegido el valor del identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a>.</li>
+	<li>La descripción de la misma aparece en la propiedad <a href="#http://purl.org/dc/terms/description">dcterms:description</a>.</li>
+	<li>El título <a href="#http://purl.org/dc/terms/title">dcterms:title</a> es una descripción corta de la misma.</li>
+	<li>Para ofrecer más información, incluidas imágenes o gráficos se puede relacionar con un adjunto a través de la propiedad de nueva creación <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaAdjunto">estraf:incidenciaAdjunto</a> que enlaza con una URI, en este caso con la URI de un PDF como los de las incidencias de la EMT de Madrid.</li>
+	<li>Cuenta con la propiedad de la fecha de creación <a href="#http://schema.org/dateCreated">schema:dateCreated</a>, la del comienzo de la incidencia <a href="#http://schema.org/startDate">schema:startDate</a> y del fin con <a href="#http://schema.org/endDate">schema:endDate</a>.</li>
+	<li>La propiedad <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente">estraf:esRecurrente</a> indica si se trata de una incidencia recurrente o no. Por ejemplo, si fuera fruto del mercadillo semanal.</li>
+	<li>Con <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos">estraf:numSentidos</a> se puede indicar el número de sentidos a los que afecta y <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles">estraf:numCarriles</a> el número de carriles afectados.</li>
+	<li>Para la geolocalización, en tanto que subclase de <a href="#http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a>, cuenta con la propiedad <a href="#http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a> que apunta a una instancia de un punto geográfico <a href="#http://www.opengis.net/ont/sf#Point">sf:Point</a>.</li>
+	<li>Esa incidencia puede ocurrir <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo">estraf:incidenciaEnTramo</a> en un <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">estraf:Tramo</a>.</li>
+	<li>Por último, puede ser un tipo de incidencia <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia">estraf:tipoIncidencia</a> que enlaza con la taxonomía <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia">estrafkos:tipo-incidencia</a>.</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/incidencia/29059944-382A-49AA-A068-B55BF2FAC51F&gt; a estraf:Incidencia ;
 	dcterms:identifier "29059944-382A-49AA-A068-B55BF2FAC51F"^^xsd:string ;
 	dcterms:description "El 21 de junio de 12:00 a 14:30 horas aproximadamente, las líneas 001,  002,  1,  2,  3,  7,  21,  37,  40,  44,  46,  62,  82,  83,  132,  133,  138,  147,  149,  C1 y C2, tendrán retenciones (...)"^^xsd:string ;
 	dcterms:title "Manifestación Génova - Moncloa 21/06/2020"^^xsd:string ;
-	esautob:incidenciaAdjunto "http://feeds.emtmadrid.es:8082/docs/20200621-Manifestacion-Genova-Moncloa.pdf"^^xsd:anyURI ;
+	estraf:incidenciaAdjunto "http://feeds.emtmadrid.es:8082/docs/20200621-Manifestacion-Genova-Moncloa.pdf"^^xsd:anyURI ;
 	schema:dateCreated "2020-06-20T09:30:00+02:00"^^xsd:dateTime ;
 	schema:startDate "2020-06-21T12:00:00+02:00"^^xsd:dateTime ;
 	schema:endDate "2020-06-21T14:30:00+02:00"^^xsd:dateTime ;
@@ -799,16 +799,17 @@ function loadTOC(){
       </pre>
     </div>
     <!-- fin figure-incidencia -->
+    
     <div id="figure-route">
       <h4>Route, rutas</h4>
-      <p>Cada línea <a href="#Linea">esautob:Linea</a> suele tener al menos dos rutas <a href="#Route">tmjourney:Route</a>, aunque podría ser solo una o más de dos. La ruta de ida va de la parada de cabecera de línea al final de línea y la ruta de vuelta en sentido inverso. Las rutas marcan los itinerarios base, luego los patrones de viaje <a href="#JourneyPattern">tmjourney:JourneyPattern</a> pueden definir más itinerarios.</p>
+      <p>Cada línea <a href="#Linea">esautob:Linea</a> suele tener al menos dos rutas <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>, aunque podría ser solo una o más de dos. La ruta de ida va de la parada de cabecera de línea al final de línea y la ruta de vuelta en sentido inverso. Las rutas marcan los itinerarios base, luego los patrones de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> pueden definir más itinerarios.</p>
       <div><center><img src="resources/images/autobus-route.png" alt="Detalle del diagrama de Route o ruta ."/><figcaption>Figura 11. - Detalle del diagrama de Route o ruta </figcaption></center></div>
       <p>Sus atributos son:</p>
       <ul>
-	<li>Un identificador <a href="#identifier">dcterms:identifier</a> que podría ser el nombre de la línea y una letra del abecedario.</li>
-	<li>Una descripción <a href="#description">dcterms:description</a> donde indica si es ruta de ida o de vuelta.</li>
-	<li>Se compone de <a href="#madeUpOf">tmjourney:madeUpOf</a> una serie de puntos en la ruta <a href="#PointOnRoute">tmjourney:PointOnRoute</a> que se corresponderán luego con las paradas.</li>
-	<li>Para informar sobre su dirección la propiedad <a href="#directionType">tmjourney:directionType</a> enlaza con la taxonomía de direcciones posibles, en este caso <span lang="en">outbound</span>	indica que va del inicio al final de línea.</li>
+	<li>Un identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a> que podría ser el nombre de la línea y una letra del abecedario.</li>
+	<li>Una descripción <a href="#http://purl.org/dc/terms/description">dcterms:description</a> donde indica si es ruta de ida o de vuelta.</li>
+	<li>Se compone de <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> una serie de puntos en la ruta <a href="#http://w3id.org/transmodel/journeys#PointOnRoute">tmjourney:PointOnRoute</a> que se corresponderán luego con las paradas.</li>
+	<li>Para informar sobre su dirección la propiedad <a href="#http://w3id.org/transmodel/journeys#directionType">tmjourney:directionType</a> enlaza con la taxonomía de direcciones posibles, en este caso <span lang="en">outbound</span>	indica que va del inicio al final de línea.</li>
       </ul>
       <p>La ruta de ida:</p>
       <pre>
@@ -834,14 +835,14 @@ function loadTOC(){
     <!-- fin figure-route -->
     <div id="figure-pointonroute-routepoint">
       <h4>PointOnRoute, Punto en Ruta y RoutePoint, Punto de Ruta</h4>
-      <p>Los puntos en ruta <a href="#PointOnRoute">tmjourney:PointOnRoute</a> de los que se compone una ruta <a href="#Route">tmjourney:Route</a> son subclase de puntos en la secuencia de enlaces <a href="#PointInLinkSequence">tmjourney:PointInLinkSequence</a>, de donde heredan las propiedades del orden <a href="#order">tmjourney:order</a> y la distancia desde el comienzo <a href="#distanceFromStart">tmjourney:distanceFromStart</a>.</p>
+      <p>Los puntos en ruta <a href="#http://w3id.org/transmodel/journeys#PointOnRoute">tmjourney:PointOnRoute</a> de los que se compone una ruta <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a> son subclase de puntos en la secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>, de donde heredan las propiedades del orden <a href="#http://w3id.org/transmodel/journeys#order">tmjourney:order</a> y la distancia desde el comienzo <a href="#http://w3id.org/transmodel/journeys#distanceFromStart">tmjourney:distanceFromStart</a>.</p>
       <div><center><img src="resources/images/autobus-pointonroute-routepoint.png" alt="Detalle del diagrama de PointOnRoute y RoutePoint ."/><figcaption>Figura 12. - Detalle del diagrama de PointOnRoute y RoutePoint </figcaption></center></div>
-      <p>Cada instancia de <a href="#PointOnRoute">tmjourney:PointOnRoute</a> se representa por:</p>
+      <p>Cada instancia de <a href="#http://w3id.org/transmodel/journeys#PointOnRoute">tmjourney:PointOnRoute</a> se representa por:</p>
       <ul>
-	<li>Un identificador <a href="#identifier">dcterms:identifier</a> que se utiliza en la URI.</li>
-	<li>El orden <a href="#order">tmjourney:order</a> del punto en ruta <a href="#PointOnRoute">tmjourney:PointOnRoute</a>.</li>
-	<li>La distancia desde elinicio <a href="#distanceFromStart">tmjourney:distanceFromStart</a> de la ruta, expresada en metros.</li>
-	<li>La relación con un punto de ruta <a href="#RoutePoint">tmjourney:RoutePoint</a> se realiza a través de la propiedad <a href="#viewedAs">tmjourney:viewedAs</a>, lo cual es la forma de comunicar los puntos en ruta con los puntos físicos.</li>
+	<li>Un identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a> que se utiliza en la URI.</li>
+	<li>El orden <a href="#http://w3id.org/transmodel/journeys#order">tmjourney:order</a> del punto en ruta <a href="#http://w3id.org/transmodel/journeys#PointOnRoute">tmjourney:PointOnRoute</a>.</li>
+	<li>La distancia desde elinicio <a href="#http://w3id.org/transmodel/journeys#distanceFromStart">tmjourney:distanceFromStart</a> de la ruta, expresada en metros.</li>
+	<li>La relación con un punto de ruta <a href="#http://w3id.org/transmodel/journeys#RoutePoint">tmjourney:RoutePoint</a> se realiza a través de la propiedad <a href="#http://w3id.org/transmodel/journeys#viewedAs">tmjourney:viewedAs</a>, lo cual es la forma de comunicar los puntos en ruta con los puntos físicos.</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/pointonroute/138b-4608&gt; a tmjourney:PointOnRoute ;
@@ -856,16 +857,16 @@ function loadTOC(){
 	tmjourney:distanceFromStart "247"^^xsd:double ;
 	tmjourney:viewedAs &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4022&gt; .
       </pre>
-      <p>El punto de ruta <a href="#RoutePoint">tmjourney:RoutePoint</a> relaciona los puntos en ruta con los puntos físicos, es decir, las paradas <a href="#Parada">esautob:Parada</a>, al ser los puntos en ruta centroides funcionales <a href="#functionalCentroidFor">tmjourney:functionalCentroidFor</a> para una zona <a href="#Zone">tmcommons:Zone</a> que es la superclase de <a href="#Place">tmcommons:Place</a> y ésta a su vez de la parada, como se muestra más adelante.</p>
+      <p>El punto de ruta <a href="#http://w3id.org/transmodel/journeys#RoutePoint">tmjourney:RoutePoint</a> relaciona los puntos en ruta con los puntos físicos, es decir, las paradas <a href="#Parada">esautob:Parada</a>, al ser los puntos en ruta centroides funcionales <a href="#http://w3id.org/transmodel/commons#aFunctionalCentroidFor">tmcommons:aFunctionalCentroidFor</a> para una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a> que es la superclase de <a href="#http://w3id.org/transmodel/commons#Place">tmcommons:Place</a> y ésta a su vez de la parada, como se muestra más adelante.</p>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/routepoint/138b-4608&gt; a tmjourney:RoutePoint ;
-	tmcommons:functionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recureso/transporte/autobus/parada/4608&gt; .
+	tmcommons:aFunctionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recureso/transporte/autobus/parada/4608&gt; .
       </pre>
     </div>
     <!-- fin figure-pointonroute-routepoint -->
     <div id="figure-journeypattern">
       <h4>Journey Pattern, patrones de viaje y destino</h4>
-      <p>El patrón de viaje <a href="#JourneyPattern">tmjourney:JourneyPattern</a> trabaja en <a href="#on">tmjourney:on</a> una ruta <a href="#Route">tmjourney:Route</a>. Ambas clases son subclases de la clase secuencia de enlaces <a href="#LinkSequence">tmjourney:LinkSequence</a>. Está hecha de <a href="#madeUpOf">tmjourney:madeUpOf</a> puntos de parada en el patrón de viaje <a href="#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> que son subclases de <a href="#PointInLinkSequence">tmjourney:PointInLinkSequence</a>. Su destino se anuncia a través de la relación <a href="#journeyPatternAdvertisedFor">tmjourney:journeyPatternAdvertisedFor</a> en un <a href="#DestinationDisplay">tmjourney:DestinationDisplay</a>.</p>
+      <p>El patrón de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> trabaja en <a href="#http://w3id.org/transmodel/journeys#on">tmjourney:on</a> una ruta <a href="#http://w3id.org/transmodel/journeys#Route">tmjourney:Route</a>. Ambas clases son subclases de la clase secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#LinkSequence">tmjourney:LinkSequence</a>. Está hecha de <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> puntos de parada en el patrón de viaje <a href="#http://w3id.org/transmodel/journeys#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> que son subclases de <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>. Su destino se anuncia a través de la relación <a href="#http://w3id.org/transmodel/journeys#journeyPatternAdvertisedFor">tmjourney:journeyPatternAdvertisedFor</a> en un <a href="#http://w3id.org/transmodel/journeys#DestinationDisplay">tmjourney:DestinationDisplay</a>.</p>
       <div><center><img src="resources/images/autobus-journeypattern.png" alt="Detalle del diagrama de JourneyPattern y DestinationDisplay ."/><figcaption>Figura 13. - Detalle del diagrama de JourneyPattern y DestinationDisplay </figcaption></center></div>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/journeypattern/138a2&gt; a tmjourney:JourneyPattern ;
@@ -884,10 +885,10 @@ function loadTOC(){
     <!-- fin figure-journeypattern -->
     <div id="figure-stoppointinjourneypattern">
       <h4>StopPointInJourneyPattern</h4>
-      <p>Los patrones de viaje <a href="#JourneyPattern">tmjourney:JourneyPattern</a> están compuestos de <a href="#madeUpOf">tmjourney:madeUpOf</a> puntos de parada en patrones de viaje <a href="#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> que son subclase de puntos en secuencia de enlaces <a href="#PointInLinkSequence">tmjourney:PointInLinkSequence</a>. Como tales, pueden verse <a href="#viewedAs">tmjourney:viewedAs</a> como puntos de parada programados <a href="#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a>.</p>
+      <p>Los patrones de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> están compuestos de <a href="#http://w3id.org/transmodel/journeys#madeUpOf">tmjourney:madeUpOf</a> puntos de parada en patrones de viaje <a href="#http://w3id.org/transmodel/journeys#StopPointInJourneyPattern">tmjourney:StopPointInJourneyPattern</a> que son subclase de puntos en secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a>. Como tales, pueden verse <a href="#http://w3id.org/transmodel/journeys#viewedAs">tmjourney:viewedAs</a> como puntos de parada programados <a href="#http://w3id.org/transmodel/journeys#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a>.</p>
       <div><center><img src="resources/images/autobus-stoppointinjourneypattern.png" alt="Detalle del diagrama de StopPointInJourneyPattern ."/><figcaption>Figura 15. - Detalle del diagrama de StopPointInJourneyPattern </figcaption></center></div>
-      <p>El tipo de uso de este punto de parada en patrón de viaje se determina gracias a la relación <a href="#stopUse">tmjourney:stopUse</a> con el vocabulario <a href="#stop-use-type">tmkosjourney:stop-use-type</a>. En este caso se trata de una parada de paso <a href="https://w3id.org/transmodel/kos/journeys/stop-use-type">tmkosjourney:stop-use-type</a>.</p>
-      <p>De <a href="#PointInLinkSequence">tmjourney:PointInLinkSequence</a> hereda el identificador <a href="#identifier">dcterms:identifier</a>, el orden <a href="#order">tmjourney:order</a> de ese punto en la secuencia de enlaces <a href="#LinkSequence">tmjourney:LinkSequence</a> que es el <a href="#JourneyPattern">tmjourney:JourneyPattern</a> y la distancia desde el comienzo <a href="#distancefromStart">tmjourney:distanceFromStart</a> de esta secuencia.</p>
+      <p>El tipo de uso de este punto de parada en patrón de viaje se determina gracias a la relación <a href="#http://w3id.org/transmodel/journeys#stopUse">tmjourney:stopUse</a> con el vocabulario <a href="https://w3id.org/transmodel/kos/journeys/stop-use-type">tmkosjourney:stop-use-type</a>. En este caso se trata de una parada de paso <a href="https://w3id.org/transmodel/kos/journeys/stop-use-type/pass-through">tmkosjourney:stop-use-type</a>.</p>
+      <p>De <a href="#http://w3id.org/transmodel/journeys#PointInLinkSequence">tmjourney:PointInLinkSequence</a> hereda el identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a>, el orden <a href="#http://w3id.org/transmodel/journeys#order">tmjourney:order</a> de ese punto en la secuencia de enlaces <a href="#http://w3id.org/transmodel/journeys#LinkSequence">tmjourney:LinkSequence</a> que es el <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a> y la distancia desde el comienzo <a href="#http://w3id.org/transmodel/journeys#distancefromStart">tmjourney:distanceFromStart</a> de esta secuencia.</p>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoppointinjourneypattern/138a1-4608&gt; a tmjourney:StopPointInJourneyPattern ;
 	dcterms:identifier "138a1-4608"^^xsd:string ;
@@ -899,18 +900,18 @@ function loadTOC(){
     <!-- fin figure-stoppointinjourneypattern -->
     <div id="figure-scheduledstoppoint">
       <h4>ScheduledStopPoint</h4>
-      <p>El punto de parada planificada <a href="#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a>, como subclase del punto <a href="#Point">tmjourney:Point</a>, es el centroide funcional <a href="#functionalCentroidFor">tmjourney:functionalCentroidFor</a> para una zona <a href="#Zone">tmcommons:Zone</a>, que es la súperclase de <a href="#Place">#tmcommons:Place</a> y esta a su vez de <a href="#Parada">tmjourney:Parada</a>.</p>
+      <p>El punto de parada planificada <a href="#http://w3id.org/transmodel/journeys#ScheduledStopPoint">tmjourney:ScheduledStopPoint</a>, como subclase del punto <a href="#http://w3id.org/transmodel/journeys#Point">tmjourney:Point</a>, es el centroide funcional <a href="#http://w3id.org/transmodel/commons#aFunctionalCentroidFor">tmcommons:aFunctionalCentroidFor</a> para una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a>, que es la súperclase de <a href="#http://w3id.org/transmodel/commons#Place">#tmcommons:Place</a> y esta a su vez de <a href="#Parada">esautob:Parada</a>.</p>
       <div><center><img src="resources/images/autobus-scheduledstoppoint.png" alt="Detalle del diagrama de ScheduledStopPoint ."/><figcaption>Figura 16. - Detalle del diagrama de ScheduledStopPoint </figcaption></center></div>
       <p>Sus propiedades son:</p>
       <ul>
-	<li>Un identificador <a href="#identifier">dcterms:identifier</a> que se utiliza para la URI.</li>
-	<li>Dos propiedades indican si la parada se puede utilizar para subir al autobús <a href="#forAlighting">tmjourney:forAlighting</a> o para bajar <a href="#forBoarding">tmjourney:forBoarding</a>.</li>
-	<li>Puede estar incluida <a href="#included">tmjourney:included</a> en un área de paradas <a href="#StopArea">tmjourney:StopArea</a>·</li>
+	<li>Un identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a> que se utiliza para la URI.</li>
+	<li>Dos propiedades indican si la parada se puede utilizar para subir al autobús <a href="#http://w3id.org/transmodel/journeys#forAlighting">tmjourney:forAlighting</a> o para bajar <a href="#http://w3id.org/transmodel/journeys#forBoarding">tmjourney:forBoarding</a>.</li>
+	<li>Puede estar incluida <a href="#http://w3id.org/transmodel/journeys#includedIn">tmjourney:includedIn</a> en un área de paradas <a href="#http://w3id.org/transmodel/journeys#StopArea">tmjourney:StopArea</a>·</li>
       </ul>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/schedulestoppoint/138a1-4608&gt; a tmjourney:ScheduledStopPoint ;
 	tmjourney:includedIn &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/stoparea/cristorey&gt; ;
-	tmcommons:functionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608&gt; ;
+	tmcommons:aFunctionalCentroidFor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/4608&gt; ;
 	tmjourney:forAlighting "false"^^xsd:boolean ;
 	tmjourney:forBoarding "true"^^xsd:boolean .
 	
@@ -922,7 +923,7 @@ function loadTOC(){
     <!-- fin figure-scheduledstoppoint -->
     <div id="figure-parada">
       <h4>Parada, Zona, Lugar</h4>
-      <p>Una zona <a href="#Zone">tmcommons:Zone</a> es la superclase de <a href="#Place">tmcommons:Place</a> y ésta a su vez de <a href="#Parada">esautob:Parada</a>.</p>
+      <p>Una zona <a href="#http://w3id.org/transmodel/commons#Zone">tmcommons:Zone</a> es la superclase de <a href="#http://w3id.org/transmodel/commons#Place">tmcommons:Place</a> y ésta a su vez de <a href="#Parada">esautob:Parada</a>.</p>
       <div><center><img src="resources/images/autobus-parada.png" alt="Detalle del diagrama de Parada ."/><figcaption>Figura 17. - Detalle del diagrama de Parada</figcaption></center></div>
       <pre>
 	&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/parada/3086&gt; a esautob:Parada , tmcommons:Place, tmcommons:Zone ;
@@ -937,14 +938,14 @@ function loadTOC(){
 	schema:address &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/manuelbecerra&gt; .
       </pre>
       <ul>
-	<li>Cada parada puede tener una URL <a href="#url">schema:url</a>.</li>
-	<li>Cuenta con un identificador <a href="#id">dcterms:id</a>, normalmente el número de parada.</li>
-	<li>También una descripción  <a href="#description">dcterms:description</a>.</li>
-	<li>Un nombre <a href="#name">schema:name</a>.</li>
-	<li>Información sobre si dispone de conexión WiFi <a href="#wifi">esautob:wifi</a> o panel de información electrónico <a href="#panelElectronico">#esautob:panelElectronico</a>.</li>
-	<li>A qué zona <a href=#zona">esautob:zona</a> corresponde.</li>
-	<li>Como subclase de <a href="#Feature">geosparql:Feature</a>, su geometría <a href="#hasGeometry">geosparql:hasGeometry</a> que apunta a un punto geográfico <a href="#Point">sf:Point</a>.</li>
-	<li>Finalmente, una dirección postal <a href="#address">schema:address</a>.</li>
+	<li>Cada parada puede tener una URL <a href="#http://schema.org/url">schema:url</a>.</li>
+	<li>Cuenta con un identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a>, normalmente el número de parada.</li>
+	<li>También una descripción  <a href="#http://purl.org/dc/terms/description">dcterms:description</a>.</li>
+	<li>Un nombre <a href="#http://schema.org/name">schema:name</a>.</li>
+	<li>Información sobre si dispone de conexión WiFi <a href="#wifi">esautob:wifi</a> o panel de información electrónico <a href="#panelElectronico">esautob:panelElectronico</a>.</li>
+	<li>A qué zona <a href="#zona">esautob:zona</a> corresponde.</li>
+	<li>Como subclase de <a href="#http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a>, su geometría <a href="#http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a> que apunta a un punto geográfico <a href="#http://www.opengis.net/ont/sf#Point">sf:Point</a>.</li>
+	<li>Finalmente, una dirección postal <a href="#http://schema.org/address">schema:address</a>.</li>
       </ul>
     </div>
     <!-- fin figure-parada -->
@@ -959,10 +960,10 @@ function loadTOC(){
       </ul>
       <div><center><img src="resources/images/autobus-punto.png" alt="Detalle del diagrama de Punto geográfico ."/><figcaption>Figura 18. - Detalle del diagrama de Punto geográfico </figcaption></center></div>
       <ul>
-	<li>Del vocabulario <a href="http://www.opengis.net/ont/geosparql">geosparql</a> se reutiliza la clase <a href="#SpatialObject">geosparql:SpatialObject</a> que es superclase tanto de <a href="#Feature">geosparql:Feature</a>, superclase a su vez de <a href="#Parada">esautob:Parada</a>, como de <a href="#Geometry">geosparql:Geometry</a>, superclase a su vez de <a href="#Point">sf:Point</a>. También se utiliza la propiedad <a href="#hasGeometry">geosparql:hasGeometry</a> que relaciona la característica <a href="#Feature">geosparql:Feature</a> con su geometría </a href="#Geometry">geosparql:Geometry</a>, cuya propiedad <a href="#asWKT">gesoparql:asWKT</a> representa como literales de <span lang="en">well-known representation of geometry</span> (WKT) su geometría.</li>
-<li>Del vocabulario <a href="https://datos.ign.es/def/geo_core">geo_core</a> se representan X <a href="#xETRS89">geo_core:xETRS89<a> e Y <a href="#yETRS89">geo_core:yETRS89</a>.</li>
-<li>De <a href="http://www.opengis.net/ont/sf">sf</a> se reutiliza la clase <a href="#Point">sf:Point</a> que contiene las coordenadas.</li>
-<li>De <a href="http://www.w3.org/2003/01/geo/wgs84_pos">geo</a> se representan longitud <a href="#long">geo:long</a> y latitud <a href="#lat">geo:lat</a>.</li>
+	<li>Del vocabulario <a href="http://www.opengis.net/ont/geosparql">geosparql</a> se reutiliza la clase <a href="#http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a> que es superclase tanto de <a href="#http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a>, superclase a su vez de <a href="#Parada">esautob:Parada</a>, como de <a href="#http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>, superclase a su vez de <a href="#http://www.opengis.net/ont/sf#Point">sf:Point</a>. También se utiliza la propiedad <a href="#http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a> que relaciona la característica <a href="#http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a> con su geometría </a href="#http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>, cuya propiedad <a href="#http://www.opengis.net/ont/geosparql#asWKT">geoparql:asWKT</a> representa como literales de <span lang="en">well-known representation of geometry</span> (WKT) su geometría.</li>
+<li>Del vocabulario <a href="https://datos.ign.es/def/geo_core">geo_core</a> se representan X <a href="#https://datos.ign.es/def/geo_core#xETRS89">geo_core:xETRS89<a> e Y <a href="#https://datos.ign.es/def/geo_core#yETRS89">geo_core:yETRS89</a>.</li>
+<li>De <a href="http://www.opengis.net/ont/sf">sf</a> se reutiliza la clase <a href="#http://www.opengis.net/ont/sf#Point">sf:Point</a> que contiene las coordenadas.</li>
+<li>De <a href="http://www.w3.org/2003/01/geo/wgs84_pos">geo</a> se representan longitud <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#long">geo:long</a> y latitud <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a>.</li>
 </ul>
 <pre>
   &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/point/3086&gt; a sf:Point ;
@@ -976,14 +977,14 @@ function loadTOC(){
 <!-- fin figure-punto -->
 <div id="figure-vehiclejourney">
   <h4>VehicleJourney</h4>
-  <p>Un viaje del vehículo <a href="#VehicleJourney">tmjourney:VehicleJourney</a> se hacen utilizando <a href="#madeUsing">tmjourney:madeUsing</a> patrones de viaje <a href="#JourneyPattern">tmjourney:JourneyPattern</a>, trabajan en <a href="#workedOn">tmjourney:workedOn<a> tipos de día <a href="#DayType">tmjourney:DayType</a>, están compuestos de <a href="#composedOf">tmjourney:composedOf</a> grupos de viaje de cabecera <a href="#HeadwayJourneyGroup">tmjoruney:HeadwayJourneyGroup</a> y el tipo de dirección <a href="#directionType">tmjourney:directionType</a> apunta a la taxonomía de tipos de dirección < href="https://w3id.org/transmodel/kos/journeys/direction-type">tmkosjourney:direction-type</a>, en este caso &quot;outbound&quot;, de cabecera a final de línea.</p>
+  <p>Un viaje del vehículo <a href="#http://w3id.org/transmodel/journeys#VehicleJourney">tmjourney:VehicleJourney</a> se hacen utilizando <a href="#http://w3id.org/transmodel/journeys#madeUsing">tmjourney:madeUsing</a> patrones de viaje <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a>, trabajan en <a href="#http://w3id.org/transmodel/journeys#workedOn">tmjourney:workedOn<a> tipos de día <a href="#http://w3id.org/transmodel/journeys#DayType">tmjourney:DayType</a>, están compuestos de <a href="#http://w3id.org/transmodel/journeys#composedOf">tmjourney:composedOf</a> grupos de viaje de cabecera <a href="#http://w3id.org/transmodel/journeys#HeadwayJourneyGroup">tmjourney:HeadwayJourneyGroup</a> y el tipo de dirección <a href="#http://w3id.org/transmodel/journeys#directionType">tmjourney:directionType</a> apunta a la taxonomía de tipos de dirección <a href="https://w3id.org/transmodel/kos/journeys/direction-type">tmkosjourney:direction-type</a>, en este caso &quot;outbound&quot;, de cabecera a final de línea.</p>
   <div><center><img src="resources/images/autobus-vehiclejourney.png" alt="Detalle del diagrama de VehicleJourney ."/><figcaption>Figura 19. - Detalle del diagrama de VehicleJourney </figcaption></center></div>
   <p>Sus otras propiedades son:</p>
   <ul>
-    <li>El identificador <a href="#identifier">dcterms:identifier</a> puede ser el mismo que el del <a href="#JourneyPattern">tmjourney:JourneyPattern</a>.</li>
-    <li>Una descripción <a href="#description">dcterms:description</li>
-    <li>Su duración <a href="#journeyDuration">tmjourney:journeyDuration</a>.</li>
-    <li>Hora de salida <a href="#departureTime">tmjourney:departureTime</a>.</li>
+    <li>El identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a> puede ser el mismo que el del <a href="#http://w3id.org/transmodel/journeys#JourneyPattern">tmjourney:JourneyPattern</a>.</li>
+    <li>Una descripción <a href="#http://purl.org/dc/terms/description">dcterms:description</li>
+    <li>Su duración <a href="#http://w3id.org/transmodel/journeys#journeyDuration">tmjourney:journeyDuration</a>.</li>
+    <li>Hora de salida <a href="#http://w3id.org/transmodel/journeys#departureTime">tmjourney:departureTime</a>.</li>
   </ul>
   <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/vehiclejourney/110a1&gt; a tmjourney:VehicleJourney ;
@@ -1000,8 +1001,8 @@ function loadTOC(){
 <!-- figure-headway-journey-group y headwayinterval -->
 <div id="figure-headwayjourneygroup-headwayinterval">
   <h4>HeadwayJourneyGroup y HeadwayInterval</h4>
-  <p>Los <a href="#VehicleJourney">tmjourney:VehicleJourney</a> se componen de <a href="#composedOf">tmjourney:composedOf</a> grupos de viajes de cabecera <a href="#HeadwayJourneyGroup">tmjoruney:HeadwayJourneyGroup</a> que informan de su primera salida <a href="#firstDepartureTime">tmjourney:firstDepartureTime</a>, su última salida <a href="#lastDepartureTime">tmjourney:lastDepartureTime</a> y la compensación del último día <a href="#lastDayOffset">tmjourney:lastDayOffset</a>.</p>
-  <p>Está determinada <a href="#determinedBy">tmjourney:determinedBy</a> por una frecuencia o intervalo de cabecera <a href="#HeadwayInterval">tmjourney:HeadwayInterval</a> que informa de su intervalo mínimo con <a href="#minimumHeadwayInterval">tmjourney:minimumHeadwayInterval</a>, un intervalo máximo con <a href="#maximumHeadwayInterval">tmjourney:maximumHeadwayInterval</a> e información sobre el intervalo programado, mínimo y máximo, con <a href="#scheduledHeadwayInterval">tmjourney:scheduledHeadwayInterval</a>.</p>
+  <p>Los <a href="#http://w3id.org/transmodel/journeys#VehicleJourney">tmjourney:VehicleJourney</a> se componen de <a href="#http://w3id.org/transmodel/journeys#composedOf">tmjourney:composedOf</a> grupos de viajes de cabecera <a href="#http://w3id.org/transmodel/journeys#HeadwayJourneyGroup">tmjourney:HeadwayJourneyGroup</a> que informan de su primera salida <a href="#http://w3id.org/transmodel/journeys#firstDepartureTime">tmjourney:firstDepartureTime</a>, su última salida <a href="#http://w3id.org/transmodel/journeys#lastDepartureTime">tmjourney:lastDepartureTime</a> y la compensación del último día <a href="#http://w3id.org/transmodel/journeys#lastDayOffset">tmjourney:lastDayOffset</a>.</p>
+  <p>Está determinada <a href="#http://w3id.org/transmodel/journeys#determinedBy">tmjourney:determinedBy</a> por una frecuencia o intervalo de cabecera <a href="#http://w3id.org/transmodel/journeys#HeadwayInterval">tmjourney:HeadwayInterval</a> que informa de su intervalo mínimo con <a href="#http://w3id.org/transmodel/journeys#minimumHeadwayInterval">tmjourney:minimumHeadwayInterval</a>, un intervalo máximo con <a href="#http://w3id.org/transmodel/journeys#maximumHeadwayInterval">tmjourney:maximumHeadwayInterval</a> e información sobre el intervalo programado, mínimo y máximo, con <a href="#http://w3id.org/transmodel/journeys#scheduledHeadwayInterval">tmjourney:scheduledHeadwayInterval</a>.</p>
   <div><center><img src="resources/images/autobus-headwayjourneygroup.png" alt="Detalle del diagrama de HeadwayJourneyGroup y HeadwayInterval"/><figcaption>Figura 20. - Detalle del diagrama de HeadwayJourneyGroup y HeadwayInterval</figcaption></center></div>
   <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/headwayjourneygroup/138a1-laborable&gt; a tmjourney:HeadwayJourneyGroup ;
@@ -1020,8 +1021,8 @@ function loadTOC(){
 <!-- figure-daytype-daytypeassignment-servicecalendar -->
 <div id="figure-daytype-daytypeassignment-servicecalendar">
   <h4>DayType, DayTypeAssignment y ServiceCalendar</h4>
-  <p>Cada calendario de servicio <a href="#ServiceCalendar">tmjourney:ServiceCalendar</a> tiene las propiedades de identificador <a href="#identifier">dcterms:identifier</a>, descripción <a href="#description">dcterms:description</a>, nombre <a href="#name">schema:name</a>, nombre corto <a href="#shortName">tmcommons:shortName</a> y la fecha cuando comienza <a href="#from">tmjourney:from</a> y cuando termina <a href="#to">tmjourney:to</a>.</p>
-  <p>Se define <a href="#definedBy">tmjourney:definedBy</a> por asignación/es de tipo de día <a href="#DayTypeAssignment">tmjourney:DayTypeAssignment</a> que son días concretos que especifican <a href="#specifying">tmjourney:specifying</a> tipos de día <a href="#DayType">tmjourney:DayType</a> que comparte las cuatro primeras propiedades con <a href="#ServiceCalendar">tmjourney:ServiceCalendar</a> y tiene como propiedades propias la hora más temprana de comienzo del servicio <a href="#earliestTime">tmjourney:earliestTime</a> y la duración del día con <a href="#dayLength">dcterms:dayLength</a>.</p>
+  <p>Cada calendario de servicio <a href="#http://w3id.org/transmodel/journeys#ServiceCalendar">tmjourney:ServiceCalendar</a> tiene las propiedades de identificador <a href="#http://purl.org/dc/terms/identifier">dcterms:identifier</a>, descripción <a href="#http://purl.org/dc/terms/description">dcterms:description</a>, nombre <a href="#http://schema.org/name">schema:name</a>, nombre corto <a href="#http://w3id.org/transmodel/commons#shortName">tmcommons:shortName</a> y la fecha cuando comienza <a href="#http://w3id.org/transmodel/journeys#from">tmjourney:from</a> y cuando termina <a href="#http://w3id.org/transmodel/journeys#to">tmjourney:to</a>.</p>
+  <p>Se define <a href="#http://w3id.org/transmodel/journeys#definedBy">tmjourney:definedBy</a> por asignación/es de tipo de día <a href="#http://w3id.org/transmodel/journeys#DayTypeAssignment">tmjourney:DayTypeAssignment</a> que son días concretos que especifican <a href="#http://w3id.org/transmodel/journeys#specifying">tmjourney:specifying</a> tipos de día <a href="#http://w3id.org/transmodel/journeys#DayType">tmjourney:DayType</a> que comparte las cuatro primeras propiedades con <a href="#http://w3id.org/transmodel/journeys#ServiceCalendar">tmjourney:ServiceCalendar</a> y tiene como propiedades propias la hora más temprana de comienzo del servicio <a href="#http://w3id.org/transmodel/journeys#earliestTime">tmjourney:earliestTime</a> y la duración del día con <a href="#http://purl.org/dc/terms/dayLength">dcterms:dayLength</a>.</p>
   <div><center><img src="resources/images/autobus-servicecalendar-daytype.png" alt="Detalle del diagrama de DayType, DayTypeAssignment y Service Calendar."/><figcaption>Figura 21. - Detalle del diagrama de DayType, DayTypeAssignment y Service Calendar</figcaption></center></div>
   <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/autobus/servicecalendar/2020&gt; a tmjourney:ServiceCalendar ;
@@ -2174,8 +2175,8 @@ function loadTOC(){
         </dd>
         <dt>en dominio de</dt>
         <dd>
-          <a href="#http://w3id.org/transmodel/journeys#aFunctionalCentroidFor"
-             title="http://w3id.org/transmodel/journeys#aFunctionalCentroidFor">Un centroide funcional para</a>
+          <a href="#http://w3id.org/transmodel/journeys#aaFunctionalCentroidFor"
+             title="http://w3id.org/transmodel/journeys#aaFunctionalCentroidFor">Un centroide funcional para</a>
           <sup class="type-op" title="Propiedad entre objetos">op</sup>
         </dd>
         <dt>en rango de</dt>
@@ -2632,8 +2633,8 @@ function loadTOC(){
         <a href="#http://w3id.org/transmodel/journeys#timedFrom" title="http://w3id.org/transmodel/journeys#timedFrom">toma de tiempo</a>
       </li>
       <li>
-        <a href="#http://w3id.org/transmodel/journeys#aFunctionalCentroidFor"
-           title="http://w3id.org/transmodel/journeys#aFunctionalCentroidFor">Un centroide funcional para</a>
+        <a href="#http://w3id.org/transmodel/journeys#aaFunctionalCentroidFor"
+           title="http://w3id.org/transmodel/journeys#aaFunctionalCentroidFor">Un centroide funcional para</a>
       </li>
     </ul>
     <div class="entity" id="http://w3id.org/transmodel/journeys#presentedBy">
@@ -3532,13 +3533,13 @@ function loadTOC(){
         </dl>
       </div>
     </div>
-    <div class="entity" id="http://w3id.org/transmodel/journeys#aFunctionalCentroidFor">
+    <div class="entity" id="http://w3id.org/transmodel/journeys#aaFunctionalCentroidFor">
       <h3>Un centroide funcional para<sup class="type-op" title="Propiedad entre objetos">op</sup>
         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
         </span>
       </h3>
       <p>
-        <strong>IRI:</strong> http://w3id.org/transmodel/journeys#aFunctionalCentroidFor</p>
+        <strong>IRI:</strong> http://w3id.org/transmodel/journeys#aaFunctionalCentroidFor</p>
       <div class="comment">
         <span class="markdown">Esta propiedad permite la conexión de un Punto con una Zona.</span>
       </div>
@@ -5279,7 +5280,7 @@ function loadTOC(){
       <li><a href="http://www.w3.org/2003/01/geo/wgs84_pos#">geo</a>, para las propiedades de latitud y longitud en WGS84.</li>
       <li><a href="https://datos.ign.es/def/geo_core#">geo_core</a>, para las propiedades de latitud y longitud en ETRS89.</li>
       <li><a href="http://www.opengis.net/ont/geosparql#">geosparql</a> para la representación geográfica de las tres entidades.</li>
-      <li><a href="http://www.opengis.net/ont/sf#">sf</a> (Simple Features Geometries), para la representación del punto <a href="#Point">sf:Point</a>.</li>
+      <li><a href="http://www.opengis.net/ont/sf#">sf</a> (Simple Features Geometries), para la representación del punto <a href="#http://www.opengis.net/ont/sf#Point">sf:Point</a>.</li>
       </ul>
   <li>Para algunos valores de los autobuses o de las rutas se ha reutilizado el vocabulario de sensores <a href="https://w3c.github.io/sdw/ssn/#">SOSA</a> (Semantic Sensor Network Ontology).</li>
   <li>Se ha reutilizado el vocabulario de <a href="https://github.com/CiudadesAbiertas/vocab-transporte-trafico">Tráfico</a> <a href="http://vocab.ciudadesabiertas.es/def/transporte/trafico#">estraf</a> para incidencias.</li>
