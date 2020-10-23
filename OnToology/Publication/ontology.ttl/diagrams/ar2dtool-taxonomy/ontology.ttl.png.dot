@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://w3id.org/transmodel/journeys#StopArea" "http://w3id.org/transmodel/commons#Place" "http://w3id.org/transmodel/journeys#Line" "base:Linea" "http://w3id.org/transmodel/organisations#ContactDetails" "http://w3id.org/transmodel/organisations#Organisation" "http://schema.org/ContactPoint" "http://w3id.org/transmodel/journeys#JourneyPattern" "http://w3id.org/transmodel/journeys#Route" "http://www.opengis.net/ont/geosparql#Geometry" "http://www.w3.org/ns/org#Organization" "base:RealTimePassingTime" "http://www.opengis.net/ont/sf#Point" "http://www.w3.org/ns/sosa/Observation" "http://www.opengis.net/ont/geosparql#SpatialObject" "http://w3id.org/transmodel/commons#Zone" "http://w3id.org/transmodel/journeys#StopPointInJourneyPattern" "http://w3id.org/transmodel/journeys#TimingPointInJourneyPattern" "http://w3id.org/transmodel/journeys#PointInJourneyPattern" "http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada" "http://w3id.org/transmodel/organisations#Authority" "http://w3id.org/transmodel/journeys#PointOnRoute" "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia" "base:Parada" "http://www.opengis.net/ont/geosparql#Feature" "http://w3id.org/transmodel/journeys#RoutePoint" "http://w3id.org/transmodel/journeys#PointInLinkSequence" "http://w3id.org/transmodel/journeys#Point" "http://w3id.org/transmodel/journeys#LinkSequence" "http://w3id.org/transmodel/organisations#Operator" "http://w3id.org/transmodel/journeys#ScheduledStopPoint" ; /*classes style*/
+	"http://w3id.org/transmodel/journeys#Route" -> "http://w3id.org/transmodel/journeys#LinkSequence" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#StopPointInJourneyPattern" -> "http://w3id.org/transmodel/journeys#PointInJourneyPattern" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/organisations#Operator" -> "http://w3id.org/transmodel/organisations#Organisation" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#TimingPointInJourneyPattern" -> "http://w3id.org/transmodel/journeys#PointInLinkSequence" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#TimingPointInJourneyPattern" -> "http://w3id.org/transmodel/journeys#Point" [ label = "rdfs:subClassOf" ];
+	"base:Linea" -> "http://w3id.org/transmodel/journeys#Line" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada" -> "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/commons#Place" -> "http://w3id.org/transmodel/commons#Zone" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/organisations#Organisation" -> "http://www.w3.org/ns/org#Organization" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#RoutePoint" -> "http://w3id.org/transmodel/journeys#Point" [ label = "rdfs:subClassOf" ];
+	"base:Parada" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"base:Parada" -> "http://w3id.org/transmodel/commons#Place" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#ScheduledStopPoint" -> "http://w3id.org/transmodel/journeys#Point" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#PointInJourneyPattern" -> "http://w3id.org/transmodel/journeys#PointInLinkSequence" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Feature" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#PointOnRoute" -> "http://w3id.org/transmodel/journeys#PointInLinkSequence" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#JourneyPattern" -> "http://w3id.org/transmodel/journeys#LinkSequence" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/journeys#StopArea" -> "http://w3id.org/transmodel/commons#Place" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/organisations#Authority" -> "http://w3id.org/transmodel/organisations#Organisation" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/sf#Point" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "rdfs:subClassOf" ];
+	"base:RealTimePassingTime" -> "http://www.w3.org/ns/sosa/Observation" [ label = "rdfs:subClassOf" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"http://w3id.org/transmodel/organisations#ContactDetails" -> "http://schema.org/ContactPoint" [ label = "rdfs:subClassOf" ];
+
+}
