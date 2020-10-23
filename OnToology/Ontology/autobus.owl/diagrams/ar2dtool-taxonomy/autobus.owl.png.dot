@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "tmjourney:StopArea" "tmcommons:Place" "tmjourney:Line" "esautob:Linea" "tmorg:ContactDetails" "tmorg:Organisation" "schema:ContactPoint" "tmjourney:JourneyPattern" "tmjourney:Route" "geosparql:Geometry" "org:Organization" "esautob:RealTimePassingTime" "sf:Point" "http://www.w3.org/ns/sosa/Observation" "tmcommons:Zone" "geosparql:SpatialObject" "tmjourney:StopPointInJourneyPattern" "tmjourney:TimingPointInJourneyPattern" "tmjourney:PointInJourneyPattern" "estraf:IncidenciaPlanificada" "tmorg:Authority" "tmjourney:PointOnRoute" "estraf:Incidencia" "esautob:Parada" "geosparql:Feature" "tmjourney:RoutePoint" "tmjourney:PointInLinkSequence" "tmjourney:Point" "tmjourney:LinkSequence" "tmjourney:ScheduledStopPoint" "tmorg:Operator" ; /*classes style*/
+	"tmjourney:Route" -> "tmjourney:LinkSequence" [ label = "rdfs:subClassOf" ];
+	"tmjourney:StopPointInJourneyPattern" -> "tmjourney:PointInJourneyPattern" [ label = "rdfs:subClassOf" ];
+	"tmorg:Operator" -> "tmorg:Organisation" [ label = "rdfs:subClassOf" ];
+	"tmjourney:TimingPointInJourneyPattern" -> "tmjourney:PointInLinkSequence" [ label = "rdfs:subClassOf" ];
+	"tmjourney:TimingPointInJourneyPattern" -> "tmjourney:Point" [ label = "rdfs:subClassOf" ];
+	"esautob:Linea" -> "tmjourney:Line" [ label = "rdfs:subClassOf" ];
+	"estraf:IncidenciaPlanificada" -> "estraf:Incidencia" [ label = "rdfs:subClassOf" ];
+	"tmcommons:Place" -> "tmcommons:Zone" [ label = "rdfs:subClassOf" ];
+	"tmorg:Organisation" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+	"tmjourney:RoutePoint" -> "tmjourney:Point" [ label = "rdfs:subClassOf" ];
+	"esautob:Parada" -> "geosparql:Feature" [ label = "rdfs:subClassOf" ];
+	"esautob:Parada" -> "tmcommons:Place" [ label = "rdfs:subClassOf" ];
+	"tmjourney:ScheduledStopPoint" -> "tmjourney:Point" [ label = "rdfs:subClassOf" ];
+	"tmjourney:PointInJourneyPattern" -> "tmjourney:PointInLinkSequence" [ label = "rdfs:subClassOf" ];
+	"geosparql:Feature" -> "geosparql:SpatialObject" [ label = "rdfs:subClassOf" ];
+	"tmjourney:PointOnRoute" -> "tmjourney:PointInLinkSequence" [ label = "rdfs:subClassOf" ];
+	"tmjourney:JourneyPattern" -> "tmjourney:LinkSequence" [ label = "rdfs:subClassOf" ];
+	"tmjourney:StopArea" -> "tmcommons:Place" [ label = "rdfs:subClassOf" ];
+	"tmorg:Authority" -> "tmorg:Organisation" [ label = "rdfs:subClassOf" ];
+	"sf:Point" -> "geosparql:Geometry" [ label = "rdfs:subClassOf" ];
+	"esautob:RealTimePassingTime" -> "http://www.w3.org/ns/sosa/Observation" [ label = "rdfs:subClassOf" ];
+	"estraf:Incidencia" -> "geosparql:Feature" [ label = "rdfs:subClassOf" ];
+	"geosparql:Geometry" -> "geosparql:SpatialObject" [ label = "rdfs:subClassOf" ];
+	"tmorg:ContactDetails" -> "schema:ContactPoint" [ label = "rdfs:subClassOf" ];
+
+}
