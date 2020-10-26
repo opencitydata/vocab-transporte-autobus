@@ -53,7 +53,7 @@ The vocabulary has been divided into three main parts:
         <dc:title xml:lang="en">Vocabulary for the representation of data on public transport by bus.</dc:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-05</terms:created>
         <terms:hasVersion>1.0.0</terms:hasVersion>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-01</terms:issued>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-03</terms:issued>
         <terms:license>https://creativecommons.org/licenses/by/4.0</terms:license>
         <terms:publisher xml:lang="en">Ontology Engineering Group - Universidad Politécnica de Madrid</terms:publisher>
         <terms:publisher xml:lang="es">Ontology Engineering Group - Universidad Politécnica de Madrid</terms:publisher>
