@@ -1,4 +1,30 @@
 
 <h2 id="ref" class="list">Referencias <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
-<span class="markdown">A&ntilde;ade aqu&iacute; tus referencias, a ser posible en una lista.</span>
+<p>El vocabulario del servicio público de transporte de autobuses urbano utiliza fundamentalmente los módulos del vocabulario <a href="https://w3id.org/transmodel">Transmodel</a>, se apoya en otros vocabularios (sosa, geo, kos y organization) además de crear algunas clases y propiedades ad hoc.</p>
+<p>En concreto, de <a href="https://w3id.org/transmodel">Transmodel</a> se han reutilizado los siguientes vocabularios:</p>
+<ul>
+  <li><a href="https://oeg-upm.github.io/snap-docs/tm-commons.owl/documentation/index-en.html">Commons</a>, <a href="https://w3id.org/transmodel/commons#">tmcommons</a>, para representar algunos conceptos y propiedades comunes de los módulos de Transmodel.</li>
+  <li><a href="https://oeg-upm.github.io/snap-docs/tm-journeys.owl/documentation/index-en.html">Journeys</a>, <a href="https://w3id.org/transmodel/journeys#">tmjourneys</a>, para la información relativa a viajes. </li>
+  <li><a href="https://oeg-upm.github.io/snap-docs/tm-organisations.owl/documentation/index-en.html">Organisations</a>, <a href="https://w3id.org/transmodel/organisations#">tmorg</a>, para representar la información relativa a las organizaciones que participan en el sistema de transporte público de autobuses urbanos</a>.</li>
+</ul>
+<p>Los otros vocabularios utilizados han sido:</p>
+<ul>
+  <li>Para las taxonomías se ha empleado <a href="https://www.w3.org/2004/02/skos/">SKOS</a> (Simple Knowledge Organization System), en concreto:
+    <ul>
+      <li><a href="http://w3id.org/transmodel/kos/commons">tmkoscommons</a> para taxonomías comunes.</li>
+      <li><a href="http://w3id.org/transmodel/kos/journeys/">tmkosjourney</a> para taxonomías de viajes.</li>
+    </ul>
+  </li>
+  <li>Para la representación geográfica de los datos se han reutilizado los siguientes vocabularios:
+    <ul>
+      <li><a href="http://www.w3.org/2003/01/geo/wgs84_pos#">geo</a>, para las propiedades de latitud y longitud en WGS84.</li>
+      <li><a href="https://datos.ign.es/def/geo_core#">geo_core</a>, para las propiedades de latitud y longitud en ETRS89.</li>
+      <li><a href="http://www.opengis.net/ont/geosparql#">geosparql</a> para la representación geográfica de las tres entidades.</li>
+      <li><a href="http://www.opengis.net/ont/sf#">sf</a> (Simple Features Geometries), para la representación del punto <a href="#http://www.opengis.net/ont/sf#Point">sf:Point</a>.</li>
+      </ul>
+  <li>Para algunos valores de los autobuses o de las rutas se ha reutilizado el vocabulario de sensores <a href="https://w3c.github.io/sdw/ssn/#">SOSA</a> (Semantic Sensor Network Ontology).</li>
+  <li>Se ha reutilizado el vocabulario de <a href="https://github.com/CiudadesAbiertas/vocab-transporte-trafico">Tráfico</a> <a href="http://vocab.ciudadesabiertas.es/def/transporte/trafico#">estraf</a> para incidencias.</li>
+  <li>Para la dirección de la parada se ha reutilizado el vocabulario de callejero <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#">escjr</a>.</li>
+  <li>Se ha empleado el vocabulario <a href="http://www.w3.org/ns/org#">org</a> para las organizaciones de transporte.</li>
+</ul>
 
