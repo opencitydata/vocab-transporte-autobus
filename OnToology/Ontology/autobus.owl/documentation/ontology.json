@@ -605,7 +605,16 @@
   } ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
+    "@value" : "Andrés Iglesias Pardo - Empresa Municipal de Transportes de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "Andrés Recio Martín - Empresa Municipal de Transportes de Madrid"
+  }, {
+    "@language" : "es",
     "@value" : "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "José Antonio Chanca Cáceres - Ayuntamiento de Zaragoza"
   }, {
     "@language" : "es",
     "@value" : "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"

@@ -28,7 +28,10 @@ The vocabulary has been divided into three main parts:
 - Organizations (authority and operator) and their lines
 - Routes and points thereof, including stops.
 - Journeys and travel patterns."""@en ;
-                                                           <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
+                                                           <http://purl.org/dc/elements/1.1/contributor> "Andrés Iglesias Pardo - Empresa Municipal de Transportes de Madrid"@es ,
+                                                                                                         "Andrés Recio Martín - Empresa Municipal de Transportes de Madrid"@es ,
+                                                                                                         "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
+                                                                                                         "José Antonio Chanca Cáceres - Ayuntamiento de Zaragoza"@es ,
                                                                                                          "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
                                                                                                          "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
                                                                                                          "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ,
