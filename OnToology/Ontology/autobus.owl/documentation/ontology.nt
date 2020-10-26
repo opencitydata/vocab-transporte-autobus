@@ -23,7 +23,7 @@
 <http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/title> "Vocabulary for the representation of data on public transport by bus."@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/created> "2020-05-05"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/hasVersion> "1.0.0" .
-<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/issued> "2020-11-01"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/issued> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
 <http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@es .

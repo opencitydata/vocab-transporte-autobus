@@ -49,7 +49,7 @@ The vocabulary has been divided into three main parts:
                                                                                                    "Vocabulary for the representation of data on public transport by bus."@en ;
                                                            <http://purl.org/dc/terms/created> "2020-05-05"^^xsd:dateTime ;
                                                            <http://purl.org/dc/terms/hasVersion> "1.0.0" ;
-                                                           <http://purl.org/dc/terms/issued> "2020-11-01"^^xsd:dateTime ;
+                                                           <http://purl.org/dc/terms/issued> "2020-11-03"^^xsd:dateTime ;
                                                            <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
                                                            <http://purl.org/dc/terms/publisher> "Ontology Engineering Group - Universidad Politécnica de Madrid"@en ,
                                                                                                 "Ontology Engineering Group - Universidad Politécnica de Madrid"@es ;
