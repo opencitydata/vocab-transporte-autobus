@@ -38,6 +38,9 @@
 	<dc:contributor xml:lang="es">Víctor Morlán Pío - Ayuntamiento de Zaragoza</dc:contributor>
         <dc:contributor xml:lang="es">Red.es</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Informática - Ayuntamiento de Santiago de Compostela</dc:contributor>
+	<dc:contributor xml:lang="es">Andrés Recio Martín - Empresa Municipal de Transportes de Madrid</dc:contributor>
+	<dc:contributor xml:lang="es">Andrés Iglesias Pardo - Empresa Municipal de Transportes de Madrid</dc:contributor>
+	<dc:contributor xml:lang="es">José Antonio Chanca Cáceres - Ayuntamiento de Zaragoza</dc:contributor>
 	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
 	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
