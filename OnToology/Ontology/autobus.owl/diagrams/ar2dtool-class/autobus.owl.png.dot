@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "tmjourney:StopArea" "tmjourney:VehicleJourney" "tmcommons:Presentation" "tmjourney:Line" "esautob:Linea" "tmorg:ContactDetails" "direccion-postal:DireccionPostal" "tmorg:Organisation" "tmjourney:DestinationDisplay" "schema:ContactPoint" "tmjourney:JourneyPattern" "-31f008b9:175641e1d53:-7ff6" "tmjourney:Route" "-31f008b9:175641e1d53:-7ffa" "geosparql:Geometry" "org:Organization" "tmjourney:HeadwayInterval" "skos:ConceptScheme" "esautob:RealTimePassingTime" "-31f008b9:175641e1d53:-7fe8" "sf:Point" "tmcommons:Zone" "tmjourney:StopPointInJourneyPattern" "skos:Concept" "tmjourney:TimingPointInJourneyPattern" "estraf:IncidenciaPlanificada" "tmorg:Authority" "estraf:Incidencia" "tmjourney:DayTypeAssignment" "tmjourney:HeadwayJourneyGroup" "tmjourney:ServiceCalendar" "esautob:Parada" "tmjourney:DayType" "-31f008b9:175641e1d53:-7ff2" "tmjourney:PointInLinkSequence" "tmjourney:Point" "tmjourney:LinkSequence" "tmjourney:ScheduledStopPoint" "tmorg:Operator" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "tmjourney:StopArea" "tmjourney:VehicleJourney" "tmcommons:Presentation" "tmjourney:Line" "esautob:Linea" "tmorg:ContactDetails" "direccion-postal:DireccionPostal" "tmorg:Organisation" "tmjourney:DestinationDisplay" "schema:ContactPoint" "-36fb76b8:1756493bc9a:-7ffa" "tmjourney:JourneyPattern" "tmjourney:Route" "geosparql:Geometry" "org:Organization" "tmjourney:HeadwayInterval" "skos:ConceptScheme" "esautob:RealTimePassingTime" "sf:Point" "tmcommons:Zone" "tmjourney:StopPointInJourneyPattern" "skos:Concept" "tmjourney:TimingPointInJourneyPattern" "-36fb76b8:1756493bc9a:-7ff2" "estraf:IncidenciaPlanificada" "-36fb76b8:1756493bc9a:-7ff6" "tmorg:Authority" "estraf:Incidencia" "tmjourney:DayTypeAssignment" "tmjourney:HeadwayJourneyGroup" "tmjourney:ServiceCalendar" "esautob:Parada" "tmjourney:DayType" "tmjourney:PointInLinkSequence" "tmjourney:Point" "-36fb76b8:1756493bc9a:-7fe8" "tmjourney:LinkSequence" "tmjourney:ScheduledStopPoint" "tmorg:Operator" ; /*classes style*/
 	"estraf:recurrencia" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"tmjourney:prescribing" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"tmorg:Organisation" -> "org:Organization" [ label = "owl:equivalentClass" ];
@@ -38,34 +38,34 @@ node [shape = rectangle, color="orange"]; "tmjourney:StopArea" "tmjourney:Vehicl
 	"tmjourney:specifying" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"http://www.w3.org/ns/sosa/resultTime" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"skos:inScheme" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
-	"NULL" -> "tmjourney:distanceFromStart" [ label = "owl:onProperty" ];
 	"NULL" -> "tmjourney:viewedAs" [ label = "owl:onProperty" ];
+	"NULL" -> "tmjourney:distanceFromStart" [ label = "owl:onProperty" ];
+	"NULL" -> "-36fb76b8:1756493bc9a:-7ff7" [ label = "rdf:rest" ];
 	"NULL" -> "tmjourney:Line" [ label = "rdf:first" ];
-	"NULL" -> "-31f008b9:175641e1d53:-7ff3" [ label = "rdf:rest" ];
-	"NULL" -> "-31f008b9:175641e1d53:-7fe7" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-36fb76b8:1756493bc9a:-7ff5" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-36fb76b8:1756493bc9a:-7ff9" [ label = "owl:intersectionOf" ];
 	"NULL" -> "tmcommons:colour" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:float" [ label = "owl:onDataRange" ];
 	"NULL" -> "tmkosjourney:direction-type" [ label = "owl:hasValue" ];
-	"NULL" -> "-31f008b9:175641e1d53:-7ff1" [ label = "owl:unionOf" ];
-	"NULL" -> "tmcommons:textColour" [ label = "owl:onProperty" ];
+	"NULL" -> "-36fb76b8:1756493bc9a:-7ff3" [ label = "rdf:rest" ];
 	"NULL" -> "tmjourney:order" [ label = "owl:onProperty" ];
+	"NULL" -> "tmcommons:textColour" [ label = "owl:onProperty" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "tmjourney:Point" [ label = "owl:onClass" ];
 	"NULL" -> "tmkosjourney:stop-use-type" [ label = "owl:hasValue" ];
-	"NULL" -> "-31f008b9:175641e1d53:-7fe5" [ label = "rdf:rest" ];
+	"NULL" -> "-36fb76b8:1756493bc9a:-7ff1" [ label = "owl:unionOf" ];
 	"NULL" -> "xsd:nonNegativeInteger" [ label = "owl:onDataRange" ];
 	"NULL" -> "tmjourney:DestinationDisplay" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "tmjourney:prescribing" [ label = "owl:onProperty" ];
 	"NULL" -> "tmjourney:presentedBy" [ label = "owl:onProperty" ];
 	"NULL" -> "tmjourney:PointInLinkSequence" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "tmjourney:madeUpOf" [ label = "owl:onProperty" ];
-	"NULL" -> "-31f008b9:175641e1d53:-7fe8" [ label = "owl:allValuesFrom" ];
-	"NULL" -> "-31f008b9:175641e1d53:-7ff7" [ label = "rdf:rest" ];
-	"NULL" -> "-31f008b9:175641e1d53:-7ff5" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-36fb76b8:1756493bc9a:-7fe7" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-36fb76b8:1756493bc9a:-7fe8" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "-36fb76b8:1756493bc9a:-7fe5" [ label = "rdf:rest" ];
 	"NULL" -> "tmjourney:directionType" [ label = "owl:onProperty" ];
 	"NULL" -> "tmcommons:Presentation" [ label = "owl:allValuesFrom" ];
-	"NULL" -> "-31f008b9:175641e1d53:-7ff9" [ label = "owl:intersectionOf" ];
 	"NULL" -> "xsd:string" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
 	"esautob:zona" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -98,7 +98,7 @@ node [shape = rectangle, color="orange"]; "tmjourney:StopArea" "tmjourney:Vehicl
 	"owl:Thing" -> "xsd:dateTime" [ label = "schema:startDate" ];
 	"schema:ContactPoint" -> "xsd:string" [ label = "schema:alternateName" ];
 	"esautob:Linea" -> "esautob:Parada" [ label = "esautob:finalLinea" ];
-	"-31f008b9:175641e1d53:-7ffc" -> "geosparql:Geometry" [ label = "geosparql:hasGeometry" ];
+	"-36fb76b8:1756493bc9a:-7ffc" -> "geosparql:Geometry" [ label = "geosparql:hasGeometry" ];
 	"tmjourney:DayTypeAssignment" -> "tmjourney:DayType" [ label = "tmjourney:specifying" ];
 	"tmjourney:ScheduledStopPoint" -> "xsd:boolean" [ label = "tmjourney:forBoarding" ];
 	"sf:Point" -> "xsd:float" [ label = "geo:long" ];
@@ -107,7 +107,7 @@ node [shape = rectangle, color="orange"]; "tmjourney:StopArea" "tmjourney:Vehicl
 	"owl:Thing" -> "xsd:dateTime" [ label = "schema:dateCreated" ];
 	"tmjourney:PointInLinkSequence" -> "tmjourney:Point" [ label = "tmjourney:viewedAs" ];
 	"owl:Thing" -> "xsd:anyURI" [ label = "schema:url" ];
-	"-31f008b9:175641e1d53:-7ffb" -> "estraf:Incidencia" [ label = "esautob:afectadaPorIncidencia" ];
+	"-36fb76b8:1756493bc9a:-7ffb" -> "estraf:Incidencia" [ label = "esautob:afectadaPorIncidencia" ];
 	"owl:Thing" -> "estraf:Incidencia" [ label = "esautob:generadoPorIncidencia" ];
 	"tmjourney:JourneyPattern" -> "tmjourney:Route" [ label = "tmjourney:on" ];
 	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
@@ -121,7 +121,7 @@ node [shape = rectangle, color="orange"]; "tmjourney:StopArea" "tmjourney:Vehicl
 	"tmjourney:HeadwayInterval" -> "xsd:dateTime" [ label = "tmjourney:minimumHeadwayInterval" ];
 	"esautob:Linea" -> "esautob:Parada" [ label = "esautob:cabeceraLinea" ];
 	"estraf:Incidencia" -> "xsd:anyURI" [ label = "estraf:incidenciaAdjunto" ];
-	"-31f008b9:175641e1d53:-7ff0" -> "xsd:string" [ label = "esautob:zona" ];
+	"-36fb76b8:1756493bc9a:-7ff0" -> "xsd:string" [ label = "esautob:zona" ];
 	"tmorg:Operator" -> "tmjourney:Line" [ label = "tmorg:operating" ];
 	"owl:Thing" -> "tmjourney:PointInLinkSequence" [ label = "http://www.w3.org/ns/sosa/hasFeatureOfInterest" ];
 	"tmjourney:DestinationDisplay" -> "xsd:string" [ label = "tmjourney:frontText" ];
@@ -143,7 +143,7 @@ node [shape = rectangle, color="orange"]; "tmjourney:StopArea" "tmjourney:Vehicl
 	"tmjourney:HeadwayJourneyGroup" -> "xsd:dateTime" [ label = "tmjourney:lastDepartureTime" ];
 	"tmjourney:HeadwayInterval" -> "xsd:dateTime" [ label = "tmjourney:maximumHeadwayInterval" ];
 	"tmjourney:PointInLinkSequence" -> "xsd:double" [ label = "tmjourney:distanceFromStart" ];
-	"tmjourney:StopPointInJourneyPattern" -> "-31f008b9:175641e1d53:-7ff6" [ label = "tmjourney:stopUse" ];
+	"tmjourney:StopPointInJourneyPattern" -> "-36fb76b8:1756493bc9a:-7ff6" [ label = "tmjourney:stopUse" ];
 	"esautob:Parada" -> "xsd:boolean" [ label = "esautob:panelElectronico" ];
 	"owl:Thing" -> "estraf:PropiedadMedicionTrafico" [ label = "http://www.w3.org/ns/sosa/observedProperty" ];
 	"schema:ContactPoint" -> "xsd:string" [ label = "schema:legalName" ];
@@ -172,9 +172,9 @@ node [shape = rectangle, color="orange"]; "tmjourney:StopArea" "tmjourney:Vehicl
 	"tmjourney:ServiceCalendar" -> "xsd:date" [ label = "tmjourney:to" ];
 	"schema:ContactPoint" -> "xsd:string" [ label = "schema:telephone" ];
 	"dct:creator" -> "owl:Thing" [ label = "dct:created" ];
-	"tmjourney:Route" -> "-31f008b9:175641e1d53:-7ffa" [ label = "tmjourney:directionType" ];
+	"tmjourney:Route" -> "-36fb76b8:1756493bc9a:-7ffa" [ label = "tmjourney:directionType" ];
 	"tmcommons:Presentation" -> "xsd:string" [ label = "tmcommons:textColour" ];
-	"-31f008b9:175641e1d53:-7ff2" -> "xsd:string" [ label = "tmcommons:shortName" ];
+	"-36fb76b8:1756493bc9a:-7ff2" -> "xsd:string" [ label = "tmcommons:shortName" ];
 	"tmcommons:Presentation" -> "xsd:string" [ label = "tmcommons:colour" ];
 
 }
