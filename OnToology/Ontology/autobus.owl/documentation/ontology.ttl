@@ -557,21 +557,21 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  http://schema.org/dateCreated
 <http://schema.org/dateCreated> rdf:type owl:DatatypeProperty ;
                                 rdfs:range xsd:dateTime ;
-                                rdfs:comment "La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)"@es ,
-                                             "The end date and time of the incidence (in ISO 8601 date format)."@en ;
+                                rdfs:comment "La fecha o fecha y hora de creación en formato fecha ISO 8601"@es ,
+                                             "The end date or end date and time in ISO 8601 date format."@en ;
                                 rdfs:isDefinedBy <http://schema.org/> ;
-                                rdfs:label "fecha de publicación de incidencia"@es ,
-                                           "posted incidence date"@en .
+                                rdfs:label "Date created"@en ,
+                                           "Fecha de creación"@es .
 
 
 ###  http://schema.org/datePosted
 <http://schema.org/datePosted> rdf:type owl:DatatypeProperty ;
                                rdfs:range xsd:dateTime ;
-                               rdfs:comment "La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)"@es ,
-                                            "The end date and time of the incidence (in ISO 8601 date format)."@en ;
+                               rdfs:comment "La fecha o fecha y hora de publicación en formato fecha ISO 8601"@es ,
+                                            "The end date or date and time in ISO 8601 date format."@en ;
                                rdfs:isDefinedBy <http://schema.org/> ;
-                               rdfs:label "fecha de publicación de incidencia"@es ,
-                                          "posted incidence date"@en .
+                               rdfs:label "Date posted"@en ,
+                                          "Fecha de publicación"@es .
 
 
 ###  http://schema.org/email
@@ -588,9 +588,8 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  http://schema.org/endDate
 <http://schema.org/endDate> rdf:type owl:DatatypeProperty ;
                             rdfs:range xsd:dateTime ;
-                            rdfs:comment """La fecha y hora de finalización de
-	    una incidencia (en formato fecha ISO 8601)"""@es ,
-                                         "The end date and time of an incidence (in ISO 8601 date format)."@en ;
+                            rdfs:comment "La fecha o fecha y hora de finalización en formato fecha ISO 8601)"@es ,
+                                         "The end date or date and time of an incidence in ISO 8601 date format)."@en ;
                             rdfs:isDefinedBy <http://schema.org/> ;
                             rdfs:label "end date"@en ,
                                        "fecha de fin"@es .
@@ -620,8 +619,8 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  http://schema.org/startDate
 <http://schema.org/startDate> rdf:type owl:DatatypeProperty ;
                               rdfs:range xsd:dateTime ;
-                              rdfs:comment "La fecha y hora de inicio de una incidencia (en formato fecha ISO 8601)."@es ,
-                                           "The start date and time of an incidence (in ISO 8601 date format)."@en ;
+                              rdfs:comment "La fecha o fecha y hora de inicio en formato fecha ISO 8601."@es ,
+                                           "The start date or start date and time in ISO 8601 date format."@en ;
                               rdfs:isDefinedBy <http://schema.org/> ;
                               rdfs:label "(expected) start date"@en ,
                                          "fecha de inicio (prevista)"@es .

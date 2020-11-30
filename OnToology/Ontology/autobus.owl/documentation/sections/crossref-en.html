@@ -1,4 +1,4 @@
-<h2 id="crossreference" class="list">Cross reference for classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="crossreference" class="list">Cross reference for Vocabulary for the representation of data on public transport by bus. classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Vocabulary for the representation of data on public transport by bus..
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
@@ -2611,6 +2611,12 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://w3id.org/transmodel/journeys#date" title="http://w3id.org/transmodel/journeys#date">Date</a>
       </li>
       <li>
+         <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">Date created</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/datePosted" title="http://schema.org/datePosted">Date posted</a>
+      </li>
+      <li>
          <a href="#http://w3id.org/transmodel/journeys#departureTime"
             title="http://w3id.org/transmodel/journeys#departureTime">Departure Time</a>
       </li>
@@ -2707,12 +2713,6 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://www.w3.org/ns/sosa/resultTime" title="http://www.w3.org/ns/sosa/resultTime">Phenomenon Time</a>
       </li>
       <li>
-         <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">posted incidence date</a>
-      </li>
-      <li>
-         <a href="#http://schema.org/datePosted" title="http://schema.org/datePosted">posted incidence date</a>
-      </li>
-      <li>
          <a href="#http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia">Recurrence</a>
       </li>
@@ -2804,7 +2804,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://schema.org/startDate</p>
       <div class="comment">
-         <span class="markdown">The start date and time of an incidence (in ISO 8601 date format).</span>
+         <span class="markdown">The start date or start date and time in ISO 8601 date format.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2906,6 +2906,60 @@ This section provides details for each class and property defined by Vocabulary 
                   title="http://w3id.org/transmodel/journeys#DayTypeAssignment">DayTypeAssignment</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/dateCreated">
+      <h3>Date created<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/dateCreated</p>
+      <div class="comment">
+         <span class="markdown">The end date or end date and time in ISO 8601 date format.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://schema.org/datePosted">
+      <h3>Date posted<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/datePosted</p>
+      <div class="comment">
+         <span class="markdown">The end date or date and time in ISO 8601 date format.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#dateTime"
@@ -3146,7 +3200,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://schema.org/endDate</p>
       <div class="comment">
-         <span class="markdown">The end date and time of an incidence (in ISO 8601 date format).</span>
+         <span class="markdown">The end date or date and time of an incidence in ISO 8601 date format).</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3776,60 +3830,6 @@ This section provides details for each class and property defined by Vocabulary 
                   target="_blank"
                   title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://schema.org/dateCreated">
-      <h3>posted incidence date<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://schema.org/dateCreated</p>
-      <div class="comment">
-         <span class="markdown">The end date and time of the incidence (in ISO 8601 date format).</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://schema.org/">http://schema.org/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://schema.org/datePosted">
-      <h3>posted incidence date<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://schema.org/datePosted</p>
-      <div class="comment">
-         <span class="markdown">The end date and time of the incidence (in ISO 8601 date format).</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://schema.org/">http://schema.org/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#dateTime"

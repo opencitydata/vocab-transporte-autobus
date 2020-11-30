@@ -1,7 +1,5 @@
-<h2 id="crossreference" class="list">T&eacute;rminos para clases, propiedades y
-  propiedades de datos <span class="backlink"> volver
-    a <a href="#toc">&iacute;ndice</a></span></h2>
-<p>Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por Vocabulario para la representación de datos sobre el transporte público urbano de autobuses.</p>
+<h2 id="crossreference" class="list">T&eacute;rminos de Vocabulary for the representation of data on public transport by bus. para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por Vocabulary for the representation of data on public transport by bus..
 <div id="classes">
    <h3 id="classes-headline" class="list">Clases</h3>
    <ul class="hlist">
@@ -2643,6 +2641,9 @@
          <a href="#http://w3id.org/transmodel/journeys#date" title="http://w3id.org/transmodel/journeys#date">Fecha</a>
       </li>
       <li>
+         <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">Fecha de creación</a>
+      </li>
+      <li>
          <a href="#http://schema.org/endDate" title="http://schema.org/endDate">fecha de fin</a>
       </li>
       <li>
@@ -2653,10 +2654,7 @@
          <a href="#http://schema.org/startDate" title="http://schema.org/startDate">fecha de inicio (prevista)</a>
       </li>
       <li>
-         <a href="#http://schema.org/dateCreated" title="http://schema.org/dateCreated">fecha de publicación de incidencia</a>
-      </li>
-      <li>
-         <a href="#http://schema.org/datePosted" title="http://schema.org/datePosted">fecha de publicación de incidencia</a>
+         <a href="#http://schema.org/datePosted" title="http://schema.org/datePosted">Fecha de publicación</a>
       </li>
       <li>
          <a href="#http://w3id.org/transmodel/journeys#maximumHeadwayInterval"
@@ -3204,6 +3202,33 @@
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://schema.org/dateCreated">
+      <h3>Fecha de creación<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/dateCreated</p>
+      <div class="comment">
+         <span class="markdown">La fecha o fecha y hora de creación en formato fecha ISO 8601</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>
+            <a href="http://schema.org/">http://schema.org/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://schema.org/endDate">
       <h3>fecha de fin<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
@@ -3212,8 +3237,7 @@
       <p>
          <strong>IRI:</strong> http://schema.org/endDate</p>
       <div class="comment">
-         <span class="markdown">La fecha y hora de finalización de
-	    una incidencia (en formato fecha ISO 8601)</span>
+         <span class="markdown">La fecha o fecha y hora de finalización en formato fecha ISO 8601)</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -3274,34 +3298,7 @@
       <p>
          <strong>IRI:</strong> http://schema.org/startDate</p>
       <div class="comment">
-         <span class="markdown">La fecha y hora de inicio de una incidencia (en formato fecha ISO 8601).</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Definida por</dt>
-         <dd>
-            <a href="http://schema.org/">http://schema.org/</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>rango</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#dateTime"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#dateTime">date time</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://schema.org/dateCreated">
-      <h3>fecha de publicación de incidencia<sup class="type-dp" title="Propiedad de datos">dp</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://schema.org/dateCreated</p>
-      <div class="comment">
-         <span class="markdown">La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)</span>
+         <span class="markdown">La fecha o fecha y hora de inicio en formato fecha ISO 8601.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -3321,14 +3318,14 @@
       </div>
    </div>
    <div class="entity" id="http://schema.org/datePosted">
-      <h3>fecha de publicación de incidencia<sup class="type-dp" title="Propiedad de datos">dp</sup>
+      <h3>Fecha de publicación<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://schema.org/datePosted</p>
       <div class="comment">
-         <span class="markdown">La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)</span>
+         <span class="markdown">La fecha o fecha y hora de publicación en formato fecha ISO 8601</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
