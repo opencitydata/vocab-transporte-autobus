@@ -382,20 +382,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)"
+    "@value" : "La fecha o fecha y hora de creación en formato fecha ISO 8601"
   }, {
     "@language" : "en",
-    "@value" : "The end date and time of the incidence (in ISO 8601 date format)."
+    "@value" : "The end date or end date and time in ISO 8601 date format."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://schema.org/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "fecha de publicación de incidencia"
-  }, {
     "@language" : "en",
-    "@value" : "posted incidence date"
+    "@value" : "Date created"
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha de creación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -405,20 +405,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)"
+    "@value" : "La fecha o fecha y hora de publicación en formato fecha ISO 8601"
   }, {
     "@language" : "en",
-    "@value" : "The end date and time of the incidence (in ISO 8601 date format)."
+    "@value" : "The end date or date and time in ISO 8601 date format."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://schema.org/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "fecha de publicación de incidencia"
-  }, {
     "@language" : "en",
-    "@value" : "posted incidence date"
+    "@value" : "Date posted"
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha de publicación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -454,10 +454,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "La fecha y hora de finalización de\n\t    una incidencia (en formato fecha ISO 8601)"
+    "@value" : "La fecha o fecha y hora de finalización en formato fecha ISO 8601)"
   }, {
     "@language" : "en",
-    "@value" : "The end date and time of an incidence (in ISO 8601 date format)."
+    "@value" : "The end date or date and time of an incidence in ISO 8601 date format)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://schema.org/"
@@ -526,10 +526,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "La fecha y hora de inicio de una incidencia (en formato fecha ISO 8601)."
+    "@value" : "La fecha o fecha y hora de inicio en formato fecha ISO 8601."
   }, {
     "@language" : "en",
-    "@value" : "The start date and time of an incidence (in ISO 8601 date format)."
+    "@value" : "The start date or start date and time in ISO 8601 date format."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://schema.org/"
